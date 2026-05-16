@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: rokstrauss-art/galaxy-sport-website
   branch: main
 
 media_folder: "src/images/uploads"
@@ -7,8 +8,8 @@ public_folder: "/images/uploads"
 
 locale: "en"
 
-site_url: https://galaxysportss.netlify.app
-display_url: https://galaxysportss.netlify.app
+site_url: https://galaxysportslo.netlify.app
+display_url: https://galaxysportslo.netlify.app
 logo_url: /images/logo-dark.png
 
 collections:
