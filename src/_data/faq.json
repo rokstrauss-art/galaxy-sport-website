@@ -1,0 +1,28 @@
+{
+  "section_label": "Pogosta vprašanja →",
+  "section_title": "Kaj te zanima?",
+  "section_intro": "Najpogostejša vprašanja udeležencev. Če odgovora ne najdeš, kar pokliči.",
+  "cta_label": "Pošlji vprašanje",
+  "items": [
+    {
+      "question": "Kakšno raven kolesarjenja potrebujem?",
+      "answer": "Odvisno od dogodka. Pri vsakem terminu pišemo, za koga je primeren — od popolnih začetnikov pa do bolj izkušenih kolesarjev. Če nisi prepričan, nam piši in skupaj ugotoviva."
+    },
+    {
+      "question": "Kakšno kolo potrebujem?",
+      "answer": "Prav tako odvisno od dogodka. Za bikepacking je dovolj gravel ali MTB s 2.0+ pnevmatikami, za francoske Alpe potrebuješ trail (130–140 mm) ali all-mountain kolo. E-bike je skoraj povsod dobrodošel. Pred prijavo bomo skupaj preverili, da imaš pravo opremo."
+    },
+    {
+      "question": "Kaj je vključeno v ceno?",
+      "answer": "Vključeno je strokovno vodenje, organizacija in (kjer je navedeno) nastanitev s polpenzionom. Vsak dogodek ima na strani natančno naveden seznam, kaj je vključeno in kaj ne."
+    },
+    {
+      "question": "Kako se prijavim?",
+      "answer": "Najlažje preko maila info@galaxysport.si — pošlji ime, priimek in mobilno številko. V najkrajšem času te kontaktiramo z vsemi podrobnostmi in potrditvijo."
+    },
+    {
+      "question": "Ali je zavarovanje vključeno?",
+      "answer": "Osebno zavarovanje ni vključeno v ceno — priporočamo, da si ga uredite sami. Za dodatna vprašanja smo na voljo na mailu ali telefonu."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "section_label": "Album sezone →",
+  "section_title_part1": "Trenutki ",
+  "section_title_emphasis": "s poti",
+  "section_title_part2": ".",
+  "section_intro": "Vsaka tura ima svojo zgodbo. Tu je nekaj naših najljubših.",
+  "items": [
+    { "image": "", "title": "Cres MTB", "meta": "Maj · 2025" },
+    { "image": "", "title": "Bejba zmore", "meta": "Maj · 2025" },
+    { "image": "", "title": "Bikepacking", "meta": "Junij · 2025" },
+    { "image": "", "title": "Špric", "meta": "Vsi termini" },
+    { "image": "", "title": "Francoske Alpe", "meta": "Avgust · 2025" },
+    { "image": "", "title": "Servis", "meta": "Vse leto" },
+    { "image": "", "title": "Trail po dežju", "meta": "Julij · 2025" }
+  ]
+}

@@ -1,0 +1,496 @@
+{% include "head.njk" %}
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="trees" viewBox="0 0 1200 280" preserveAspectRatio="xMidYEnd slice">
+      <g fill="currentColor">
+        <polygon points="50,280 80,160 110,280"/><polygon points="100,280 140,120 180,280"/>
+        <polygon points="170,280 210,180 250,280"/><polygon points="240,280 290,90 340,280"/>
+        <polygon points="320,280 360,140 400,280"/><polygon points="390,280 430,170 470,280"/>
+        <polygon points="450,280 510,80 570,280"/><polygon points="550,280 590,150 630,280"/>
+        <polygon points="610,280 660,110 710,280"/><polygon points="690,280 730,170 770,280"/>
+        <polygon points="750,280 800,100 850,280"/><polygon points="830,280 870,160 910,280"/>
+        <polygon points="890,280 940,120 990,280"/><polygon points="970,280 1010,170 1050,280"/>
+        <polygon points="1030,280 1080,90 1130,280"/><polygon points="1110,280 1150,150 1190,280"/>
+      </g>
+    </symbol>
+    <symbol id="i-cal" viewBox="0 0 16 16">
+      <rect x="2" y="3" width="12" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M5 1.5v3M11 1.5v3M2 7h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 16 16">
+      <path d="M8 1.5c-2.8 0-5 2.1-5 4.7C3 9.5 8 14.5 8 14.5s5-5 5-8.3c0-2.6-2.2-4.7-5-4.7z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="8" cy="6" r="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="i-people" viewBox="0 0 16 16">
+      <circle cx="6" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="11.5" cy="6" r="1.7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M2 13c0-2.2 1.8-3.5 4-3.5s4 1.3 4 3.5M10 13c0-1.6 1.2-2.7 3-2.7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 18 18">
+      <circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M9 4 L9 9 L13 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 18 18">
+      <path d="M5 2 L7.5 2 L8.5 5 L7 6.5 C8 8.5 9.5 10 11.5 11 L13 9.5 L16 10.5 L16 13 C16 14.5 14.5 16 13 16 C7 15.5 2.5 11 2 5 C2 3.5 3.5 2 5 2 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-tools" viewBox="0 0 18 18">
+      <path d="M11 3 L13 3 L14 4 L14 6 L12.5 6.5 L12 7.5 L12.5 9 L11.5 10 L10 9.5 L9 10.5 L8.5 12 L7 12 L6.5 10.5 L5.5 9.5 L4 10 L3 9 L3.5 7.5 L3 6 L1.5 5.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="8" cy="8" r="1.8" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="announce">
+  <div class="container announce-track">
+    <span class="announce-tag">Novost!</span>
+    <span class="announce-text">{{ settings.announce_text | safe }}</span>
+    <a href="{{ settings.announce_link_url }}" class="announce-link">{{ settings.announce_link_label }}</a>
+  </div>
+</div>
+
+<header id="header">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Galaxy Sport">
+      <img src="/images/logo-dark.png" alt="Galaxy Sport">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#events">Dogodki</a></li>
+      <li><a href="#shop">Servis</a></li>
+      <li><a href="#about">O nas</a></li>
+      <li><a href="#gallery">Galerija</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#events" class="btn btn-primary">Prijavi se</a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="hero-stage">
+    {% for slide in hero.slides %}
+    <div class="hero-slide{% if loop.first %} active{% endif %}" data-slide="{{ loop.index0 }}" data-place="{{ slide.place }}" data-meta="{{ slide.meta }}">
+      <img src="{{ slide.image }}" alt="{{ slide.alt }}" loading="{% if loop.index0 < 2 %}eager{% else %}lazy{% endif %}">
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+
+  <svg class="hero-doodle doodle-stamp" viewBox="0 0 130 130" aria-hidden="true">
+    <circle class="bg" cx="65" cy="65" r="60"/>
+    <circle cx="65" cy="65" r="56" fill="none" stroke="#1A2E26" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+    <text class="big" x="65" y="56">no</text>
+    <text class="small" x="65" y="76">stress</text>
+    <text class="tiny" x="65" y="93">EST. 2014</text>
+  </svg>
+
+  <div class="container hero-content">
+    <div class="hero-inner">
+      <div class="hand-tag">{{ hero.hand_tag }}</div>
+      <h1 class="display">
+        {{ hero.headline_part1 }} <em>{{ hero.headline_emphasis }}</em>{{ hero.headline_part2 }}
+      </h1>
+      <p class="hero-lead">
+        {{ hero.lead }} <strong>{{ hero.lead_strong }}</strong>
+      </p>
+      <div class="hero-cta">
+        <a href="{{ hero.cta_primary_url }}" class="btn btn-primary btn-lg btn-arrow">{{ hero.cta_primary_label }}</a>
+        <a href="{{ hero.cta_secondary_url }}" class="btn btn-outline btn-lg">{{ hero.cta_secondary_label }}</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-num">{{ hero.stat1_num }}</span>
+          <span class="meta-label">{{ hero.stat1_label }}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num">{{ hero.stat2_num }}</span>
+          <span class="meta-label">{{ hero.stat2_label }}</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num">{{ hero.stat3_num }}</span>
+          <span class="meta-label">{{ hero.stat3_label }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-photo-info">
+    <div class="pi-place" id="heroPiPlace">{{ hero.slides[0].place }}</div>
+    <div class="pi-meta" id="heroPiMeta">{{ hero.slides[0].meta }}</div>
+  </div>
+
+  <div class="hero-dots" id="heroDots">
+    {% for slide in hero.slides %}
+    <button class="hero-dot{% if loop.first %} active{% endif %}" data-go="{{ loop.index0 }}" aria-label="Slika {{ loop.index }}"></button>
+    {% endfor %}
+  </div>
+
+  <div class="hero-scroll-hint">Scroll</div>
+
+</section>
+
+<section class="block events" id="events">
+  <div class="container">
+    <div class="events-header fade-up">
+      <div>
+        <div class="section-label">{{ events.section_label }}</div>
+        <h2 class="section-title">{{ events.section_title_part1 }}<em>{{ events.section_title_emphasis }}</em>.</h2>
+        <p class="section-intro">{{ events.section_intro }}</p>
+      </div>
+      <a href="#" class="btn btn-outline">Vsi dogodki</a>
+    </div>
+
+    <div class="events-grid">
+      {% for ev in events.list %}
+      <a href="{{ ev.detail_url }}" class="event-card fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 80 }}ms"{% endif %}>
+        <div class="event-image"{% if ev.image %} style="background-image: url('{{ ev.image }}'); background-size: cover; background-position: center;"{% endif %}>
+          {% if not ev.image %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>{% endif %}
+          <span class="event-tag{% if ev.tag_hot %} hot{% endif %}">{{ ev.tag }}</span>
+          <span class="event-image-label">{{ ev.image_label }}</span>
+        </div>
+        <div class="event-content">
+          <div class="event-meta-top">
+            <span><svg><use href="#i-cal"/></svg> {{ ev.date }}</span>
+            <span><svg><use href="#i-pin"/></svg> {{ ev.location }}</span>
+            <span><svg><use href="#i-people"/></svg> {{ ev.audience }}</span>
+          </div>
+          <h3 class="event-title">{{ ev.title }}</h3>
+          <p class="event-desc">{{ ev.description }}</p>
+          <div class="event-footer">
+            <div class="event-price">
+              <span class="event-price-num">{{ ev.price_num }}</span>
+              <span class="event-price-label">{{ ev.price_label }}</span>
+            </div>
+            <span class="event-cta">Več info</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block shop" id="shop">
+  <div class="container">
+    <div class="shop-grid">
+
+      <div class="shop-visual fade-up"{% if shop.photo %} style="background-image: url('{{ shop.photo }}'); background-size: cover; background-position: center;"{% endif %}>
+        <div class="shop-sticker">
+          {{ shop.sticker_line1 }}<br>
+          <small>{{ shop.sticker_line2 }}</small>
+        </div>
+        <div class="shop-visual-label">
+          <span class="title">{{ shop.photo_label_title }}</span>
+          <span class="meta">{{ shop.photo_label_meta }}</span>
+        </div>
+      </div>
+
+      <div class="shop-content fade-up" style="transition-delay: 150ms">
+        <div class="hand-tag">{{ shop.hand_tag }}</div>
+        <h2>{{ shop.title_part1 }}<em>{{ shop.title_emphasis }}</em>{{ shop.title_part2 }}</h2>
+        <p class="shop-lead">{{ shop.lead }}</p>
+
+        <div class="shop-info">
+          <div class="shop-info-item">
+            <div class="shop-info-icon"><svg><use href="#i-pin"/></svg></div>
+            <div>
+              <div class="shop-info-label">Naslov</div>
+              <div class="shop-info-value">
+                <a href="{{ shop.address_maps_url }}" target="_blank" rel="noopener">{{ shop.address | replace("\n", "<br>") | safe }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="shop-info-item">
+            <div class="shop-info-icon"><svg><use href="#i-clock"/></svg></div>
+            <div>
+              <div class="shop-info-label">Urnik</div>
+              <div class="shop-info-value">{{ shop.hours }}</div>
+            </div>
+          </div>
+          <div class="shop-info-item">
+            <div class="shop-info-icon"><svg><use href="#i-phone"/></svg></div>
+            <div>
+              <div class="shop-info-label">Pokliči</div>
+              <div class="shop-info-value"><a href="tel:{{ settings.contact_phone_link }}">{{ settings.contact_phone }}</a></div>
+            </div>
+          </div>
+          <div class="shop-info-item">
+            <div class="shop-info-icon"><svg><use href="#i-tools"/></svg></div>
+            <div>
+              <div class="shop-info-label">Storitve</div>
+              <div class="shop-info-value">{{ shop.services }}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-cta">
+          <a href="mailto:{{ settings.contact_email }}?subject=Servis kolesa" class="btn btn-primary btn-arrow">{{ shop.cta_primary_label }}</a>
+          <a href="{{ shop.address_maps_url }}" target="_blank" rel="noopener" class="btn btn-outline">{{ shop.cta_secondary_label }}</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">{{ services.section_label }}</div>
+      <h2 class="section-title">{{ services.section_title_part1 }}<em>{{ services.section_title_emphasis }}</em>{{ services.section_title_part2 }}</h2>
+      <p class="section-intro">{{ services.section_intro }}</p>
+    </div>
+
+    <div class="services-grid">
+      {% for svc in services.list %}
+      <a href="#" class="service-card fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 80 }}ms"{% endif %}>
+        <div class="service-icon">
+          {% if svc.icon == "workshop" %}
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="9" cy="22" r="5"/><circle cx="23" cy="22" r="5"/>
+            <path d="M9 22 L14 12 L21 12 L23 22"/><path d="M14 12 L12 8 L9 8"/>
+            <circle cx="18" cy="12" r="1" fill="currentColor"/>
+          </svg>
+          {% elif svc.icon == "trip" %}
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 24 L10 14 L14 19 L20 9 L28 24 Z"/>
+            <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+          </svg>
+          {% elif svc.icon == "holiday" %}
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 3 L26 8 L26 17 C26 22 21 26 16 28 C11 26 6 22 6 17 L6 8 Z"/>
+            <path d="M11 16 L14 19 L21 12"/>
+          </svg>
+          {% else %}
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 7 L25 7 L27 9 L27 13 L24 14 L23 16 L24 19 L22 21 L19 20 L17 21 L16 24 L13 24 L12 21 L10 20 L7 21 L5 19 L6 16 L5 14 L2 13"/>
+            <circle cx="16" cy="16" r="3"/>
+          </svg>
+          {% endif %}
+        </div>
+        <h3 class="service-title">{{ svc.title }}</h3>
+        <p class="service-desc">{{ svc.description }}</p>
+        <span class="service-link">Več</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image fade-up"{% if about.photo %} style="background-image: url('{{ about.photo }}'); background-size: cover; background-position: center;"{% endif %}>
+        {% if not about.photo %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>
+        <span class="about-image-label">{{ about.photo_label }}</span>{% endif %}
+        <div class="about-sticker">
+          {{ about.sticker_line1 }}<br>{{ about.sticker_line2 }}
+        </div>
+      </div>
+      <div class="about-content fade-up" style="transition-delay: 150ms">
+        <div class="section-label">{{ about.section_label }}</div>
+        <h2 class="section-title">{{ about.section_title_part1 }}<em>{{ about.section_title_emphasis }}</em>{{ about.section_title_part2 }}</h2>
+        <p>{{ about.paragraph1 }}</p>
+        <p>{{ about.paragraph2 }}</p>
+        <div class="about-values">
+          <div>
+            <div class="value-num">{{ about.value1_num }}</div>
+            <div class="value-label">{{ about.value1_label }}</div>
+          </div>
+          <div>
+            <div class="value-num">{{ about.value2_num }}</div>
+            <div class="value-label">{{ about.value2_label }}</div>
+          </div>
+          <div>
+            <div class="value-num">{{ about.value3_num }}</div>
+            <div class="value-label">{{ about.value3_label }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block gallery" id="gallery">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">{{ gallery.section_label }}</div>
+      <h2 class="section-title">{{ gallery.section_title_part1 }}<em>{{ gallery.section_title_emphasis }}</em>{{ gallery.section_title_part2 }}</h2>
+      <p class="section-intro">{{ gallery.section_intro }}</p>
+    </div>
+    <div class="gallery-grid">
+      {% for item in gallery.items %}
+      <div class="gallery-item fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 50 }}ms"{% endif %}{% if item.image %} style="background-image: url('{{ item.image }}'); background-size: cover; background-position: center;"{% endif %}>
+        <span class="gallery-item-label"><span class="title">{{ item.title }}</span><span class="meta">{{ item.meta }}</span></span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="block faq" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="fade-up">
+        <div class="section-label">{{ faq.section_label }}</div>
+        <h2 class="section-title">{{ faq.section_title }}</h2>
+        <p class="section-intro">{{ faq.section_intro }}</p>
+        <a href="mailto:{{ settings.contact_email }}" class="btn btn-primary btn-arrow">{{ faq.cta_label }}</a>
+      </div>
+
+      <div class="faq-list fade-up" style="transition-delay: 100ms">
+        {% for item in faq.items %}
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>{{ item.question }}</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">{{ item.answer }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block final-cta">
+  <div class="container">
+    <div class="final-cta-content">
+      <div class="hand-tag">{{ finalcta.hand_tag }}</div>
+      <h2>{{ finalcta.title_part1 }}<em>{{ finalcta.title_emphasis }}</em>{{ finalcta.title_part2 }}</h2>
+      <p>{{ finalcta.text }}</p>
+      <div class="final-cta-buttons">
+        <a href="{{ finalcta.cta_primary_url }}" class="btn btn-primary btn-lg btn-arrow">{{ finalcta.cta_primary_label }}</a>
+        <a href="mailto:{{ settings.contact_email }}" class="btn btn-outline btn-lg">{{ finalcta.cta_secondary_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="#" class="logo" aria-label="Galaxy Sport">
+          <img src="/images/logo-light.png" alt="Galaxy Sport">
+        </a>
+        <p class="footer-tag">{{ settings.footer_tagline }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Storitve</h4>
+        <ul>
+          <li><a href="#services">Delavnice</a></li>
+          <li><a href="#services">Izleti</a></li>
+          <li><a href="#services">Počitnice</a></li>
+          <li><a href="#shop">Servis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Galaxy Sport</h4>
+        <ul>
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#events">Dogodki</a></li>
+          <li><a href="mailto:{{ settings.contact_email }}">Kontakt</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sledi nam</h4>
+        <ul>
+          {% if settings.instagram_url %}<li><a href="{{ settings.instagram_url }}" target="_blank" rel="noopener">Instagram</a></li>{% endif %}
+          {% if settings.facebook_url %}<li><a href="{{ settings.facebook_url }}" target="_blank" rel="noopener">Facebook</a></li>{% endif %}
+          {% if settings.strava_url %}<li><a href="{{ settings.strava_url }}" target="_blank" rel="noopener">Strava</a></li>{% endif %}
+          {% if settings.youtube_url %}<li><a href="{{ settings.youtube_url }}" target="_blank" rel="noopener">YouTube</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Galaxy Sport. Vse pravice pridržane.</span>
+      <span>{{ settings.contact_email }} · {{ settings.contact_phone }}</span>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <p>Uporabljamo piškotke za izboljšanje izkušnje in analizo prometa. <a href="#">Več o piškotkih</a></p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" onclick="acceptCookies('all')">Sprejmi vse</button>
+    <button class="btn btn-outline" onclick="acceptCookies('essential')">Samo nujne</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const piPlace = document.getElementById('heroPiPlace');
+  const piMeta = document.getElementById('heroPiMeta');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+  const DURATION = 6000;
+
+  function go(idx) {
+    current = (idx + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('active', i === current));
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    const place = slides[current].dataset.place;
+    const meta = slides[current].dataset.meta;
+    if (piPlace) piPlace.textContent = place;
+    if (piMeta) piMeta.textContent = meta;
+  }
+
+  function start() {
+    stop();
+    timer = setInterval(() => go(current + 1), DURATION);
+  }
+
+  function stop() {
+    if (timer) clearInterval(timer);
+  }
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      go(parseInt(dot.dataset.go, 10));
+      start();
+    });
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop();
+    else start();
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  start();
+})();
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 8));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -80px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => item.classList.toggle('open'));
+});
+
+let cookieConsent = null;
+setTimeout(() => { if (cookieConsent === null) document.getElementById('cookieBanner').classList.add('show'); }, 1400);
+function acceptCookies(level) { cookieConsent = level; document.getElementById('cookieBanner').classList.remove('show'); }
+</script>
+
+</body>
+</html>

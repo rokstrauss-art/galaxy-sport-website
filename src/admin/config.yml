@@ -1,0 +1,232 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+locale: "en"
+
+site_url: https://galaxysportss.netlify.app
+display_url: https://galaxysportss.netlify.app
+logo_url: /images/logo-dark.png
+
+collections:
+  - name: "hero"
+    label: "Hero / naslovnica"
+    files:
+      - name: "hero"
+        label: "Hero / naslovnica"
+        file: "src/_data/hero.json"
+        fields:
+          - { name: "hand_tag", label: "Napis nad naslovom", widget: "string", hint: "Ročno pisan napis, npr. 'Sezona 2026 je tu'" }
+          - { name: "headline_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "headline_emphasis", label: "Naslov — poudarjeni del (rumeno)", widget: "string" }
+          - { name: "headline_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "lead", label: "Podnaslov", widget: "text" }
+          - { name: "lead_strong", label: "Podnaslov — poudarjeni stavek", widget: "string" }
+          - { name: "cta_primary_label", label: "Glavni gumb — besedilo", widget: "string" }
+          - { name: "cta_primary_url", label: "Glavni gumb — povezava", widget: "string" }
+          - { name: "cta_secondary_label", label: "Drugi gumb — besedilo", widget: "string" }
+          - { name: "cta_secondary_url", label: "Drugi gumb — povezava", widget: "string" }
+          - { name: "stat1_num", label: "Statistika 1 — številka", widget: "string" }
+          - { name: "stat1_label", label: "Statistika 1 — opis", widget: "string" }
+          - { name: "stat2_num", label: "Statistika 2 — številka", widget: "string" }
+          - { name: "stat2_label", label: "Statistika 2 — opis", widget: "string" }
+          - { name: "stat3_num", label: "Statistika 3 — številka", widget: "string" }
+          - { name: "stat3_label", label: "Statistika 3 — opis", widget: "string" }
+          - name: "slides"
+            label: "Fotografije v rotaciji"
+            widget: "list"
+            label_singular: "Fotografija"
+            summary: "{{fields.place}}"
+            fields:
+              - { name: "image", label: "Fotografija", widget: "image" }
+              - { name: "alt", label: "Opis slike (za dostopnost)", widget: "string" }
+              - { name: "place", label: "Lokacija (prikaz spodaj desno)", widget: "string" }
+              - { name: "meta", label: "Podnapis lokacije", widget: "string" }
+
+  - name: "events"
+    label: "Dogodki"
+    files:
+      - name: "events"
+        label: "Dogodki"
+        file: "src/_data/events.json"
+        fields:
+          - { name: "section_label", label: "Oznaka sekcije", widget: "string" }
+          - { name: "section_title_part1", label: "Naslov sekcije — prvi del", widget: "string" }
+          - { name: "section_title_emphasis", label: "Naslov sekcije — poudarjeni del", widget: "string" }
+          - { name: "section_intro", label: "Uvodno besedilo", widget: "text" }
+          - name: "list"
+            label: "Seznam dogodkov"
+            widget: "list"
+            label_singular: "Dogodek"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Naziv dogodka", widget: "string" }
+              - { name: "image", label: "Fotografija dogodka", widget: "image", required: false, hint: "Če ni slike, se prikaže gozdni vzorec" }
+              - { name: "image_label", label: "Napis čez fotografijo", widget: "string" }
+              - { name: "tag", label: "Oznaka (zgornji levi kot)", widget: "string" }
+              - { name: "tag_hot", label: "Poudarjena oznaka (rumena)", widget: "boolean", default: false }
+              - { name: "date", label: "Datum", widget: "string", hint: "npr. 15.–17. maj 2026" }
+              - { name: "location", label: "Lokacija", widget: "string" }
+              - { name: "audience", label: "Za koga / št. oseb", widget: "string" }
+              - { name: "description", label: "Opis dogodka", widget: "text" }
+              - { name: "price_num", label: "Cena", widget: "string", hint: "npr. 359 €" }
+              - { name: "price_label", label: "Opis cene", widget: "string", hint: "npr. Polni paket" }
+              - { name: "detail_url", label: "Povezava na podrobnosti", widget: "string", default: "#", required: false }
+
+  - name: "shop"
+    label: "Servis"
+    files:
+      - name: "shop"
+        label: "Servis / delavnica"
+        file: "src/_data/shop.json"
+        fields:
+          - { name: "sticker_line1", label: "Nalepka — prva vrstica", widget: "string" }
+          - { name: "sticker_line2", label: "Nalepka — druga vrstica", widget: "string" }
+          - { name: "photo", label: "Fotografija delavnice", widget: "image", required: false }
+          - { name: "photo_label_title", label: "Napis na fotografiji — naslov", widget: "string" }
+          - { name: "photo_label_meta", label: "Napis na fotografiji — podnapis", widget: "string" }
+          - { name: "hand_tag", label: "Ročni napis", widget: "string" }
+          - { name: "title_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "title_emphasis", label: "Naslov — poudarjeni del", widget: "string" }
+          - { name: "title_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "lead", label: "Besedilo", widget: "text" }
+          - { name: "address", label: "Naslov delavnice", widget: "text", hint: "Vsako vrstico ločite z novo vrstico" }
+          - { name: "address_maps_url", label: "Google Maps povezava", widget: "string" }
+          - { name: "hours", label: "Delovni čas", widget: "string" }
+          - { name: "services", label: "Storitve", widget: "string" }
+          - { name: "cta_primary_label", label: "Glavni gumb — besedilo", widget: "string" }
+          - { name: "cta_secondary_label", label: "Drugi gumb — besedilo", widget: "string" }
+
+  - name: "about"
+    label: "O nas"
+    files:
+      - name: "about"
+        label: "O nas"
+        file: "src/_data/about.json"
+        fields:
+          - { name: "photo", label: "Fotografija ekipe", widget: "image", required: false }
+          - { name: "photo_label", label: "Napis na fotografiji (če ni slike)", widget: "string" }
+          - { name: "sticker_line1", label: "Nalepka — prva vrstica", widget: "string" }
+          - { name: "sticker_line2", label: "Nalepka — druga vrstica", widget: "string" }
+          - { name: "section_label", label: "Oznaka sekcije", widget: "string" }
+          - { name: "section_title_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "section_title_emphasis", label: "Naslov — poudarjeni del", widget: "string" }
+          - { name: "section_title_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "paragraph1", label: "Prvi odstavek", widget: "text" }
+          - { name: "paragraph2", label: "Drugi odstavek", widget: "text" }
+          - { name: "value1_num", label: "Podatek 1 — številka", widget: "string" }
+          - { name: "value1_label", label: "Podatek 1 — opis", widget: "string" }
+          - { name: "value2_num", label: "Podatek 2 — številka", widget: "string" }
+          - { name: "value2_label", label: "Podatek 2 — opis", widget: "string" }
+          - { name: "value3_num", label: "Podatek 3 — številka", widget: "string" }
+          - { name: "value3_label", label: "Podatek 3 — opis", widget: "string" }
+
+  - name: "services"
+    label: "Storitve (4 kartice)"
+    files:
+      - name: "services"
+        label: "Storitve"
+        file: "src/_data/services.json"
+        fields:
+          - { name: "section_label", label: "Oznaka sekcije", widget: "string" }
+          - { name: "section_title_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "section_title_emphasis", label: "Naslov — poudarjeni del", widget: "string" }
+          - { name: "section_title_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "section_intro", label: "Uvodno besedilo", widget: "text" }
+          - name: "list"
+            label: "Kartice storitev"
+            widget: "list"
+            label_singular: "Storitev"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Naslov", widget: "string" }
+              - { name: "description", label: "Opis", widget: "text" }
+              - name: "icon"
+                label: "Ikona"
+                widget: "select"
+                options:
+                  - { label: "Kolo (delavnice)", value: "workshop" }
+                  - { label: "Gore (izleti)", value: "trip" }
+                  - { label: "Ščit (počitnice)", value: "holiday" }
+                  - { label: "Zobnik (servis)", value: "service" }
+
+  - name: "gallery"
+    label: "Galerija"
+    files:
+      - name: "gallery"
+        label: "Galerija"
+        file: "src/_data/gallery.json"
+        fields:
+          - { name: "section_label", label: "Oznaka sekcije", widget: "string" }
+          - { name: "section_title_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "section_title_emphasis", label: "Naslov — poudarjeni del", widget: "string" }
+          - { name: "section_title_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "section_intro", label: "Uvodno besedilo", widget: "text" }
+          - name: "items"
+            label: "Fotografije"
+            widget: "list"
+            label_singular: "Fotografija"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "image", label: "Fotografija", widget: "image", required: false }
+              - { name: "title", label: "Naslov", widget: "string" }
+              - { name: "meta", label: "Podnapis (datum/leto)", widget: "string" }
+
+  - name: "faq"
+    label: "Pogosta vprašanja"
+    files:
+      - name: "faq"
+        label: "FAQ"
+        file: "src/_data/faq.json"
+        fields:
+          - { name: "section_label", label: "Oznaka sekcije", widget: "string" }
+          - { name: "section_title", label: "Naslov sekcije", widget: "string" }
+          - { name: "section_intro", label: "Uvodno besedilo", widget: "text" }
+          - { name: "cta_label", label: "Gumb — besedilo", widget: "string" }
+          - name: "items"
+            label: "Vprašanja in odgovori"
+            widget: "list"
+            label_singular: "Vprašanje"
+            summary: "{{fields.question}}"
+            fields:
+              - { name: "question", label: "Vprašanje", widget: "string" }
+              - { name: "answer", label: "Odgovor", widget: "text" }
+
+  - name: "finalcta"
+    label: "Zaključni poziv"
+    files:
+      - name: "finalcta"
+        label: "Zaključni poziv (pred nogo strani)"
+        file: "src/_data/finalcta.json"
+        fields:
+          - { name: "hand_tag", label: "Ročni napis", widget: "string" }
+          - { name: "title_part1", label: "Naslov — prvi del", widget: "string" }
+          - { name: "title_emphasis", label: "Naslov — poudarjeni del", widget: "string" }
+          - { name: "title_part2", label: "Naslov — zadnji del", widget: "string" }
+          - { name: "text", label: "Besedilo", widget: "text" }
+          - { name: "cta_primary_label", label: "Glavni gumb — besedilo", widget: "string" }
+          - { name: "cta_primary_url", label: "Glavni gumb — povezava", widget: "string" }
+          - { name: "cta_secondary_label", label: "Drugi gumb — besedilo", widget: "string" }
+
+  - name: "settings"
+    label: "Nastavitve"
+    files:
+      - name: "settings"
+        label: "Splošne nastavitve"
+        file: "src/_data/settings.json"
+        fields:
+          - { name: "announce_text", label: "Obvestilo na vrhu strani", widget: "string" }
+          - { name: "announce_link_label", label: "Obvestilo — besedilo povezave", widget: "string" }
+          - { name: "announce_link_url", label: "Obvestilo — povezava", widget: "string" }
+          - { name: "contact_email", label: "E-pošta", widget: "string" }
+          - { name: "contact_phone", label: "Telefon (prikaz)", widget: "string" }
+          - { name: "contact_phone_link", label: "Telefon (za klic, format +386...)", widget: "string" }
+          - { name: "facebook_url", label: "Facebook povezava", widget: "string", required: false }
+          - { name: "instagram_url", label: "Instagram povezava", widget: "string", required: false }
+          - { name: "strava_url", label: "Strava povezava", widget: "string", required: false }
+          - { name: "youtube_url", label: "YouTube povezava", widget: "string", required: false }
+          - { name: "footer_tagline", label: "Besedilo v nogi strani", widget: "text" }
+          - { name: "meta_description", label: "SEO opis strani (za Google)", widget: "text" }

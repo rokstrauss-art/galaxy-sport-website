@@ -1,0 +1,14 @@
+{
+  "name": "galaxy-sport-website",
+  "version": "1.0.0",
+  "description": "Galaxy Sport — MTB ture, delavnice, bikepacking, servis. Eleventy + Decap CMS.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

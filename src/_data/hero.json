@@ -1,0 +1,56 @@
+{
+  "hand_tag": "Sezona 2026 je tu",
+  "headline_part1": "Mi vse",
+  "headline_emphasis": "poštimamo",
+  "headline_part2": ", ti samo furaš.",
+  "lead": "Vodene MTB ture, ženske delavnice, bikepacking, kolesarske počitnice in lasten servis koles. Ti se prikaži s kolesom in dobro voljo.",
+  "lead_strong": "Za vse ostalo poskrbimo mi.",
+  "cta_primary_label": "Poglej dogodke",
+  "cta_primary_url": "#events",
+  "cta_secondary_label": "Kdo smo",
+  "cta_secondary_url": "#about",
+  "stat1_num": "12+",
+  "stat1_label": "Let na poti",
+  "stat2_num": "800+",
+  "stat2_label": "Kolesarjev",
+  "stat3_num": "0",
+  "stat3_label": "Stresnih trenutkov",
+  "slides": [
+    {
+      "image": "/images/hero-main.jpg",
+      "alt": "Oče in sin na turi nad Cerkniškim jezerom",
+      "place": "Cerkniško jezero",
+      "meta": "Družinski izlet · Oktober"
+    },
+    {
+      "image": "/images/hero-jump-wide.jpg",
+      "alt": "Kolesar v skoku, Massif des Écrins v ozadju",
+      "place": "Francoske Alpe",
+      "meta": "Bike park · Avgust"
+    },
+    {
+      "image": "/images/hero-bikepacking.jpg",
+      "alt": "Bikepacking po kraški planoti",
+      "place": "Kraški rob",
+      "meta": "Bikepacking · September"
+    },
+    {
+      "image": "/images/hero-trail.jpg",
+      "alt": "Kolesarji na alpski enoslednici",
+      "place": "Puy Saint Vincent",
+      "meta": "MTB počitnice · 2025"
+    },
+    {
+      "image": "/images/hero-alps.jpg",
+      "alt": "Pogled na alpske serpentine",
+      "place": "Les Orres",
+      "meta": "PSV trip · 2024"
+    },
+    {
+      "image": "/images/hero-group.jpg",
+      "alt": "Ekipa Galaxy Sport kolesarjev",
+      "place": "Snežnik",
+      "meta": "Skupinski izlet · Pomlad"
+    }
+  ]
+}
