@@ -5,12 +5,34 @@
   "section_title_part2": ".",
   "section_intro": "Vsaka tura ima svojo zgodbo. Tu je nekaj naših najljubših.",
   "items": [
-    { "image": "", "title": "Cres MTB", "meta": "Maj · 2025" },
-    { "image": "", "title": "Bejba zmore", "meta": "Maj · 2025" },
-    { "image": "", "title": "Bikepacking", "meta": "Junij · 2025" },
-    { "image": "", "title": "Špric", "meta": "Vsi termini" },
-    { "image": "", "title": "Francoske Alpe", "meta": "Avgust · 2025" },
-    { "image": "", "title": "Servis", "meta": "Vse leto" },
-    { "image": "", "title": "Trail po dežju", "meta": "Julij · 2025" }
+    {
+      "image": "/images/uploads/new logo.png",
+      "title": "Cres MTB",
+      "meta": "Maj · 2025"
+    },
+    {
+      "title": "Bejba zmore",
+      "meta": "Maj · 2025"
+    },
+    {
+      "title": "Bikepacking",
+      "meta": "Junij · 2025"
+    },
+    {
+      "title": "Špric",
+      "meta": "Vsi termini"
+    },
+    {
+      "title": "Francoske Alpe",
+      "meta": "Avgust · 2025"
+    },
+    {
+      "title": "Servis",
+      "meta": "Vse leto"
+    },
+    {
+      "title": "Trail po dežju",
+      "meta": "Julij · 2025"
+    }
   ]
 }
