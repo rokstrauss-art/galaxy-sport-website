@@ -1,0 +1,213 @@
+media:
+  - name: images
+    label: Slike
+    input: src/images/uploads
+    output: /images/uploads
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+
+content:
+  - name: hero
+    label: Hero / naslovnica
+    type: file
+    path: src/_data/hero.json
+    icon: image
+    fields:
+      - { name: hand_tag, label: Napis nad naslovom, type: string }
+      - { name: headline_part1, label: Naslov — prvi del, type: string }
+      - { name: headline_emphasis, label: Naslov — poudarjeni del (rumeno), type: string }
+      - { name: headline_part2, label: Naslov — zadnji del, type: string }
+      - { name: lead, label: Podnaslov, type: text }
+      - { name: lead_strong, label: Podnaslov — poudarjeni stavek, type: string }
+      - { name: cta_primary_label, label: Glavni gumb — besedilo, type: string }
+      - { name: cta_primary_url, label: Glavni gumb — povezava, type: string }
+      - { name: cta_secondary_label, label: Drugi gumb — besedilo, type: string }
+      - { name: cta_secondary_url, label: Drugi gumb — povezava, type: string }
+      - { name: stat1_num, label: Statistika 1 — številka, type: string }
+      - { name: stat1_label, label: Statistika 1 — opis, type: string }
+      - { name: stat2_num, label: Statistika 2 — številka, type: string }
+      - { name: stat2_label, label: Statistika 2 — opis, type: string }
+      - { name: stat3_num, label: Statistika 3 — številka, type: string }
+      - { name: stat3_label, label: Statistika 3 — opis, type: string }
+      - name: slides
+        label: Fotografije v rotaciji
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Fotografija, type: image }
+          - { name: alt, label: Opis slike (za dostopnost), type: string }
+          - { name: place, label: Lokacija (prikaz spodaj desno), type: string }
+          - { name: meta, label: Podnapis lokacije, type: string }
+
+  - name: events
+    label: Dogodki
+    type: file
+    path: src/_data/events.json
+    icon: calendar
+    fields:
+      - { name: section_label, label: Oznaka sekcije, type: string }
+      - { name: section_title_part1, label: Naslov sekcije — prvi del, type: string }
+      - { name: section_title_emphasis, label: Naslov sekcije — poudarjeni del, type: string }
+      - { name: section_intro, label: Uvodno besedilo, type: text }
+      - name: list
+        label: Seznam dogodkov
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Naziv dogodka, type: string }
+          - { name: image, label: Fotografija dogodka, type: image, required: false }
+          - { name: image_label, label: Napis čez fotografijo, type: string }
+          - { name: tag, label: Oznaka (zgornji levi kot), type: string }
+          - { name: tag_hot, label: Poudarjena oznaka (rumena), type: boolean, default: false }
+          - { name: date, label: Datum, type: string }
+          - { name: location, label: Lokacija, type: string }
+          - { name: audience, label: Za koga / št. oseb, type: string }
+          - { name: description, label: Opis dogodka, type: text }
+          - { name: price_num, label: Cena, type: string }
+          - { name: price_label, label: Opis cene, type: string }
+          - { name: detail_url, label: Povezava na podrobnosti, type: string, default: "#", required: false }
+
+  - name: shop
+    label: Servis
+    type: file
+    path: src/_data/shop.json
+    icon: wrench
+    fields:
+      - { name: sticker_line1, label: Nalepka — prva vrstica, type: string }
+      - { name: sticker_line2, label: Nalepka — druga vrstica, type: string }
+      - { name: photo, label: Fotografija delavnice, type: image, required: false }
+      - { name: photo_label_title, label: Napis na fotografiji — naslov, type: string }
+      - { name: photo_label_meta, label: Napis na fotografiji — podnapis, type: string }
+      - { name: hand_tag, label: Ročni napis, type: string }
+      - { name: title_part1, label: Naslov — prvi del, type: string }
+      - { name: title_emphasis, label: Naslov — poudarjeni del, type: string }
+      - { name: title_part2, label: Naslov — zadnji del, type: string }
+      - { name: lead, label: Besedilo, type: text }
+      - { name: address, label: Naslov delavnice, type: text }
+      - { name: address_maps_url, label: Google Maps povezava, type: string }
+      - { name: hours, label: Delovni čas, type: string }
+      - { name: services, label: Storitve, type: string }
+      - { name: cta_primary_label, label: Glavni gumb — besedilo, type: string }
+      - { name: cta_secondary_label, label: Drugi gumb — besedilo, type: string }
+
+  - name: about
+    label: O nas
+    type: file
+    path: src/_data/about.json
+    icon: users
+    fields:
+      - { name: photo, label: Fotografija ekipe, type: image, required: false }
+      - { name: photo_label, label: Napis na fotografiji (če ni slike), type: string }
+      - { name: sticker_line1, label: Nalepka — prva vrstica, type: string }
+      - { name: sticker_line2, label: Nalepka — druga vrstica, type: string }
+      - { name: section_label, label: Oznaka sekcije, type: string }
+      - { name: section_title_part1, label: Naslov — prvi del, type: string }
+      - { name: section_title_emphasis, label: Naslov — poudarjeni del, type: string }
+      - { name: section_title_part2, label: Naslov — zadnji del, type: string }
+      - { name: paragraph1, label: Prvi odstavek, type: text }
+      - { name: paragraph2, label: Drugi odstavek, type: text }
+      - { name: value1_num, label: Podatek 1 — številka, type: string }
+      - { name: value1_label, label: Podatek 1 — opis, type: string }
+      - { name: value2_num, label: Podatek 2 — številka, type: string }
+      - { name: value2_label, label: Podatek 2 — opis, type: string }
+      - { name: value3_num, label: Podatek 3 — številka, type: string }
+      - { name: value3_label, label: Podatek 3 — opis, type: string }
+
+  - name: services
+    label: Storitve (4 kartice)
+    type: file
+    path: src/_data/services.json
+    icon: grid
+    fields:
+      - { name: section_label, label: Oznaka sekcije, type: string }
+      - { name: section_title_part1, label: Naslov — prvi del, type: string }
+      - { name: section_title_emphasis, label: Naslov — poudarjeni del, type: string }
+      - { name: section_title_part2, label: Naslov — zadnji del, type: string }
+      - { name: section_intro, label: Uvodno besedilo, type: text }
+      - name: list
+        label: Kartice storitev
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Naslov, type: string }
+          - { name: description, label: Opis, type: text }
+          - name: icon
+            label: Ikona
+            type: select
+            options:
+              values:
+                - { label: "Kolo (delavnice)", value: workshop }
+                - { label: "Gore (izleti)", value: trip }
+                - { label: "Ščit (počitnice)", value: holiday }
+                - { label: "Zobnik (servis)", value: service }
+
+  - name: gallery
+    label: Galerija
+    type: file
+    path: src/_data/gallery.json
+    icon: image
+    fields:
+      - { name: section_label, label: Oznaka sekcije, type: string }
+      - { name: section_title_part1, label: Naslov — prvi del, type: string }
+      - { name: section_title_emphasis, label: Naslov — poudarjeni del, type: string }
+      - { name: section_title_part2, label: Naslov — zadnji del, type: string }
+      - { name: section_intro, label: Uvodno besedilo, type: text }
+      - name: items
+        label: Fotografije
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Fotografija, type: image, required: false }
+          - { name: title, label: Naslov, type: string }
+          - { name: meta, label: Podnapis (datum/leto), type: string }
+
+  - name: faq
+    label: Pogosta vprašanja
+    type: file
+    path: src/_data/faq.json
+    icon: help-circle
+    fields:
+      - { name: section_label, label: Oznaka sekcije, type: string }
+      - { name: section_title, label: Naslov sekcije, type: string }
+      - { name: section_intro, label: Uvodno besedilo, type: text }
+      - { name: cta_label, label: Gumb — besedilo, type: string }
+      - name: items
+        label: Vprašanja in odgovori
+        type: object
+        list: true
+        fields:
+          - { name: question, label: Vprašanje, type: string }
+          - { name: answer, label: Odgovor, type: text }
+
+  - name: finalcta
+    label: Zaključni poziv
+    type: file
+    path: src/_data/finalcta.json
+    icon: megaphone
+    fields:
+      - { name: hand_tag, label: Ročni napis, type: string }
+      - { name: title_part1, label: Naslov — prvi del, type: string }
+      - { name: title_emphasis, label: Naslov — poudarjeni del, type: string }
+      - { name: title_part2, label: Naslov — zadnji del, type: string }
+      - { name: text, label: Besedilo, type: text }
+      - { name: cta_primary_label, label: Glavni gumb — besedilo, type: string }
+      - { name: cta_primary_url, label: Glavni gumb — povezava, type: string }
+      - { name: cta_secondary_label, label: Drugi gumb — besedilo, type: string }
+
+  - name: settings
+    label: Nastavitve
+    type: file
+    path: src/_data/settings.json
+    icon: settings
+    fields:
+      - { name: announce_text, label: Obvestilo na vrhu strani, type: string }
+      - { name: announce_link_label, label: Obvestilo — besedilo povezave, type: string }
+      - { name: announce_link_url, label: Obvestilo — povezava, type: string }
+      - { name: contact_email, label: E-pošta, type: string }
+      - { name: contact_phone, label: Telefon (prikaz), type: string }
+      - { name: contact_phone_link, label: "Telefon (za klic, format +386...)", type: string }
+      - { name: facebook_url, label: Facebook povezava, type: string, required: false }
+      - { name: instagram_url, label: Instagram povezava, type: string, required: false }
+      - { name: strava_url, label: Strava povezava, type: string, required: false }
+      - { name: youtube_url, label: YouTube povezava, type: string, required: false }
+      - { name: footer_tagline, label: Besedilo v nogi strani, type: text }
+      - { name: meta_description, label: SEO opis strani (za Google), type: text }

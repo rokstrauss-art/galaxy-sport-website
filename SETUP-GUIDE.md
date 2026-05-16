@@ -1,182 +1,133 @@
-# Galaxy Sport — CMS Setup Guide
+# Galaxy Sport — Pages CMS Setup Guide
 
-This guide takes the project from your computer to a live, client-editable website.
-Work through it top to bottom. Total time: about 30–40 minutes.
+The website is built with **Eleventy** (turns content files into the website)
+and edited through **Pages CMS** (pagescms.org) — a free editor that connects
+to your GitHub repo. Hosting is **Netlify**.
 
-The site is built with **Eleventy** (turns content files into the website) and
-**Decap CMS** (the visual editor your client uses). Hosting and auto-deploy is
-**Netlify**.
+This version uses Pages CMS instead of Decap because it handles GitHub login
+for you — no OAuth apps, no Identity, no Git Gateway. Much simpler.
 
 ---
 
 ## What you have
-
-The `galaxy-cms` folder contains the full project:
 
 ```
 galaxy-cms/
 ├── src/
 │   ├── _data/          ← all editable content (JSON files)
 │   ├── _includes/      ← shared template parts
-│   ├── admin/          ← the CMS editor (config.yml + index.html)
 │   ├── images/         ← photos and logos
 │   ├── index.njk       ← the page template
 │   ├── netlify.toml    ← Netlify build config
 │   └── robots.txt
 ├── .eleventy.js        ← Eleventy config
+├── .pages.yml          ← Pages CMS config (defines the editor)
 ├── .gitignore
 └── package.json
 ```
 
-You never need to hand-edit the HTML again. Content lives in `src/_data/`,
-and the client edits it through the CMS.
+---
+
+## Step 1 — Update the project on GitHub
+
+You already pushed the project to GitHub earlier. Now update it:
+
+1. Replace the files in your local cloned repo folder with this new version.
+2. In GitHub Desktop: commit ("Switch to Pages CMS") and push.
+
+Important: the new `.pages.yml` file must be in the repo root. The old
+`src/admin/` folder is gone — that's expected, Pages CMS doesn't need it.
 
 ---
 
-## Step 1 — Put the project on GitHub
+## Step 2 — Netlify keeps working as-is
 
-Decap CMS saves changes by committing to a Git repository, so the project
-must live on GitHub.
+Your site already deploys from GitHub on Netlify. Nothing to change here —
+when you push the update in Step 1, Netlify rebuilds automatically.
 
-1. Go to **github.com** and sign in (or create a free account).
-2. Click the **+** in the top-right → **New repository**.
-3. Name it `galaxy-sport-website`.
-4. Set it to **Private** (recommended).
-5. Do **not** add a README, .gitignore, or license — leave those unchecked.
-6. Click **Create repository**.
-
-GitHub now shows a page with setup commands. You need to upload the project.
-The simplest way without command-line tools:
-
-**Option A — GitHub Desktop (easiest)**
-1. Download **GitHub Desktop** from desktop.github.com and install it.
-2. In GitHub Desktop: **File → Clone repository** → pick `galaxy-sport-website`.
-3. It downloads an empty folder to your computer.
-4. Copy everything from the `galaxy-cms` folder *into* that cloned folder.
-5. Back in GitHub Desktop, you'll see all the files listed as changes.
-6. Type a summary like "Initial site" and click **Commit to main**.
-7. Click **Push origin**.
-
-**Option B — Upload via browser** (works, but clumsier for folders)
-GitHub's web upload doesn't handle nested folders well — Option A is strongly
-preferred.
-
-After this step, your project is on GitHub.
+You can also now disable Netlify Identity and Git Gateway if you like —
+they're no longer used. (Not required, just tidying up.)
 
 ---
 
-## Step 2 — Connect Netlify to the GitHub repo
+## Step 3 — Open Pages CMS
 
-You currently deploy by dragging a ZIP. That changes now — Netlify will build
-the site automatically from GitHub.
+This is the easy part — the part that replaces all the OAuth/Identity pain.
 
-1. Go to **app.netlify.com** and sign in.
-2. Click **Add new site → Import an existing project**.
-3. Choose **GitHub** and authorize Netlify if asked.
-4. Pick the `galaxy-sport-website` repository.
-5. Netlify reads `netlify.toml` automatically, so the build settings should
-   already be filled in:
-   - Build command: `npm run build`
-   - Publish directory: `_site`
-6. Click **Deploy**.
+1. Go to **pagescms.org**
+2. Click **Sign in** → **Sign in with GitHub**
+3. Authorize Pages CMS to access your GitHub account
+4. When asked which repositories, grant access to `galaxy-sport-website`
+   (recommended) or all repos
+5. Pages CMS shows your repos — click **galaxy-sport-website**
+6. It reads the `.pages.yml` file and builds the editor automatically
 
-Netlify installs Eleventy, builds the site, and publishes it. First build
-takes 1–2 minutes. You'll get a URL like `random-name.netlify.app`.
-
-**Important:** This creates a *new* Netlify site. Once you've confirmed it
-works, you can delete the old drag-and-drop site, or rename this new one to
-take over the `galaxysportss` name (Site configuration → Change site name).
+No OAuth app, no helper service, no Identity. If you can sign into GitHub,
+you can use the CMS.
 
 ---
 
-## Step 3 — Turn on Netlify Identity (the client's login)
+## Step 4 — Edit content
 
-This is how the client logs into the CMS without needing a GitHub account.
+Inside Pages CMS you'll see the sections in the sidebar: Hero, Dogodki,
+Servis, O nas, Storitve, Galerija, FAQ, Zaključni poziv, Nastavitve.
 
-1. In your new site's dashboard, go to **Integrations** (or **Site
-   configuration → Identity** in some Netlify versions).
-2. Find **Identity** and click **Enable Identity**.
-3. Under **Identity → Registration**, set registration to **Invite only**
-   (so randoms can't sign up).
-4. Still under Identity, find **Services → Git Gateway** and click
-   **Enable Git Gateway**. This is what lets the CMS save changes back to
-   GitHub.
+1. Click any section
+2. Edit the fields
+3. Click **Save**
+4. Pages CMS commits the change to GitHub
+5. Netlify sees the commit and rebuilds — live in about a minute
 
 ---
 
-## Step 4 — Invite yourself (and the client) as editors
+## Step 5 — Give the client access
 
-1. In the site dashboard → **Identity** tab.
-2. Click **Invite users**.
-3. Enter your own email first (to test), then the client's email.
-4. Each person gets an email with a confirmation link. Clicking it lets them
-   set a password.
+The client needs a (free) GitHub account, then:
 
----
+**Option A — Add them as a repo collaborator**
+1. GitHub → your repo → Settings → Collaborators → Add people
+2. Enter the client's GitHub username
+3. They accept the invite
+4. They go to pagescms.org, sign in with GitHub, see the repo
 
-## Step 5 — Test the CMS
-
-1. Go to `your-site.netlify.app/admin`
-2. Log in with the email/password you set up.
-3. You should see the editor: Hero, Dogodki, Servis, O nas, Storitve,
-   Galerija, FAQ, Zaključni poziv, Nastavitve.
-4. Open **Hero**, change a word in the headline, click **Publish**.
-5. Wait about a minute, refresh the main site — the change is live.
-
-If that works, the CMS is fully operational.
+**Option B — You handle edits**
+If the client doesn't want a GitHub account, you can do their edits for
+them in Pages CMS. You said earlier this is acceptable.
 
 ---
 
 ## How editing works from now on
 
-- **Client edits content:** they go to `/admin`, log in, change fields,
-  hit Publish. Netlify rebuilds automatically. Live in ~1 minute.
-- **You edit design/code:** edit files locally, commit and push via GitHub
-  Desktop. Netlify rebuilds automatically.
-- **No more ZIP drag-and-drop.** Everything goes through Git now. This is
-  better — every change is versioned and reversible.
+- Edit in Pages CMS → Save → auto-commits → Netlify rebuilds → live in ~1 min.
+- You can also edit code/design directly via GitHub Desktop.
+- No more ZIP drag-and-drop — everything goes through Git.
 
 ---
 
 ## Editing locally (optional, for you)
 
-To preview changes on your own computer before pushing:
-
-1. Install **Node.js** from nodejs.org (LTS version).
+1. Install Node.js from nodejs.org (LTS).
 2. Open a terminal in the project folder.
 3. Run `npm install` (first time only).
 4. Run `npm start`.
-5. Open `http://localhost:8080` — live preview that reloads as you edit.
+5. Open http://localhost:8080 — live preview.
 
 ---
 
 ## Troubleshooting
 
-**The build fails on Netlify**
-Check the deploy log (Deploys tab → click the failed deploy). Usually it's a
-typo in one of the JSON files in `src/_data/` — a missing comma or quote.
-JSON is strict. Validate the file at jsonlint.com.
+**Pages CMS doesn't show my repo**
+When signing in, make sure you granted access to the repo (or all repos).
+Adjust at github.com → Settings → Applications → Pages CMS → Configure.
 
-**Client can't log in to /admin**
-Make sure Identity is enabled (Step 3) and they accepted the email invite
-(Step 4). The invite link expires — re-invite if needed.
+**The editor looks empty or wrong**
+Pages CMS reads `.pages.yml` from the repo root. Make sure that file was
+committed and pushed.
 
-**Images uploaded in the CMS don't show**
-Decap saves uploads to `src/images/uploads/`. They appear after the next
-build completes (~1 min). If they never appear, check Git Gateway is enabled.
+**A build fails on Netlify**
+Check the deploy log (Deploys tab). Usually a typo in a JSON file in
+`src/_data/` — JSON is strict about commas and quotes. Validate at
+jsonlint.com.
 
-**Changes in the CMS don't go live**
-Check the Deploys tab — a new deploy should trigger on every Publish. If not,
-Git Gateway may be disconnected; re-enable it in Identity settings.
-
----
-
-## A note on the events
-
-Events are a **list** in the CMS — under "Dogodki", the client can add a new
-event, delete an old one, or drag to reorder. Each event has its own fields
-(name, date, price, photo, etc.). Same for Galerija photos, FAQ questions,
-and the hero photo rotation.
-
-When an event is in the past, the client can simply delete it or you can
-later add a "past events" archive — tell me if you want that built.
+**Changes don't go live**
+Check the Deploys tab — a new deploy should trigger on every save.
