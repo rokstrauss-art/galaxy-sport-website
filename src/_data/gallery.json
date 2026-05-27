@@ -6,7 +6,7 @@
   "section_intro": "Vsaka tura ima svojo zgodbo. Tu je nekaj naših najljubših.",
   "items": [
     {
-      "image": "/images/uploads/new logo.png",
+      "image": "/images/uploads/20250927_173418.jpg",
       "title": "Cres MTB",
       "meta": "Maj · 2025"
     },
@@ -15,14 +15,16 @@
       "meta": "Maj · 2025"
     },
     {
+      "image": "/images/uploads/IMG_20180802_114934.jpg",
       "title": "Bikepacking",
       "meta": "Junij · 2025"
     },
     {
-      "title": "Špric",
-      "meta": "Vsi termini"
+      "title": "Dnevni izleti",
+      "meta": "Od marca do novembra"
     },
     {
+      "image": "/images/uploads/IMG_20170608_124016.jpg",
       "title": "Francoske Alpe",
       "meta": "Avgust · 2025"
     },
@@ -31,8 +33,9 @@
       "meta": "Vse leto"
     },
     {
-      "title": "Trail po dežju",
-      "meta": "Julij · 2025"
+      "image": "/images/uploads/IMG_8998.jpg",
+      "title": "Galaxy sport skozi čas",
+      "meta": "Več kot tri desetletja avantur"
     }
   ]
 }
