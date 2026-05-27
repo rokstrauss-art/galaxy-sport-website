@@ -33,8 +33,19 @@
       "meta": "Vse leto"
     },
     {
-      "title": "Trail po dežju",
-      "meta": "Julij · 2025"
+      "title": "Dnevni izleti",
+      "meta": "Od marca do novembra",
+      "cover": "/images/uploads/IMG_20170608_124016-6.jpg",
+      "photos": [
+        "/images/uploads/IMG_8998-2.jpg",
+        "/images/uploads/IMG_1322(1).jpg",
+        "/images/uploads/IMG_20170527_154735.jpg",
+        "/images/uploads/20150828_170615.jpg",
+        "/images/uploads/IMG_7102.jpg",
+        "/images/uploads/IMG_7006.jpg",
+        "/images/uploads/IMG_7708.jpg",
+        "/images/uploads/IMG_20160704_150300.jpg"
+      ]
     }
   ]
 }
