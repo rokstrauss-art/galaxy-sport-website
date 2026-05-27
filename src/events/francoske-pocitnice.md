@@ -21,7 +21,7 @@ description: Stacionirani v privatni hiši v Puy Saint Vincentu, furamo PSV,
 price_num: 860 €
 price_label: + prevoz in hrana
 price_includes_accommodation: true
-registration_note: Prijave do 1. julija 2026. Skupaj uredimo prevoz in plačila.
+registration_note: Prijave do 1. avgusta 2026. Skupaj uredimo prevoz in plačila.
 contact_email: info@galaxysport.si
 payment_url: https://pay.sumup.com/b2c/QQ567DMZ
 included:
