@@ -1,7 +1,7 @@
 ---
 title: Francoske MTB počitnice
 slug: francoske-pocitnice
-title_short: Francoske počitnice
+title_short: Francoske MTB počitnice
 image: /images/uploads/IMG_0374-1.jpg
 image_label: 7 dni furanja v francoskih Alpah.
 tag: Naša uspešnica
