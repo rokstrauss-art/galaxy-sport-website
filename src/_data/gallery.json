@@ -6,40 +6,35 @@
   "section_intro": "Vsaka tura ima svojo zgodbo. Klikni za več fotografij.",
   "items": [
     {
-      "cover": "",
       "title": "Cres MTB",
       "meta": "Maj · 2025",
-      "photos": []
+      "cover": "/images/uploads/20250927_173418-1.jpg",
+      "photos": [
+        "/images/uploads/IMG-20240918-WA0008.jpg",
+        "/images/uploads/IMG-20240701-WA0000.jpg",
+        "/images/uploads/IMG-20230507-WA0008-1.jpg",
+        "/images/uploads/IMG_20221019_105754_073.jpg"
+      ]
     },
     {
-      "cover": "",
       "title": "Bejba zmore",
-      "meta": "Maj · 2025",
-      "photos": []
+      "meta": "Maj · 2025"
     },
     {
-      "cover": "",
       "title": "Bikepacking",
-      "meta": "Junij · 2025",
-      "photos": []
+      "meta": "Junij · 2025"
     },
     {
-      "cover": "",
       "title": "Francoske Alpe",
-      "meta": "Avgust · 2025",
-      "photos": []
+      "meta": "Avgust · 2025"
     },
     {
-      "cover": "",
       "title": "Servis",
-      "meta": "Vse leto",
-      "photos": []
+      "meta": "Vse leto"
     },
     {
-      "cover": "",
       "title": "Trail po dežju",
-      "meta": "Julij · 2025",
-      "photos": []
+      "meta": "Julij · 2025"
     }
   ]
 }
