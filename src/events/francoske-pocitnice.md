@@ -11,9 +11,10 @@ date_start: 2026-08-15
 date_end: 2026-08-22
 location: Briancon, Francija
 location_meta: Francoske Alpe · Massif des Écrins
-audience: 5–8 oseb
-group_size: 5–8 udeležencev
+audience: 5–7 oseb
+group_size: 5–7 udeležencev
 difficulty: Srednje izkušeni in napredni
+instructor: Marko Mac Šimenc
 description: Stacionirani v privatni hiši v Puy Saint Vincentu, furamo PSV,
   Serre Chevalier, Les Orres in Bardonecchio. Najboljši kolesarski parki Alp,
   lokalna kulinarika in dobre vibre.
@@ -25,13 +26,13 @@ contact_email: info@galaxysport.si
 payment_url: https://pay.sumup.com/b2c/QQ567DMZ
 included:
   - 7 dni vodenja po najboljših alpskih bike parkih
-  - Nastanitev v privatni hiši v Puy Saint Vincentu
+  - Karte za bike parke / žičnice (za 7 dni furanja)
+  - Nastanitev v privatni hiši v bližini Briancona
   - Logistika med kraji (PSV, Serre Chevalier, Les Orres, Bardonecchio)
   - Lokalni nasveti — kje jesti, kje uživati
 not_included:
   - Prevoz do Francije (uredimo skupinski prevoz)
   - Hrana in pijača
-  - Karte za bike parke / žičnice (cca. 30–40 € na dan)
   - Osebno zavarovanje (priporočljivo za bike park)
 to_bring:
   - Lastno MTB kolo — priporočljivo trail/enduro (140–170 mm)
