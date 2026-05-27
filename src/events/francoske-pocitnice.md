@@ -15,9 +15,9 @@ audience: 5–7 oseb
 group_size: 5–7 udeležencev
 difficulty: Srednje izkušeni in napredni
 instructor: Marko Mac Šimenc
-description: Stacionirani v privatni hiši v Puy Saint Vincentu, furamo PSV,
-  Serre Chevalier, Les Orres in Bardonecchio. Najboljši kolesarski parki Alp,
-  lokalna kulinarika in dobre vibre.
+description: Stacionirani v privatni hiši v bližini Briancona, Serre Chevalier,
+  PSV, Les Orres, Bardonecchio,.. Najboljši kolesarski parki Alp, lokalna
+  kulinarika in dober vibe.
 price_num: 860 €
 price_label: + prevoz in hrana
 price_includes_accommodation: true
