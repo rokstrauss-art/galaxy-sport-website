@@ -137,33 +137,32 @@
   <div class="container">
     <div class="events-header fade-up">
       <div>
-        <div class="section-label">{{ events.section_label }}</div>
-        <h2 class="section-title">{{ events.section_title_part1 }}<em>{{ events.section_title_emphasis }}</em>.</h2>
-        <p class="section-intro">{{ events.section_intro }}</p>
+        <div class="section-label">{{ events_section.section_label }}</div>
+        <h2 class="section-title">{{ events_section.section_title_part1 }}<em>{{ events_section.section_title_emphasis }}</em>.</h2>
+        <p class="section-intro">{{ events_section.section_intro }}</p>
       </div>
-      <a href="#" class="btn btn-outline">Vsi dogodki</a>
     </div>
 
     <div class="events-grid">
-      {% for ev in events.list %}
-      <a href="{{ ev.detail_url }}" class="event-card fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 80 }}ms"{% endif %}>
-        <div class="event-image"{% if ev.image %} style="background-image: url('{{ ev.image }}'); background-size: cover; background-position: center;"{% endif %}>
-          {% if not ev.image %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>{% endif %}
-          <span class="event-tag{% if ev.tag_hot %} hot{% endif %}">{{ ev.tag }}</span>
-          <span class="event-image-label">{{ ev.image_label }}</span>
+      {% for ev in collections.events %}
+      <a href="/dogodki/{{ ev.data.slug }}/" class="event-card fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 80 }}ms"{% endif %}>
+        <div class="event-image"{% if ev.data.image %} style="background-image: url('{{ ev.data.image }}'); background-size: cover; background-position: center;"{% endif %}>
+          {% if not ev.data.image %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>{% endif %}
+          <span class="event-tag{% if ev.data.tag_hot %} hot{% endif %}">{{ ev.data.tag }}</span>
+          <span class="event-image-label">{{ ev.data.image_label }}</span>
         </div>
         <div class="event-content">
           <div class="event-meta-top">
-            <span><svg><use href="#i-cal"/></svg> {{ ev.date }}</span>
-            <span><svg><use href="#i-pin"/></svg> {{ ev.location }}</span>
-            <span><svg><use href="#i-people"/></svg> {{ ev.audience }}</span>
+            <span><svg><use href="#i-cal"/></svg> {{ ev.data.date_label }}</span>
+            <span><svg><use href="#i-pin"/></svg> {{ ev.data.location }}</span>
+            <span><svg><use href="#i-people"/></svg> {{ ev.data.audience }}</span>
           </div>
-          <h3 class="event-title">{{ ev.title }}</h3>
-          <p class="event-desc">{{ ev.description }}</p>
+          <h3 class="event-title">{{ ev.data.title }}</h3>
+          <p class="event-desc">{{ ev.data.description }}</p>
           <div class="event-footer">
             <div class="event-price">
-              <span class="event-price-num">{{ ev.price_num }}</span>
-              <span class="event-price-label">{{ ev.price_label }}</span>
+              <span class="event-price-num">{{ ev.data.price_num }}</span>
+              <span class="event-price-label">{{ ev.data.price_label }}</span>
             </div>
             <span class="event-cta">Več info</span>
           </div>
@@ -324,13 +323,40 @@
     </div>
     <div class="gallery-grid">
       {% for item in gallery.items %}
-      <div class="gallery-item fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 50 }}ms"{% endif %}{% if item.image %} style="background-image: url('{{ item.image }}'); background-size: cover; background-position: center;"{% endif %}>
-        <span class="gallery-item-label"><span class="title">{{ item.title }}</span><span class="meta">{{ item.meta }}</span></span>
-      </div>
+      {% set has_photos = item.photos and item.photos.length > 0 %}
+      <button type="button"
+              class="gallery-item fade-up{% if not has_photos %} gallery-item-empty{% endif %}"
+              {% if loop.index0 > 0 %}style="transition-delay: {{ loop.index0 * 50 }}ms{% if item.cover %}; background-image: url('{{ item.cover }}'); background-size: cover; background-position: center{% endif %}"{% elif item.cover %}style="background-image: url('{{ item.cover }}'); background-size: cover; background-position: center"{% endif %}
+              data-gallery-index="{{ loop.index0 }}"
+              {% if has_photos %}aria-label="Odpri galerijo: {{ item.title }}"{% else %}disabled aria-label="Brez fotografij"{% endif %}>
+        <span class="gallery-item-label">
+          <span class="title">{{ item.title }}</span>
+          <span class="meta">{{ item.meta }}{% if has_photos %} · {{ item.photos.length }} fotografij{% endif %}</span>
+        </span>
+        {% if has_photos %}<span class="gallery-item-badge" aria-hidden="true">+{{ item.photos.length }}</span>{% endif %}
+      </button>
       {% endfor %}
     </div>
   </div>
 </section>
+
+<!-- Gallery lightbox: hidden until activated -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galerija">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Zapri galerijo">&times;</button>
+  <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Prejšnja fotografija">&lsaquo;</button>
+  <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Naslednja fotografija">&rsaquo;</button>
+  <div class="lightbox-stage">
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<script type="application/json" id="galleryData">
+{% set gallery_data = [] %}
+{% for item in gallery.items %}{% if item.photos and item.photos.length %}{% set gallery_data = (gallery_data.push({"title": item.title, "meta": item.meta, "photos": item.photos}), gallery_data) %}{% endif %}{% endfor %}
+{{ gallery.items | dump | safe }}
+</script>
 
 <section class="block faq" id="faq">
   <div class="container">
@@ -486,6 +512,74 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 document.querySelectorAll('.faq-item').forEach(item => {
   item.addEventListener('click', () => item.classList.toggle('open'));
 });
+
+// ----- Gallery lightbox -----
+(function() {
+  let galleryData = [];
+  try {
+    galleryData = JSON.parse(document.getElementById('galleryData').textContent);
+  } catch (e) { return; }
+
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  const caption = document.getElementById('lightboxCaption');
+  const counter = document.getElementById('lightboxCounter');
+  const closeBtn = document.getElementById('lightboxClose');
+  const prevBtn = document.getElementById('lightboxPrev');
+  const nextBtn = document.getElementById('lightboxNext');
+
+  let currentSet = [];
+  let currentIndex = 0;
+  let currentTitle = '';
+
+  function showPhoto(index) {
+    if (!currentSet.length) return;
+    currentIndex = (index + currentSet.length) % currentSet.length;
+    img.src = currentSet[currentIndex];
+    img.alt = currentTitle + ' — fotografija ' + (currentIndex + 1);
+    caption.textContent = currentTitle;
+    counter.textContent = (currentIndex + 1) + ' / ' + currentSet.length;
+  }
+
+  function openLightbox(itemIndex) {
+    const item = galleryData[itemIndex];
+    if (!item || !item.photos || !item.photos.length) return;
+    currentSet = item.photos;
+    currentTitle = item.title;
+    currentIndex = 0;
+    showPhoto(0);
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  document.querySelectorAll('.gallery-item[data-gallery-index]').forEach(btn => {
+    if (btn.disabled) return;
+    btn.addEventListener('click', () => {
+      openLightbox(parseInt(btn.dataset.galleryIndex, 10));
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', () => showPhoto(currentIndex - 1));
+  nextBtn.addEventListener('click', () => showPhoto(currentIndex + 1));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPhoto(currentIndex - 1);
+    if (e.key === 'ArrowRight') showPhoto(currentIndex + 1);
+  });
+})();
 
 let cookieConsent = null;
 setTimeout(() => { if (cookieConsent === null) document.getElementById('cookieBanner').classList.add('show'); }, 1400);

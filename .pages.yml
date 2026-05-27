@@ -1,9 +1,7 @@
 media:
-  - name: images
-    label: Slike
-    input: src/images/uploads
-    output: /images/uploads
-    extensions: [jpg, jpeg, png, webp, gif, svg]
+  input: src/images/uploads
+  output: /images/uploads
+  extensions: [jpg, jpeg, png, webp, gif, svg]
 
 content:
   - name: hero
@@ -38,33 +36,75 @@ content:
           - { name: place, label: Lokacija (prikaz spodaj desno), type: string }
           - { name: meta, label: Podnapis lokacije, type: string }
 
-  - name: events
-    label: Dogodki
+  - name: events_section
+    label: "Dogodki (naslov sekcije)"
     type: file
-    path: src/_data/events.json
+    path: src/_data/events_section.json
     icon: calendar
     fields:
       - { name: section_label, label: Oznaka sekcije, type: string }
       - { name: section_title_part1, label: Naslov sekcije — prvi del, type: string }
       - { name: section_title_emphasis, label: Naslov sekcije — poudarjeni del, type: string }
       - { name: section_intro, label: Uvodno besedilo, type: text }
-      - name: list
-        label: Seznam dogodkov
+
+  - name: events
+    label: Dogodki (posamezne strani)
+    type: collection
+    path: src/events
+    view:
+      fields: [title, date_label, location]
+      primary: title
+    filename: "{fields.slug}.md"
+    fields:
+      - { name: title, label: Naziv dogodka, type: string, required: true }
+      - { name: slug, label: "Spletni naslov (URL)", type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Samo male črke, številke in vezaji" }, hint: "Brez šumnikov in presledkov. Npr. \"bejba-zmore\". Po objavi tega ne spreminjaj — pokvari povezave." }
+      - { name: title_short, label: Kratko ime (interno), type: string, required: false }
+      - { name: image, label: Glavna fotografija (heading), type: image, required: false }
+      - { name: image_label, label: Napis čez fotografijo (na seznamu), type: string }
+      - { name: tag, label: Oznaka (zgornji levi kot), type: string }
+      - { name: tag_hot, label: Poudarjena oznaka (rumena), type: boolean, default: false }
+      - { name: date_label, label: "Datum (prikazni, npr. \"15.–17. maj 2026\")", type: string }
+      - { name: date_start, label: "Datum začetka (za razvrščanje, YYYY-MM-DD)", type: date }
+      - { name: date_end, label: "Datum konca (YYYY-MM-DD)", type: date, required: false }
+      - { name: location, label: Lokacija, type: string }
+      - { name: location_meta, label: Pod-lokacija (npr. regija), type: string, required: false }
+      - { name: audience, label: "Za koga (kratko, za kartico)", type: string }
+      - { name: group_size, label: "Velikost skupine (npr. \"6–10 udeležencev\")", type: string, required: false }
+      - { name: difficulty, label: Zahtevnost, type: string, required: false }
+      - { name: instructor, label: Vodi / inštruktor, type: string, required: false }
+      - { name: description, label: "Kratek opis (za kartico na naslovnici)", type: text }
+      - { name: price_num, label: "Cena (npr. \"359 €\")", type: string }
+      - { name: price_label, label: "Opis cene (npr. \"Polni paket\")", type: string }
+      - { name: price_includes_accommodation, label: "Cena vključuje nastanitev", type: boolean, default: false }
+      - { name: registration_note, label: Opomba o prijavah, type: text }
+      - { name: contact_email, label: "Kontaktni e-mail (neobvezno — drugače uporabi splošnega)", type: string, required: false }
+      - { name: payment_url, label: "Povezava za plačilo s kartico (SumUp itd.) — neobvezno", type: string, required: false }
+      - name: included
+        label: "Vključeno v ceno"
+        type: string
+        list: true
+      - name: not_included
+        label: "Ni vključeno"
+        type: string
+        list: true
+      - name: to_bring
+        label: "Kaj prinesi s sabo"
+        type: string
+        list: true
+      - name: itinerary
+        label: "Program po dnevih"
         type: object
         list: true
         fields:
-          - { name: title, label: Naziv dogodka, type: string }
-          - { name: image, label: Fotografija dogodka, type: image, required: false }
-          - { name: image_label, label: Napis čez fotografijo, type: string }
-          - { name: tag, label: Oznaka (zgornji levi kot), type: string }
-          - { name: tag_hot, label: Poudarjena oznaka (rumena), type: boolean, default: false }
-          - { name: date, label: Datum, type: string }
-          - { name: location, label: Lokacija, type: string }
-          - { name: audience, label: Za koga / št. oseb, type: string }
-          - { name: description, label: Opis dogodka, type: text }
-          - { name: price_num, label: Cena, type: string }
-          - { name: price_label, label: Opis cene, type: string }
-          - { name: detail_url, label: Povezava na podrobnosti, type: string, default: "#", required: false }
+          - { name: day, label: "Oznaka dneva (npr. \"Petek\" ali \"1. dan\")", type: string }
+          - { name: title, label: Naslov dneva, type: string }
+          - { name: content, label: Opis dneva, type: text }
+      - name: gallery
+        label: Galerija dogodka
+        type: image
+        list: true
+        required: false
+      - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: text }
 
   - name: shop
     label: Servis
@@ -152,13 +192,18 @@ content:
       - { name: section_title_part2, label: Naslov — zadnji del, type: string }
       - { name: section_intro, label: Uvodno besedilo, type: text }
       - name: items
-        label: Fotografije
+        label: Galerije (vsaka skupina ima svoje fotografije)
         type: object
         list: true
         fields:
-          - { name: image, label: Fotografija, type: image, required: false }
-          - { name: title, label: Naslov, type: string }
+          - { name: title, label: Naslov skupine, type: string }
           - { name: meta, label: Podnapis (datum/leto), type: string }
+          - { name: cover, label: Naslovnica (prikaz na mreži), type: image, required: false }
+          - name: photos
+            label: Fotografije (do 10, ob kliku se odprejo v galeriji)
+            type: image
+            list: true
+            required: false
 
   - name: faq
     label: Pogosta vprašanja
@@ -199,12 +244,12 @@ content:
     path: src/_data/settings.json
     icon: settings
     fields:
+      - { name: contact_email, label: "📧 Kontaktni e-mail (uporabljen povsod na strani)", type: string }
+      - { name: contact_phone, label: "📞 Telefon — kot se prikaže (npr. 068 147 467)", type: string }
+      - { name: contact_phone_link, label: "📞 Telefon — za klic (mednarodna oblika, npr. +38668147467)", type: string, hint: "Brez presledkov in pomišljajev. Začne se s + in kodo države." }
       - { name: announce_text, label: Obvestilo na vrhu strani, type: string }
       - { name: announce_link_label, label: Obvestilo — besedilo povezave, type: string }
       - { name: announce_link_url, label: Obvestilo — povezava, type: string }
-      - { name: contact_email, label: E-pošta, type: string }
-      - { name: contact_phone, label: Telefon (prikaz), type: string }
-      - { name: contact_phone_link, label: "Telefon (za klic, format +386...)", type: string }
       - { name: facebook_url, label: Facebook povezava, type: string, required: false }
       - { name: instagram_url, label: Instagram povezava, type: string, required: false }
       - { name: strava_url, label: Strava povezava, type: string, required: false }

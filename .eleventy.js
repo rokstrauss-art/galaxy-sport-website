@@ -9,6 +9,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/_data/");
   eleventyConfig.addWatchTarget("src/_includes/");
 
+  // Events collection — read every .md file in src/events/, sorted by date_start
+  eleventyConfig.addCollection("events", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/events/*.md")
+      .sort((a, b) => {
+        const dateA = new Date(a.data.date_start || 0);
+        const dateB = new Date(b.data.date_start || 0);
+        return dateA - dateB;
+      });
+  });
+
+  // urlencode filter for safe mailto: links
+  eleventyConfig.addFilter("urlencode", function (str) {
+    return encodeURIComponent(str || "");
+  });
+
   return {
     dir: {
       input: "src",
@@ -18,6 +34,6 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    templateFormats: ["njk", "html"],
+    templateFormats: ["njk", "html", "md"],
   };
 };
