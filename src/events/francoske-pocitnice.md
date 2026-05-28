@@ -2,7 +2,7 @@
 title: Francoske MTB počitnice
 slug: francoske-pocitnice
 title_short: Francoske MTB počitnice
-image: /images/uploads/IMG_6119-3.jpg
+image: /images/uploads/IMG_6119-4.jpg
 image_label: 7 dni furanja v francoskih Alpah.
 tag: Naša uspešnica
 tag_hot: true
@@ -21,7 +21,7 @@ description: Stacionirani bomo v privatni hiši v bližini Briancona. Furamo par
 price_num: 860 €
 price_label: + prevoz in hrana
 price_includes_accommodation: true
-registration_note: Prijave do 1. avgusta 2026. Skupaj uredimo prevoz in plačila.
+registration_note: Prijave do 5. avgusta 2026. Skupaj se dogovorimo za prevoz in nabavo hrane.
 contact_email: info@galaxysport.si
 payment_url: https://pay.sumup.com/b2c/QQ567DMZ
 included:
@@ -31,7 +31,7 @@ included:
   - Logistika med kraji (PSV, Serre Chevalier, Les Orres, Bardonecchio)
   - Lokalni nasveti — kje jesti, kje uživati
 not_included:
-  - Prevoz do Francije (uredimo skupinski prevoz)
+  - Prevoz do Francije (dogovorimo se za prevoz)
   - Hrana in pijača
   - Osebno zavarovanje (priporočljivo za bike park)
 to_bring:
@@ -40,18 +40,19 @@ to_bring:
   - Ščitniki za kolena (obvezno), komolce (priporočljivo)
   - Rokavice s prsti, kolesarska očala
   - Oblačila za sedem dni vožnje + sproščene večerne stvari
-  - Osebne kopalke (v hiši je bazen)
+  - Opreijete kopalke (v primeru, da obiščemo terme)
 itinerary:
   - day: 1. dan — sobota
-    title: Prihod v PSV
-    content: Po prihodu v Puy Saint Vincent se nastanimo v hiši. Lahka vožnja po
-      dolini ali sprehod po vasi, da se aklimatiziramo.
+    title: Prihod v Briancon
+    content: Po prihoduv Francijo se nastanimo v hiši. Lahka vožnja po dolini ali
+      sprehod po vasi, da se aklimatiziramo.
   - day: 2. dan — nedelja
-    title: Puy Saint Vincent bike park
+    title: Bike park Serre Chevalier
     content: Spoznavanje domačega bike parka — kombinacija lahkih in srednje
-      zahtevnih prog. Kosilo na vrhu, popoldne še nekaj spustov.
+      zahtevnih prog. Kosilo v hiši ali nekje na hribu, popoldne pa še nekaj
+      spustov.
   - day: 3. dan — ponedeljek
-    title: Serre Chevalier
+    title: Les Orres
     content: Prevoz v Serre Chevalier (cca. 1 ura) — eden največjih bike parkov v
       Alpah. Cela dnevna vožnja, popoldne piknik na soncu.
   - day: 4. dan — torek
