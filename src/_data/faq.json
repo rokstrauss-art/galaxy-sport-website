@@ -6,11 +6,11 @@
   "items": [
     {
       "question": "Kakšno raven kolesarjenja potrebujem?",
-      "answer": "Odvisno od dogodka. Pri vsakem terminu pišemo, za koga je primeren — od popolnih začetnikov pa do bolj izkušenih kolesarjev. Če nisi prepričan, nam piši in skupaj ugotoviva."
+      "answer": "Odvisno od dogodka. Pri vsakem dogodku poskušamo čimbolj natačno opisati, za koga je primeren— od popolnih začetnikov, pa vse do bolj izkušenih kolesarjev, za vsakega se nekaj najde. Če nisi prepričan, nam piši in skupaj ugotovimo, ali je določena avantura ali tečaj primeren za tvoje kolesarsko znanje."
     },
     {
       "question": "Kakšno kolo potrebujem?",
-      "answer": "Prav tako odvisno od dogodka. Za bikepacking je dovolj gravel ali MTB s 2.0+ pnevmatikami, za francoske Alpe potrebuješ trail (130–140 mm) ali all-mountain kolo. E-bike je skoraj povsod dobrodošel. Pred prijavo bomo skupaj preverili, da imaš pravo opremo."
+      "answer": "Prav tako odvisno od avanture. Za bikepacking je dovolj gravel ali MTB s 2.0+ pnevmatikami, za francoske Alpe potrebuješ polnovzmeteno all mountain (130–140 mm) ali enduro (150-180mm) kolo. E-bike je skoraj povsod dobrodošel, ni pa nujen (razen v primeru, da gre za E-bike specifičen dogodek. Pred prijavo lahko skupaj preverimo, ali imaš pravo opremo."
     },
     {
       "question": "Kaj je vključeno v ceno?",
@@ -18,11 +18,11 @@
     },
     {
       "question": "Kako se prijavim?",
-      "answer": "Najlažje preko maila info@galaxysport.si — pošlji ime, priimek in mobilno številko. V najkrajšem času te kontaktiramo z vsemi podrobnostmi in potrditvijo."
+      "answer": "Najlažje preko maila info@galaxysport.si — pošlji ime, priimek in mobilno številko. V najkrajšem času te kontaktiramo z vsemi podrobnostmi."
     },
     {
       "question": "Ali je zavarovanje vključeno?",
-      "answer": "Osebno zavarovanje ni vključeno v ceno — priporočamo, da si ga uredite sami. Za dodatna vprašanja smo na voljo na mailu ali telefonu."
+      "answer": "Osebno zavarovanje ni vključeno v ceno — priporočamo, da si ga uredite sami. Za dodatna vprašanja in predloge specifičnih zavarovanj, smo na voljo na mailu ali telefonu."
     }
   ]
 }
