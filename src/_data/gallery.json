@@ -24,7 +24,20 @@
     {
       "title": "Bikepacking avanture",
       "meta": "Večkrat v sezoni",
-      "cover": "/images/uploads/IMG_20180802_114934-4.jpg"
+      "cover": "/images/uploads/IMG_20180802_114934-4.jpg",
+      "photos": [
+        "/images/uploads/IMG_2150.jpg",
+        "/images/uploads/IMG_2136.jpg",
+        "/images/uploads/IMG_4747.jpg",
+        "/images/uploads/IMG_6671.jpg",
+        "/images/uploads/IMG_2146.jpg",
+        "/images/uploads/IMG_6551.jpg",
+        "/images/uploads/IMG_6571.jpg",
+        "/images/uploads/IMG_6632.jpg",
+        "/images/uploads/IMG_6727.jpg",
+        "/images/uploads/IMG_2604.jpg",
+        "/images/uploads/IMG_6620.jpg"
+      ]
     },
     {
       "title": "Francoske Alpe",
