@@ -19,7 +19,12 @@
     {
       "title": "Bejba zmore",
       "meta": "Maj · 2025",
-      "cover": "/images/uploads/IMG_5125.jpg"
+      "cover": "/images/uploads/IMG_5125.jpg",
+      "photos": [
+        "/images/uploads/TEJA MTB.jpg",
+        "/images/uploads/IMG_8938.jpg",
+        "/images/uploads/IMG_8964-4.jpg"
+      ]
     },
     {
       "title": "Bikepacking avanture",
