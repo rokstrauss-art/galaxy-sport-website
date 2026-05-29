@@ -2,7 +2,7 @@
 title: Bikepacking "na komot"
 slug: bikepacking-komot
 title_short: Bikepacking na komot
-image: /images/uploads/ChatGPT Image 14. maj 2026, 00_30_21-1.png
+image: /images/uploads/galaxy-img-2026-05-14-b.png
 image_label: Tri dni, tri postelje, brez šotora.
 tag: Komot vibe
 tag_hot: false
