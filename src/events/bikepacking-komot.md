@@ -56,7 +56,7 @@ itinerary:
     content: "Spust z Učke proti Kvarnerju, do morja v Lovranu. Kopanje, kosilo ob
       morju in vlak nazaj domov. Razdalja: cca. 30 km / -1300 vm."
 gallery:
-  - /images/uploads/Screenshot 2026-05-25 210343.png
+  - /images/uploads/image.png
 ---
 ## O izletu
 
