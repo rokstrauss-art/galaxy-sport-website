@@ -91,6 +91,18 @@ eleventyComputed:
 
       <div class="event-description">{{ content | safe }}</div>
 
+      {% if event.data.gallery and event.data.gallery.length %}
+      <section class="event-gallery-section">
+        <div class="event-gallery-grid event-gallery-count-{{ event.data.gallery.length }}">
+          {% for photo in event.data.gallery %}
+          <button type="button" class="event-gallery-item" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
+            <img src="{{ photo }}" alt="{{ event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
+          </button>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
       {% if event.data.itinerary and event.data.itinerary.length %}
       <section class="event-section">
         <h2 class="event-section-title">Program po dnevih</h2>
@@ -252,18 +264,50 @@ eleventyComputed:
           <textarea id="ef-notes" name="notes" rows="4" placeholder="Vse, kar bi morali vedeti."></textarea>
         </div>
 
+        {% if event.data.payment_url %}
+        <div class="form-field payment-method-field">
+          <label>Način plačila <span class="req">*</span></label>
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment_method" value="Kartica (SumUp)" checked>
+              <span class="payment-option-box">
+                <span class="payment-option-title">Plačilo s kartico</span>
+                <span class="payment-option-desc">Takojšnje plačilo prek SumUp</span>
+              </span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment_method" value="Nakazilo preko TRR">
+              <span class="payment-option-box">
+                <span class="payment-option-title">Nakazilo preko TRR</span>
+                <span class="payment-option-desc">Račun pošljemo na e-pošto</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        {% else %}
+        <input type="hidden" name="payment_method" value="Nakazilo preko TRR">
+        {% endif %}
+
         <button type="submit" class="btn btn-primary btn-lg btn-block btn-arrow" id="submitBtn">
-          {% if event.data.payment_url %}Plačaj s kartico →{% else %}Pošlji prijavo →{% endif %}
+          {% if event.data.payment_url %}Naprej na plačilo →{% else %}Pošlji prijavo →{% endif %}
         </button>
 
-        <p class="event-form-fineprint">
+        <p class="event-form-fineprint" id="formFineprint">
           {% if event.data.payment_url %}
-          Po oddaji prijave te preusmerimo na varno SumUp plačilno stran. Tvoji podatki pridejo do Galaxy Sport ekipe takoj.
+          Po oddaji prijave nadaljuješ glede na izbrani način plačila. Tvoji podatki pridejo do Galaxy Sport ekipe takoj.
           {% else %}
-          Po oddaji prijave ti pošljemo vse podrobnosti in plačilne podatke.
+          Po oddaji prijave ti na e-pošto pošljemo račun v največ 24 urah.
           {% endif %}
         </p>
       </form>
+
+      <!-- Success message shown after TRR submission -->
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="form-success-mark">✓</div>
+        <h3>Hvala za prijavo!</h3>
+        <p>Račun ti bomo poslali na tvoj e-naslov v največ 24 urah.</p>
+        <p class="form-success-sub">Če v tem času ne dobiš sporočila, preveri tudi mapo z neželeno pošto ali nas pokliči.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -323,7 +367,7 @@ eleventyComputed:
 </footer>
 
 <script>
-// Smooth scroll from "Prijavi se" sidebar button to the form
+// Smooth scroll from sidebar button to the form
 const openBtn = document.getElementById('openFormBtn');
 const formSection = document.getElementById('registrationForm');
 if (openBtn && formSection) {
@@ -337,37 +381,130 @@ if (openBtn && formSection) {
   });
 }
 
-// Intercept submit: if payment_url is set, POST to Netlify then redirect to SumUp
+// Update submit button + fineprint text when payment method changes
 const form = document.getElementById('eventForm');
+const submitBtn = document.getElementById('submitBtn');
+const fineprint = document.getElementById('formFineprint');
+const paymentUrl = form ? form.dataset.paymentUrl : '';
+
+function currentMethod() {
+  const checked = form.querySelector('input[name="payment_method"]:checked');
+  return checked ? checked.value : 'Nakazilo preko TRR';
+}
+
+function updateFormUI() {
+  if (!paymentUrl) return; // no card option, leave defaults
+  const method = currentMethod();
+  if (method === 'Nakazilo preko TRR') {
+    submitBtn.innerHTML = 'Pošlji prijavo →';
+    if (fineprint) fineprint.textContent = 'Po oddaji prijave ti na e-pošto pošljemo račun v največ 24 urah.';
+  } else {
+    submitBtn.innerHTML = 'Naprej na plačilo →';
+    if (fineprint) fineprint.textContent = 'Po oddaji prijave te preusmerimo na varno SumUp plačilno stran. Tvoji podatki pridejo do Galaxy Sport ekipe takoj.';
+  }
+}
+
 if (form) {
+  form.querySelectorAll('input[name="payment_method"]').forEach(r => {
+    r.addEventListener('change', updateFormUI);
+  });
+  updateFormUI();
+
   form.addEventListener('submit', async (e) => {
-    const paymentUrl = form.dataset.paymentUrl;
-    if (!paymentUrl) return; // No payment URL — Netlify handles normally, goes to /hvala/
+    const method = currentMethod();
 
-    e.preventDefault();
-    const submitBtn = document.getElementById('submitBtn');
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Pošiljam…';
-
-    // Build form-encoded body for Netlify
-    const formData = new FormData(form);
-    const params = new URLSearchParams();
-    for (const [k, v] of formData) params.append(k, v);
-
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString()
-      });
-      // Always redirect to SumUp even on fetch error — payment is the priority
-      window.location.href = paymentUrl;
-    } catch (err) {
-      // Even if submit failed, send them to SumUp
-      window.location.href = paymentUrl;
+    // Bank transfer (TRR): submit to Netlify, then show the success message inline
+    if (method === 'Nakazilo preko TRR') {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Pošiljam…';
+      const params = new URLSearchParams();
+      for (const [k, v] of new FormData(form)) params.append(k, v);
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: params.toString()
+        });
+      } catch (err) { /* show success regardless */ }
+      form.hidden = true;
+      const success = document.getElementById('formSuccess');
+      if (success) {
+        success.hidden = false;
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return;
     }
+
+    // Card (SumUp): submit to Netlify, then redirect to payment
+    if (paymentUrl) {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Pošiljam…';
+      const params = new URLSearchParams();
+      for (const [k, v] of new FormData(form)) params.append(k, v);
+      try {
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: params.toString()
+        });
+        window.location.href = paymentUrl;
+      } catch (err) {
+        window.location.href = paymentUrl;
+      }
+    }
+    // If no paymentUrl and method is TRR, handled above. Nothing else needed.
   });
 }
+
+// ----- Event photo gallery lightbox -----
+(function() {
+  const items = document.querySelectorAll('.event-gallery-item[data-photo-index]');
+  if (!items.length) return;
+  const photos = Array.from(items).map(it => it.querySelector('img').src);
+
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<button class="lightbox-close" aria-label="Zapri">&times;</button>' +
+    '<button class="lightbox-arrow lightbox-prev" aria-label="Prejšnja">&lsaquo;</button>' +
+    '<button class="lightbox-arrow lightbox-next" aria-label="Naslednja">&rsaquo;</button>' +
+    '<div class="lightbox-stage"><img class="lightbox-img" alt=""></div>' +
+    '<div class="lightbox-counter"></div>';
+  document.body.appendChild(lb);
+
+  const img = lb.querySelector('.lightbox-img');
+  const counter = lb.querySelector('.lightbox-counter');
+  let idx = 0;
+
+  function show(i) {
+    idx = (i + photos.length) % photos.length;
+    img.src = photos[idx];
+    counter.textContent = (idx + 1) + ' / ' + photos.length;
+  }
+  function open(i) {
+    show(i);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  items.forEach(it => it.addEventListener('click', () => open(parseInt(it.dataset.photoIndex, 10))));
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.querySelector('.lightbox-prev').addEventListener('click', () => show(idx - 1));
+  lb.querySelector('.lightbox-next').addEventListener('click', () => show(idx + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+})();
 </script>
 
 </body>
