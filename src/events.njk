@@ -89,12 +89,12 @@ eleventyComputed:
   <div class="container event-grid">
     <main class="event-main">
 
-      <div class="event-description">{{ content | safe }}</div>
+      <div class="event-description">{{ event.templateContent | safe }}</div>
 
-      {% if event.data.gallery and event.data.gallery.length %}
+      {% if event.data.event_gallery and event.data.event_gallery.length %}
       <section class="event-gallery-section">
-        <div class="event-gallery-grid event-gallery-count-{{ event.data.gallery.length }}">
-          {% for photo in event.data.gallery %}
+        <div class="event-gallery-grid event-gallery-count-{{ event.data.event_gallery.length }}">
+          {% for photo in event.data.event_gallery %}
           <button type="button" class="event-gallery-item" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
             <img src="{{ photo }}" alt="{{ event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
           </button>

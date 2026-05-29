@@ -99,7 +99,7 @@ content:
           - { name: day, label: "Oznaka dneva (npr. \"Petek\" ali \"1. dan\")", type: string }
           - { name: title, label: Naslov dneva, type: string }
           - { name: content, label: Opis dneva, type: text }
-      - name: gallery
+      - name: event_gallery
         label: "Galerija dogodka (priporočeno 5 fotografij)"
         type: image
         list: true
