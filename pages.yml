@@ -100,11 +100,11 @@ content:
           - { name: title, label: Naslov dneva, type: string }
           - { name: content, label: Opis dneva, type: text }
       - name: gallery
-        label: Galerija dogodka
+        label: "Galerija dogodka (priporočeno 5 fotografij)"
         type: image
         list: true
         required: false
-      - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: text }
+      - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: rich-text }
 
   - name: shop
     label: Servis
