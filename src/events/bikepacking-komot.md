@@ -3,7 +3,7 @@ title: Bikepacking "na komot"
 slug: bikepacking-komot
 title_short: Bikepacking na komot
 image: /images/uploads/galaxy-img-2026-05-14-b.png
-image_label: Tri dnevna avantura, brez šotora, spalke in skrbi.
+image_label: Tridnevna avantura, brez šotora, spalke in skrbi.
 tag: Komot vibe
 tag_hot: false
 date_label: 19.–21. junij 2026
@@ -15,13 +15,13 @@ audience: Vse ravni, vsa kolesa
 group_size: 6–10 udeležencev
 difficulty: Vse ravni (vsak svoj tempo)
 description: Tridnevna bikepacking avantura, ki nas mimo Cerkniškega jezera,
-  skozi snežniške gozove,Čičarijo ter preko Učke, pripelje na zaslužen sladoled
-  v vasico Brseč, kjer se ne naveličamo prelepih pogledov na kvarnerski zaliv.
+  skozi snežniške gozove, Čičarijo, preko Učke, pripelje na zaslužen sladoled v
+  vasico Brseč, kjer se ne naveličamo prelepih pogledov na kvarnerski zaliv.
   Spimo v planinskih kočah — torej brez šotora, kuhalnika in odvečnih skrbi.
 price_num: 140 €
 price_label: + stroški nočitev/hrane
 price_includes_accommodation: false
-registration_note: Prijave do 1. junija 2026. Pošlji nam mail in skupaj uredimo
+registration_note: Prijave do 15. junija 2026. Pošlji nam mail in skupaj uredimo
   izposojo torb, če jih ne imaš.
 contact_email: info@galaxysport.si
 payment_url: https://pay.sumup.com/b2c/QFQKSU6L
