@@ -64,6 +64,10 @@ itinerary:
       napitkih počakamo na prevoz, ki nas odpelje nazaj do izhodišča v Rakeku.
 event_gallery:
   - /images/uploads/11.jpeg
+  - /images/uploads/22.jpeg
+  - /images/uploads/33.jpeg
+  - /images/uploads/44.jpeg
+  - /images/uploads/55.jpeg
 ---
 ## O izletu
 
