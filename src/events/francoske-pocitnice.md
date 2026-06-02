@@ -74,6 +74,12 @@ itinerary:
   - day: 8. dan — sobota
     title: Slovo in odhod
     content: Pakiranje, zajtrk, slovo. Skupni prevoz nazaj proti Sloveniji.
+event_gallery:
+  - /images/uploads/IMG_6197-2.jpg
+  - /images/uploads/20240819_151457-2.jpg
+  - /images/uploads/20240824_112907-2.jpg
+  - /images/uploads/Francija JM 3.jpg
+  - /images/uploads/20240822_121816-2.jpg
 ---
 ## O počitnicah
 
