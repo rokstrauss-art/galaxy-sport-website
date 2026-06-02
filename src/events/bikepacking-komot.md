@@ -63,7 +63,7 @@ itinerary:
       pijačo se po obalni cesti spustimo do Lovrana, kjer ob sladoledu in
       napitkih počakamo na prevoz, ki nas odpelje nazaj do izhodišča v Rakeku.
 event_gallery:
-  - /images/uploads/material_basecolor (4).jpeg
+  - /images/uploads/11.jpeg
 ---
 ## O izletu
 
