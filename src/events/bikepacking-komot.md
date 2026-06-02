@@ -2,7 +2,6 @@
 title: Bikepacking "na komot"
 slug: bikepacking-komot
 title_short: Bikepacking na komot
-image: /images/uploads/galaxy-img-2026-05-14-b.png
 image_label: Tridnevna avantura, brez šotora, spalke in skrbi.
 tag: Komot vibe
 tag_hot: false
