@@ -194,7 +194,7 @@ eleventyComputed:
         <div class="event-payment-info">
           <strong>Način plačila:</strong>
           {% if event.data.payment_url %}
-          Po izpolnitvi prijavnice te preusmerimo na varno SumUp plačilno stran.
+          Po izpolnitvi prijavnice nadaljuješ na varno plačilno stran.
           {% else %}
           Po prijavi vam pošljemo podatke za nakazilo. Mesto v skupini je rezervirano po potrjenem plačilu.
           {% endif %}
@@ -272,7 +272,7 @@ eleventyComputed:
               <input type="radio" name="payment_method" value="Kartica (SumUp)" checked>
               <span class="payment-option-box">
                 <span class="payment-option-title">Plačilo s kartico</span>
-                <span class="payment-option-desc">Takojšnje plačilo prek SumUp</span>
+                <span class="payment-option-desc">Takojšnje plačilo s kartico</span>
               </span>
             </label>
             <label class="payment-option">
@@ -400,7 +400,7 @@ function updateFormUI() {
     if (fineprint) fineprint.textContent = 'Po oddaji prijave ti na e-pošto pošljemo račun v največ 24 urah.';
   } else {
     submitBtn.innerHTML = 'Naprej na plačilo →';
-    if (fineprint) fineprint.textContent = 'Po oddaji prijave te preusmerimo na varno SumUp plačilno stran. Tvoji podatki pridejo do Galaxy Sport ekipe takoj.';
+    if (fineprint) fineprint.textContent = 'Po oddaji prijave nadaljuješ na varno plačilno stran. Tvoji podatki pridejo do Galaxy Sport ekipe takoj.';
   }
 }
 
