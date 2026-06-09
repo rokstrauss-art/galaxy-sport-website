@@ -20,9 +20,28 @@ module.exports = function (eleventyConfig) {
       });
   });
 
+  // Blog collection — read every .md file in src/blog/, sorted newest first
+  eleventyConfig.addCollection("blog", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/blog/*.md")
+      .sort((a, b) => {
+        const dateA = new Date(a.data.date || 0);
+        const dateB = new Date(b.data.date || 0);
+        return dateB - dateA;
+      });
+  });
+
   // urlencode filter for safe mailto: links
   eleventyConfig.addFilter("urlencode", function (str) {
     return encodeURIComponent(str || "");
+  });
+
+  // Slovenian date format: "20. maj 2026"
+  eleventyConfig.addFilter("slovenianDate", function (dateInput) {
+    if (!dateInput) return "";
+    const d = new Date(dateInput);
+    const months = ["januar","februar","marec","april","maj","junij","julij","avgust","september","oktober","november","december"];
+    return `${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()}`;
   });
 
   return {

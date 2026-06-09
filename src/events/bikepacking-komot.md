@@ -1,6 +1,7 @@
 ---
 title: Bikepacking "na komot"
 slug: bikepacking-komot
+category: avantura
 title_short: Bikepacking na komot
 image: /images/uploads/IMG_6712-2.jpg
 image_label: Tridnevna avantura, brez šotora, spalke in skrbi.

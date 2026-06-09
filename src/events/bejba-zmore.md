@@ -1,6 +1,7 @@
 ---
 title: Bejba zmore — MTB delavnica
 slug: bejba-zmore
+category: delavnica
 title_short: Bejba zmore
 image: /images/uploads/IMG_8964-3.jpg
 image_label: Pure women's energy

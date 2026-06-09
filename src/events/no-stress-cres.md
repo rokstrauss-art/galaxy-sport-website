@@ -1,6 +1,7 @@
 ---
 title: No stress on Cres MTB Weekend
 slug: no-stress-cres
+category: avantura
 title_short: No stress Cres
 image: /images/uploads/20250927_173418-2.jpg
 image_label: Otok, trail, kosilo, ponovitev.

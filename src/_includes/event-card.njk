@@ -1,0 +1,23 @@
+<a href="/dogodki/{{ ev.data.slug }}/" class="event-card fade-up"{% if loop.index0 > 0 %} style="transition-delay: {{ loop.index0 * 80 }}ms"{% endif %}>
+  <div class="event-image"{% if ev.data.image %} style="background-image: url('{{ ev.data.image }}'); background-size: cover; background-position: center;"{% endif %}>
+    {% if not ev.data.image %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>{% endif %}
+    <span class="event-tag{% if ev.data.tag_hot %} hot{% endif %}">{{ ev.data.tag }}</span>
+    <span class="event-image-label">{{ ev.data.image_label }}</span>
+  </div>
+  <div class="event-content">
+    <div class="event-meta-top">
+      <span><svg><use href="#i-cal"/></svg> {{ ev.data.date_label }}</span>
+      <span><svg><use href="#i-pin"/></svg> {{ ev.data.location }}</span>
+      <span><svg><use href="#i-people"/></svg> {{ ev.data.audience }}</span>
+    </div>
+    <h3 class="event-title">{{ ev.data.title }}</h3>
+    <p class="event-desc">{{ ev.data.description }}</p>
+    <div class="event-footer">
+      <div class="event-price">
+        <span class="event-price-num">{{ ev.data.price_num }}</span>
+        <span class="event-price-label">{{ ev.data.price_label }}</span>
+      </div>
+      <span class="event-cta">Več info</span>
+    </div>
+  </div>
+</a>

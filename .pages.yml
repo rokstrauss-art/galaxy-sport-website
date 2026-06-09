@@ -59,6 +59,16 @@ content:
       - { name: title, label: Naziv dogodka, type: string, required: true }
       - { name: slug, label: "Spletni naslov (URL)", type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Samo male črke, številke in vezaji" }, hint: "Brez šumnikov in presledkov. Npr. \"bejba-zmore\". Po objavi tega ne spreminjaj — pokvari povezave." }
       - { name: title_short, label: Kratko ime (interno), type: string, required: false }
+      - name: category
+        label: "Kategorija (kam spada v meniju Ponudba)"
+        type: select
+        required: true
+        default: avantura
+        options:
+          values:
+            - { label: "Avantura", value: avantura }
+            - { label: "Dogodek", value: dogodek }
+            - { label: "Delavnica", value: delavnica }
       - { name: image, label: Glavna fotografija (heading), type: image, required: false }
       - { name: image_label, label: Napis čez fotografijo (na seznamu), type: string }
       - { name: tag, label: Oznaka (zgornji levi kot), type: string }
@@ -105,6 +115,23 @@ content:
         list: true
         required: false
       - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: rich-text }
+
+  - name: blog
+    label: Blog (članki)
+    type: collection
+    path: src/blog
+    view:
+      fields: [title, date]
+      primary: title
+    filename: "{fields.slug}.md"
+    fields:
+      - { name: title, label: Naslov članka, type: string, required: true }
+      - { name: slug, label: "Spletni naslov (URL)", type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Samo male črke, številke in vezaji" }, hint: "Brez šumnikov in presledkov. Npr. \"zakaj-bikepacking\". Po objavi ne spreminjaj." }
+      - { name: date, label: Datum objave, type: date, required: true }
+      - { name: cover, label: Naslovna fotografija, type: image, required: false }
+      - { name: excerpt, label: "Kratek povzetek (prikaže se na seznamu)", type: text }
+      - { name: author, label: Avtor, type: string, required: false, default: "Galaxy Sport" }
+      - { name: body, label: "Vsebina članka", type: rich-text }
 
   - name: shop
     label: Servis
