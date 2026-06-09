@@ -68,6 +68,7 @@
       <li><a href="/blog/">Blog</a></li>
       <li><a href="#about">O nas</a></li>
       <li><a href="#gallery">Galerija</a></li>
+      <li><button type="button" class="nav-lang" id="langHint" title="Translate / Prevedi">EN</button></li>
     </ul>
     <a href="#events" class="btn btn-primary">Prijavi se</a>
     <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -90,6 +91,7 @@
     <li><a href="#gallery">Galerija</a></li>
   </ul>
   <a href="#events" class="btn btn-primary mm-cta">Prijavi se</a>
+  <button type="button" class="nav-lang" id="langHintMobile" style="margin-top:16px;">EN — Translate</button>
 </nav>
 
 <section class="hero">
@@ -155,8 +157,6 @@
     <button class="hero-dot{% if loop.first %} active{% endif %}" data-go="{{ loop.index0 }}" aria-label="Slika {{ loop.index }}"></button>
     {% endfor %}
   </div>
-
-  <div class="hero-scroll-hint">Scroll</div>
 
 </section>
 
@@ -257,6 +257,16 @@
       </div>
 
     </div>
+
+    {% if shop.gallery and shop.gallery.length %}
+    <div class="shop-gallery">
+      {% for photo in shop.gallery %}
+      <button type="button" class="shop-gallery-item" data-shop-photo="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
+        <img src="{{ photo }}" alt="Servis Galaxy Sport — fotografija {{ loop.index }}" loading="lazy">
+      </button>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </section>
 
@@ -577,6 +587,51 @@ window.addEventListener('scroll', () => header.classList.toggle('scrolled', wind
   });
   // Close when a link inside is tapped
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+})();
+
+// EN language hint — opens the page via Google Translate (English)
+(function() {
+  const lang = document.getElementById('langHint');
+  if (!lang) return;
+  function go() {
+    const url = encodeURIComponent(window.location.href);
+    window.open('https://translate.google.com/translate?sl=sl&tl=en&u=' + url, '_blank', 'noopener');
+  }
+  lang.addEventListener('click', go);
+  const langM = document.getElementById('langHintMobile');
+  if (langM) langM.addEventListener('click', go);
+})();
+
+// Servis gallery lightbox
+(function() {
+  const items = document.querySelectorAll('.shop-gallery-item[data-shop-photo]');
+  if (!items.length) return;
+  const photos = Array.from(items).map(it => it.querySelector('img').src);
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<button class="lightbox-close" aria-label="Zapri">&times;</button>' +
+    '<button class="lightbox-arrow lightbox-prev" aria-label="Prejšnja">&lsaquo;</button>' +
+    '<button class="lightbox-arrow lightbox-next" aria-label="Naslednja">&rsaquo;</button>' +
+    '<div class="lightbox-stage"><img class="lightbox-img" alt=""></div>' +
+    '<div class="lightbox-counter"></div>';
+  document.body.appendChild(lb);
+  const img = lb.querySelector('.lightbox-img');
+  const counter = lb.querySelector('.lightbox-counter');
+  let idx = 0;
+  function show(i) { idx = (i + photos.length) % photos.length; img.src = photos[idx]; counter.textContent = (idx+1) + ' / ' + photos.length; }
+  function open(i) { show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function close() { lb.classList.remove('open'); document.body.style.overflow = ''; img.src = ''; }
+  items.forEach(it => it.addEventListener('click', () => open(parseInt(it.dataset.shopPhoto, 10))));
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.querySelector('.lightbox-prev').addEventListener('click', () => show(idx - 1));
+  lb.querySelector('.lightbox-next').addEventListener('click', () => show(idx + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
 })();
 
 const observer = new IntersectionObserver((entries) => {

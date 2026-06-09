@@ -69,7 +69,7 @@ content:
             - { label: "Avantura", value: avantura }
             - { label: "Dogodek", value: dogodek }
             - { label: "Delavnica", value: delavnica }
-      - { name: image, label: Glavna fotografija (heading), type: image, required: false }
+      - { name: image, label: Glavna fotografija (heading), type: image, required: false, hint: "Priporočena velikost: 1920 × 800 px (razmerje 12:5, ležeče), JPG, pod 2 MB. Prikaže se čez celo širino; obreže se od robov, zato postavi glavni motiv na sredino." }
       - { name: image_label, label: Napis čez fotografijo (na seznamu), type: string }
       - { name: tag, label: Oznaka (zgornji levi kot), type: string }
       - { name: tag_hot, label: Poudarjena oznaka (rumena), type: boolean, default: false }
@@ -128,7 +128,7 @@ content:
       - { name: title, label: Naslov članka, type: string, required: true }
       - { name: slug, label: "Spletni naslov (URL)", type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Samo male črke, številke in vezaji" }, hint: "Brez šumnikov in presledkov. Npr. \"zakaj-bikepacking\". Po objavi ne spreminjaj." }
       - { name: date, label: Datum objave, type: date, required: true }
-      - { name: cover, label: Naslovna fotografija, type: image, required: false }
+      - { name: cover, label: Naslovna fotografija, type: image, required: false, hint: "Priporočena velikost: 1600 × 1067 px (razmerje 3:2, ležeče), JPG, pod 2 MB. Na seznamu se prikaže v razmerju 3:2, na strani članka čez celo širino; motiv naj bo na sredini." }
       - { name: excerpt, label: "Kratek povzetek (prikaže se na seznamu)", type: text }
       - { name: author, label: Avtor, type: string, required: false, default: "Galaxy Sport" }
       - { name: body, label: "Vsebina članka", type: rich-text }
@@ -155,6 +155,11 @@ content:
       - { name: services, label: Storitve, type: string }
       - { name: cta_primary_label, label: Glavni gumb — besedilo, type: string }
       - { name: cta_secondary_label, label: Drugi gumb — besedilo, type: string }
+      - name: gallery
+        label: "Galerija servisa (priporočeno 5 fotografij)"
+        type: image
+        list: true
+        required: false
 
   - name: about
     label: O nas
