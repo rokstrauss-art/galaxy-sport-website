@@ -1,8 +1,8 @@
 ---
 title: Francoske MTB počitnice
 slug: francoske-pocitnice
-category: avantura
 title_short: Francoske MTB počitnice
+category: avantura
 image: /images/uploads/IMG_6119-4.jpg
 image_label: 7 dni furanja v francoskih Alpah.
 tag: Naša uspešnica
@@ -26,7 +26,7 @@ registration_note: Prijave do 5. avgusta 2026. Skupaj se dogovorimo za prevoz in
 contact_email: info@galaxysport.si
 payment_url: https://pay.sumup.com/b2c/QQ567DMZ
 included:
-  - 7 dni vodenja po najboljših alpskih bike parkih
+  - 7 dni vodenja po najboljših v bližnji okolici
   - Karte za bike parke / žičnice (za 7 dni furanja)
   - Nastanitev v privatni hiši v bližini Briancona
   - Logistika med kraji (PSV, Serre Chevalier, Les Orres, Bardonecchio)
@@ -37,11 +37,11 @@ not_included:
   - Osebno zavarovanje (priporočljivo za bike park)
 to_bring:
   - Lastno MTB kolo — priporočljivo trail/enduro (140–170 mm)
-  - Full face čelada za bike park (lahko si izposodimo na licu mesta)
+  - Full face čelada
   - Ščitniki za kolena (obvezno), komolce (priporočljivo)
   - Rokavice s prsti, kolesarska očala
-  - Oblačila za sedem dni vožnje + sproščene večerne stvari
-  - Opreijete kopalke (v primeru, da obiščemo terme)
+  - Oblačila za sedem dni furanja, sproščene popoldneve in toaletno torbico
+  - Opreijete kopalke (v primeru, da obiščemo terme Le Monêtier-les-Bains)
 itinerary:
   - day: 1. dan — sobota
     title: Prihod v Briancon
@@ -54,27 +54,32 @@ itinerary:
       spustov.
   - day: 3. dan — ponedeljek
     title: Les Orres
-    content: Prevoz v Serre Chevalier (cca. 1 ura) — eden največjih bike parkov v
-      Alpah. Cela dnevna vožnja, popoldne piknik na soncu.
+    content: Prevoz v Les Orres (cca. 1 ura) — eden najzabavnejših bike parkov v
+      okolici. Celodnevna furanje, ki ga nadgradimo z popoldanskim relaksom ob
+      jezeru Lac de Serre-Ponçon.
   - day: 4. dan — torek
-    title: Počitek ali enduro tura
+    title: Enduro tura v okolici Serre Chevalierja in popoldanski piknik
     content: Sprostitveni dan — kdor želi, gre na enduro turo po lokalnih
-      singletrailih, ostali počivajo, plavajo, raziskujejo dolino.
+      singletrailih, ostali počivajo, plavajo, raziskujejo dolino. Popoldne
+      zapečemo in se poveselimo v toplini naše nastanitve.
   - day: 5. dan — sreda
-    title: Les Orres
-    content: Drugi veliki bike park v okolici. Različne težavnosti, super flow
-      trasi. Kosilo s pogledom na Lac de Serre-Ponçon.
+    title: Bike park Puy Saint Vincent
+    content: Furanje v PSVju nam ponudi vse težavnosti pri izbiri prog, ki se
+      razprostirajo na izredno razgibanem terenu. Menimo, da PSV vedno navduši
+      še tako zahtevnega gorskega kolesarja.
   - day: 6. dan — četrtek
-    title: Bardonecchia (Italija)
-    content: Skok čez italijansko mejo v Bardonecchio. Drugačen karakter — bolj
-      naravne, kamnite poti. Kosilo v italijanski kuhinji.
+    title: Bike park Serre Chevalier
+    content: "Ker Serre Chevalier ponuja kar 9 spustaških in 5 enduro prog, se nam
+      ni bati, da ne bomo tudi tretji dan v tem parku, odkrili kaj novega in
+      zanimivega. "
   - day: 7. dan — petek
-    title: Zadnji dan, izbira
-    content: Vrnitev v eno od priljubljenih lokacij ali raziskovanje neraziskanega.
-      Zvečer skupna večerja — proslavimo teden!
+    title: Furanje po glasovanju
+    content: Po tajnem glasovanju, se vrnemo v demokratično izglasovano lokacijo na
+      raziskovanje še ne raziskanega. Zvečer skupna večerja — proslavimo teden!
   - day: 8. dan — sobota
-    title: Slovo in odhod
-    content: Pakiranje, zajtrk, slovo. Skupni prevoz nazaj proti Sloveniji.
+    title: Odhod proti domu s postankom v Bardonecchiji (Italija)
+    content: Pakiranje, zajtrk in na pot....(ne še domov) v Bardonecchio, kjer bomo
+      še dokončno zribali pakne.
 event_gallery:
   - /images/uploads/IMG_6197-2.jpg
   - /images/uploads/20240819_151457-2.jpg
@@ -84,12 +89,12 @@ event_gallery:
 ---
 ## O počitnicah
 
-Naša najljubša tedenska avantura. Cel teden v srcu francoskih Alp, stacionirani v lepi hiši v vasici Puy Saint Vincent. Vsak dan obiščemo enega od bike parkov v okolici — od domačega PSV, čez Serre Chevalier in Les Orres, do italijanske Bardonecchije.
+Naša najljubša tedenska avantura. 
 
-Tedenska kombinacija: kvalitetne MTB poti, lokalna francoska kulinarika (poletna sirska plošča s pogledom na Massif des Écrins je nepozaben), občasno kopanje v alpskih jezerih, in večerne pripovedi ob ognju ali bazenu.
+V letošnji sezoni se zopet vračamo v francoske alpe. Celotno zgodbo bomo nadgradili z novo nastanitvijo, kjer bo naše druženje še bolj povezano. Poleg tega, je majhna sprememba tudi pri obisku parkov, saj vam želimo ponuditi zares najboljšo kombinacijo užitkov na trailih. Ker so doživetja v francoskih Alpah so že sama po sebi nekaj posebnega. Če pa dodamo še poznavanje mikro lokacij, majhnih skrivnostnih enoslednic, lokalne kulinarike in lokacij za sprostitev, vse skupaj postane poezija. Za dobre vibracije bomo, tako kot do sedaj, zadolženi sami.
 
 ## Za koga je primerno
 
 Za bolj izkušene kolesarje, ki znajo voziti bike park (modri / rdeči nivo brez težav). Ni potrebno biti pro — potrebno je biti samozavesten v hribu in pripravljen na 5–6 dni resnega kolesarjenja v alpskem okolju.
 
-Skupina je majhna (5–8 oseb), zato dobi vsak dovolj prostora in pozornosti. Atmosfera je sproščena — to so počitnice, ne tečaj.
+Skupina je majhna (5–8 oseb), zato dobi vsak dovolj prostora in pozornosti. Atmosfera je sproščena — to so počitnice, ne tečaj, a vseeno smo pripravljeni deliti nasvete za še bolj sproščeno furanje.
