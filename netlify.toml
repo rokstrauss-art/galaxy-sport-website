@@ -1,0 +1,33 @@
+# Netlify configuration — Galaxy Sport
+# POMEMBNO: ta datoteka mora biti v KORENU repozitorija
+# (poleg .pages.yml), ne v src/. Staro src/netlify.toml izbriši.
+
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+  # Preskoči build, če commit spreminja SAMO fotografije v uploads.
+  # Pages CMS naredi ločen commit za vsako naloženo fotografijo —
+  # 10 fotografij = 10 commitov = 10 buildov. Fotografije pa na strani
+  # niso vidne, dokler jih vsebina ne referencira (klik na Shrani),
+  # zato je varno počakati na ta zadnji commit, ki sproži en sam build
+  # z vsemi fotografijami vred.
+  # Izhod 0 = preskoči build, izhod 1 = build se izvede.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)src/images/uploads'"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
