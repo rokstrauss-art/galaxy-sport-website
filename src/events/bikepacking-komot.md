@@ -1,15 +1,15 @@
 ---
-title: Bikepacking "na komot"
+title: Bikepacking "na komot" Vol. 2
 slug: bikepacking-komot
-category: avantura
 title_short: Bikepacking na komot
+category: avantura
 image: /images/uploads/IMG_6712-2.jpg
 image_label: Tridnevna avantura, brez šotora, spalke in skrbi.
 tag: Komot vibe
 tag_hot: false
-date_label: 19.–21. junij 2026
-date_start: 2026-06-19
-date_end: 2026-06-21
+date_label: 18.–20. september 2026
+date_start: 2026-09-18
+date_end: 2026-09-20
 location: Rakek → Učka → Lovran
 location_meta: Slovenija · Hrvaška
 audience: Vse ravni, vsa kolesa
@@ -22,23 +22,23 @@ description: Tridnevna bikepacking avantura, ki nas mimo Cerkniškega jezera,
 price_num: 140 €
 price_label: + stroški nočitev/hrane
 price_includes_accommodation: false
-registration_note: Prijave do 15. junija 2026. Pošlji nam mail in skupaj uredimo
-  izposojo torb, če jih ne imaš.
+registration_note: Prijave do 10. septembra 2026. Pošlji nam mail in skupaj
+  uredimo izposojo torb, če jih ne imaš.
 contact_email: info@galaxysport.si
-payment_url: https://pay.sumup.com/b2c/QFQKSU6L
+payment_url: https://pay.sumup.com/b2c/QLP54DUG
 included:
   - Načrtovanje rute in dnevnih razdalj
-  - Vodenje 3 dni
+  - 3 dnevno vodenje
   - Rezervacije nočitev v planinskih kočah
   - Logistika in pomoč pri prevozu
 not_included:
-  - Nočitve v kočah (cca. 30–40 € na noč na osebo)
+  - Nočitve v kočah (cca. 25–30 € na noč na osebo)
   - Hrana in pijača na poti
   - Prevoz do izhodišča / od cilja
   - Osebno zavarovanje
 to_bring:
   - MTB ali gravel kolo z najmanj 2.0" pnevmatikami
-  - Bikepacking torbe (lahko si tudi izposodiš — povej nam)
+  - Bikepacking torbe (lahko si tudi izposodiš - za rezervacijo nas kontaktiraj)
   - Spalna oprema NI potrebna (spimo v kočah)
   - Oblačila za 3 dni vožnje + topel sloj za večere v gorah
   - Osebne stvari, ki gredo v torbe (lahek pristop)
