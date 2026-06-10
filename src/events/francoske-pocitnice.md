@@ -22,9 +22,9 @@ description: Stacionirani bomo v privatni hiši v bližini Briancona. Furamo par
 price_num: 860 €
 price_label: + prevoz in hrana
 price_includes_accommodation: true
-registration_note: Prijave do 5. avgusta 2026. Skupaj se dogovorimo za prevoz in nabavo hrane.
+registration_note: Prijave do 10. avgusta 2026. Skupaj se dogovorimo za prevoz in nabavo hrane.
 contact_email: info@galaxysport.si
-payment_url: https://pay.sumup.com/b2c/QQ567DMZ
+payment_url: https://pay.sumup.com/b2c/QJMAPAFC
 included:
   - 7 dni vodenja po najboljših v bližnji okolici
   - Karte za bike parke / žičnice (za 7 dni furanja)
