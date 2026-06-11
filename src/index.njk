@@ -68,7 +68,6 @@
       <li><a href="/blog/">Blog</a></li>
       <li><a href="#about">O nas</a></li>
       <li><a href="#gallery">Galerija</a></li>
-      <li><button type="button" class="nav-lang" id="langHint" title="Translate / Prevedi">EN</button></li>
     </ul>
     <a href="#events" class="btn btn-primary">Prijavi se</a>
     <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -91,7 +90,6 @@
     <li><a href="#gallery">Galerija</a></li>
   </ul>
   <a href="#events" class="btn btn-primary mm-cta">Prijavi se</a>
-  <button type="button" class="nav-lang" id="langHintMobile" style="margin-top:16px;">EN — Translate</button>
 </nav>
 
 <section class="hero">
@@ -587,19 +585,6 @@ window.addEventListener('scroll', () => header.classList.toggle('scrolled', wind
   });
   // Close when a link inside is tapped
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
-})();
-
-// EN language hint — opens the page via Google Translate (English)
-(function() {
-  const lang = document.getElementById('langHint');
-  if (!lang) return;
-  function go() {
-    const url = encodeURIComponent(window.location.href);
-    window.open('https://translate.google.com/translate?sl=sl&tl=en&u=' + url, '_blank', 'noopener');
-  }
-  lang.addEventListener('click', go);
-  const langM = document.getElementById('langHintMobile');
-  if (langM) langM.addEventListener('click', go);
 })();
 
 // Servis gallery lightbox
