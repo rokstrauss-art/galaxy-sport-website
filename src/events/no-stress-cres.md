@@ -1,27 +1,29 @@
 ---
 title: No stress on Cres MTB Weekend
 slug: no-stress-cres
-category: avantura
 title_short: No stress Cres
-image: /images/uploads/20250927_173418-2.jpg
-image_label: Otok, trail, kosilo, ponovitev.
+category: avantura
+image: /images/uploads/20250928_122151.jpg
+image_label: Otok, traili, morski vibe.
 tag: No stress
 tag_hot: false
-date_label: 22.–24. maj 2026
-date_start: 2026-05-22
-date_end: 2026-05-24
+date_label: 2. - 4. oktober 2026
+date_start: 2026-10-02
+date_end: 2026-10-04
 location: Cres, Hrvaška
 location_meta: Otok Cres · Kvarner
 audience: Min. 6 oseb
 group_size: 6–12 udeležencev
 difficulty: Srednje izkušeni in napredni
-description: Mešano na žaru — skrite poti, planinske trase, rajski zalivi in
-  jagnjetina v lokalnih oštarijah. Maja gremo zopet na "no stress" otok.
+description: Mešano na žaru — vrhunski skriti traili, rajski zalivi in
+  jagnjetina v lokalnih oštarijah. Oktober je idealen čas za obisk "no stress"
+  otoka.
 price_num: 140 €
 price_label: Vodenje (brez nočitev)
 price_includes_accommodation: false
-registration_note: Prijave do 10. maja 2026. Skupaj uredimo prevoz in nastanitev.
+registration_note: Prijave do 28. septembra 2026. Skupaj uredimo prevoz in nastanitev.
 contact_email: info@galaxysport.si
+payment_url: https://pay.sumup.com/b2c/QLZ0ULM3
 included:
   - Strokovno vodenje 3 dni
   - Načrtovanje poti glede na sposobnosti skupine
@@ -37,8 +39,8 @@ to_bring:
   - Čelado (obvezno)
   - Rokavice, kolesarska očala
   - Oblačila za 3 dni vožnje
-  - Plavalna oprema (zalive si oglejmo tudi v živo)
-  - Nahrbtnik s pitnikom
+  - Kopalke in brisačo
+  - Nahrbtnik z vodnim mehom ali vsaj 1.5 litra tekočine
 itinerary:
   - day: Petek
     title: Prihod in uvodna tura
@@ -46,14 +48,22 @@ itinerary:
       pretegnemo noge in se spoznamo s terenom. Zvečer večerja v lokalni
       oštariji.
   - day: Sobota
-    title: Klasika Cresa
-    content: Najlepša cela-dnevna tura po Cresu — kombinacija planinskih tras in
-      skritih singletrailov. Kosilo v lokalni oštariji, popoldne pa še hitra
-      kopalna postaja v enem od zalivov.
+    title: Cres preseneča
+    content: Najlepša dopoldansko furanje skritih single trailov na Cresu.
+      Kosilo/malica v lokalni oštariji, popoldne se furanje nadaljuje, ter konča
+      z hitrim kopalnim postanekom v enem od zalivov.
   - day: Nedelja
-    title: Še zadnji trail
-    content: Krajša jutranja tura, čas za kosilo in slovo. Popoldne odhod nazaj
-      proti Sloveniji.
+    title: Valun - Lubenice - Valun
+    content: Nedelja je dan za lepo razgledno turo. Od Valuna se vzpnemo do vasice
+      Lubenice, kjer se nam odpre božanski pogled na morje. Po kratkem postanku,
+      se po kombinaciji enoslednic odpeljemo do samega centra Valuna, kjer ob
+      dobri papici zaključimo lep vikend. Popoldne odhod nazaj proti Sloveniji.
+event_gallery:
+  - /images/uploads/IMG-20230507-WA0008-2.jpg
+  - /images/uploads/IMG-20240918-WA0008-1.jpg
+  - /images/uploads/20250927_134825.jpg
+  - /images/uploads/IMG_20221019_105754_073-1.jpg
+  - /images/uploads/20250927_173418-3.jpg
 ---
 ## O izletu
 
