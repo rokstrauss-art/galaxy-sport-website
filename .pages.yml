@@ -132,6 +132,14 @@ content:
       - { name: excerpt, label: "Kratek povzetek (prikaže se na seznamu)", type: text }
       - { name: author, label: Avtor, type: string, required: false, default: "Galaxy Sport" }
       - { name: body, label: "Vsebina članka", type: rich-text }
+      - name: blocks
+        label: "Odstavki (besedilo, fotografije, video)"
+        type: object
+        list: true
+        fields:
+          - { name: text, label: "Besedilo", type: text }
+          - { name: images, label: "Fotografije (do 3)", type: image, list: { max: 3 } }
+          - { name: video, label: "Video (YouTube ali Vimeo povezava)", type: string, hint: "Prilepi povezavo do videa na YouTube ali Vimeo." }
 
   - name: shop
     label: Servis
