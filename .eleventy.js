@@ -1,4 +1,30 @@
 module.exports = function (eleventyConfig) {
+
+  // Convert a YouTube or Vimeo URL into a responsive embed
+  eleventyConfig.addFilter("videoEmbed", function (url) {
+    if (!url) return "";
+    url = String(url).trim();
+    function tail(s, m) { var i = s.indexOf(m); return i === -1 ? "" : s.substring(i + m.length); }
+    function clean(s) { return s.split("?")[0].split("&")[0].split("#")[0].split("/")[0]; }
+    var src = "";
+    if (url.indexOf("youtu.be/") !== -1) src = "https://www.youtube.com/embed/" + clean(tail(url, "youtu.be/"));
+    else if (url.indexOf("watch?v=") !== -1) src = "https://www.youtube.com/embed/" + clean(tail(url, "watch?v="));
+    else if (url.indexOf("/embed/") !== -1) src = "https://www.youtube.com/embed/" + clean(tail(url, "/embed/"));
+    else if (url.indexOf("/shorts/") !== -1) src = "https://www.youtube.com/embed/" + clean(tail(url, "/shorts/"));
+    else if (url.indexOf("vimeo.com/") !== -1) src = "https://player.vimeo.com/video/" + clean(tail(url, "vimeo.com/"));
+    else return "";
+    return '<div class="video-embed"><iframe src="' + src + '" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>';
+  });
+
+  // Escape text and convert newlines to <br>
+  eleventyConfig.addFilter("nl2br", function (s) {
+    if (!s) return "";
+    var NL = String.fromCharCode(10), CR = String.fromCharCode(13);
+    s = String(s).split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;");
+    s = s.split(CR + NL).join(NL).split(CR).join(NL);
+    return s.split(NL).join("<br>" + NL);
+  });
+
   // Copy static assets straight through to the output
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
