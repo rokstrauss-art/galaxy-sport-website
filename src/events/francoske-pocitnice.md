@@ -20,7 +20,6 @@ description: Stacionirani bomo v privatni hiši v bližini Briancona. Furamo par
   in traile v Serre Chevalieru, PSV, Les Orresu, Bardonecchiji,.. Najboljši
   kolesarski parki Alp, lokalna kulinarika in dober vibe.
 price_num: 860 €
-price_label: + prevoz in hrana
 price_includes_accommodation: true
 registration_note: Prijave do 10. avgusta 2026. Skupaj se dogovorimo za prevoz in nabavo hrane.
 contact_email: info@galaxysport.si
@@ -91,7 +90,7 @@ event_gallery:
 
 Naša najljubša tedenska avantura. 
 
-V letošnji sezoni se zopet vračamo v francoske alpe. Celotno zgodbo bomo nadgradili z novo nastanitvijo, kjer bo naše druženje še bolj povezano. Poleg tega, je majhna sprememba tudi pri obisku parkov, saj vam želimo ponuditi zares najboljšo kombinacijo užitkov na trailih. Ker so doživetja v francoskih Alpah so že sama po sebi nekaj posebnega. Če pa dodamo še poznavanje mikro lokacij, majhnih skrivnostnih enoslednic, lokalne kulinarike in lokacij za sprostitev, vse skupaj postane poezija. Za dobre vibracije bomo, tako kot do sedaj, zadolženi sami.
+V letošnji sezoni se zopet vračamo v francoske alpe. Celotno zgodbo bomo nadgradili z novo nastanitvijo, kjer bo naše druženje še bolj povezano. Poleg tega, je majhna sprememba tudi pri obisku parkov, saj vam želimo ponuditi zares najboljšo kombinacijo užitkov na trailih, ker so doživetja v francoskih Alpah so že sama po sebi nekaj posebnega. Če pa dodamo še poznavanje mikro lokacij, majhnih skrivnostnih enoslednic, lokalne kulinarike in lokacij za sprostitev, vse skupaj postane poezija. Za dobre vibracije bomo, tako kot do sedaj, zadolženi sami.
 
 ## Za koga je primerno
 
