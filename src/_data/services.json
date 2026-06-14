@@ -3,27 +3,27 @@
   "section_title_part1": "Štiri stvari, ki jih ",
   "section_title_emphasis": "delamo dobro",
   "section_title_part2": ".",
-  "section_intro": "Od učenja prvih veščin do popravila tvojega kolesa po koncu sezone.",
+  "section_intro": "Od poučevanja tehnike vožnje, svetovanja pri izbiri kolesa in opreme, do strokovnega popravila tvojega kolesa.",
   "list": [
     {
-      "icon": "workshop",
       "title": "Delavnice",
-      "description": "Tehnične delavnice za začetnice in napredne kolesarje. Pridobi samozavest na kolesu."
+      "description": "Poučevanje različnih nivojev in skupin za pridobitev boljše tehnike in samozavesti na kolesu.",
+      "icon": "workshop"
     },
     {
-      "icon": "trip",
       "title": "Vodeni izleti",
-      "description": "Enodnevni in vikend izleti po Sloveniji in sosednjih pokrajinah."
+      "description": "Enodnevni in vikend izleti po Sloveniji in sosednjih pokrajinah.",
+      "icon": "trip"
     },
     {
-      "icon": "holiday",
       "title": "Počitnice",
-      "description": "Večdnevne avanture v Evropi — Cres, francoske Alpe, alpski prelazi."
+      "description": "Večdnevne avanture po Evropi — Hrvaška, Francija, Italija in Bosna",
+      "icon": "holiday"
     },
     {
-      "icon": "service",
       "title": "Servis",
-      "description": "Profesionalni servis, popravilo in vzdrževanje vseh tipov koles."
+      "description": "Profesionalni servis. Za nas je kolo najboljši prijatelj. Zato z strastjo popravljamo in vzdržujemo kolesa vseh vrst, oblik in barv.",
+      "icon": "service"
     }
   ]
 }
