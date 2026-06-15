@@ -16,10 +16,11 @@ audience: 5–7 oseb
 group_size: 5–7 udeležencev
 difficulty: Srednje izkušeni in napredni
 instructor: Marko Mac Šimenc
-description: Stacionirani bomo v privatni hiši v bližini Briancona. Furamo parke
-  in traile v Serre Chevalieru, PSV, Les Orresu, Bardonecchiji,.. Najboljši
-  kolesarski parki Alp, lokalna kulinarika in dober vibe.
+description: MTB počitnice brez primere. Furamo parke in traile v okolici Serre
+  Chevaliera, PSV, Les Orresa, Bardonecchie,.. Svež alpski luft, veliko
+  višincev, vrhunska nastanitev, lokalna kulinarika in dober vibe.
 price_num: 860 €
+price_label: /osebo
 price_includes_accommodation: true
 registration_note: Prijave do 10. avgusta 2026. Skupaj se dogovorimo za prevoz in nabavo hrane.
 contact_email: info@galaxysport.si
@@ -90,10 +91,14 @@ event_gallery:
 
 Naša najljubša tedenska avantura. 
 
-V letošnji sezoni se zopet vračamo v francoske alpe. Celotno zgodbo bomo nadgradili z novo nastanitvijo, kjer bo naše druženje še bolj povezano. Poleg tega, je majhna sprememba tudi pri obisku parkov, saj vam želimo ponuditi zares najboljšo kombinacijo užitkov na trailih, ker so doživetja v francoskih Alpah so že sama po sebi nekaj posebnega. Če pa dodamo še poznavanje mikro lokacij, majhnih skrivnostnih enoslednic, lokalne kulinarike in lokacij za sprostitev, vse skupaj postane poezija. Za dobre vibracije bomo, tako kot do sedaj, zadolženi sami.
+Avgust je najboljši mesec za obisk francoskih alp. To vemo že vse od leta 2006, ko smo tja začeli zahajat ne samo s smučmi, ampak tudi z gorskimi kolesi. 
+
+Zato smo letošnji obisk nam tako ljube destinacije, nadgradili z novo nastanitvijo, kjer bo naše druženje še bolj povezano. Poleg tega, je majhna sprememba tudi pri obisku parkov, saj vam želimo ponuditi zares najboljšo kombinacijo parkov in skjrivnih poti, da bo teden preživet v okolici Briancona minil kot bi mignil. Doživetja v francoskih Alpah so že sama po sebi nekaj posebnega, če pa dodamo še poznavanje mikro lokacij, majhnih skrivnostnih enoslednic, lokalne kulinarike in lokacij za sprostitev, vse skupaj postane poezija. 
+
+Za dobre vibracije bomo, tako kot do sedaj, poskrbeli skupaj.
 
 ## Za koga je primerno
 
-Za bolj izkušene kolesarje, ki znajo voziti bike park (modri / rdeči nivo brez težav). Ni potrebno biti pro — potrebno je biti samozavesten v hribu in pripravljen na 5–6 dni resnega kolesarjenja v alpskem okolju.
+Za bolj izkušene kolesarje, ki v parkih ali trail centrih brez težav obvladujejo vožnjo po modrih in rdečih progah. Ni potrebno biti pro —  vseeno pa je potrebno biti samozavesten na hribu in pripravljen na 5–6 dni aktivnega furanja v alpskem okolju.
 
-Skupina je majhna (5–8 oseb), zato dobi vsak dovolj prostora in pozornosti. Atmosfera je sproščena — to so počitnice, ne tečaj, a vseeno smo pripravljeni deliti nasvete za še bolj sproščeno furanje.
+Skupina je majhna (5–8 oseb), zato dobi vsak dovolj prostora in pozornosti. Atmosfera je sproščena — to so počitnice, ne tečaj, a vseeno smo pripravljeni deliti nasvete za še več užitkov na kolesu.
