@@ -40,6 +40,7 @@
         "/images/uploads/IMG_6571.jpg",
         "/images/uploads/IMG_6632.jpg",
         "/images/uploads/IMG_6727.jpg",
+        "/images/uploads/69232026_10220711363160928_1507963155064553472_n.jpg",
         "/images/uploads/IMG_2604.jpg",
         "/images/uploads/IMG_6620.jpg"
       ]
@@ -59,9 +60,16 @@
       ]
     },
     {
-      "title": "Servis",
+      "title": "Kolesarski servis in trgovina",
       "meta": "Vse leto",
-      "cover": "/images/uploads/f3622be7-6e67-4779-9149-cfb9d1263d3d-3.jpg"
+      "cover": "/images/uploads/f3622be7-6e67-4779-9149-cfb9d1263d3d-3.jpg",
+      "photos": [
+        "/images/uploads/20260609_081102.jpg",
+        "/images/uploads/20260522_141615-1.jpg",
+        "/images/uploads/20260418_153152-1.jpg",
+        "/images/uploads/20260522_141451-1.jpg",
+        "/images/uploads/20260603_152257-1.jpg"
+      ]
     },
     {
       "title": "Dnevni izleti",
@@ -76,6 +84,21 @@
         "/images/uploads/IMG_7006.jpg",
         "/images/uploads/IMG_7708.jpg",
         "/images/uploads/IMG_20160704_150300.jpg"
+      ]
+    },
+    {
+      "title": "Delavnice",
+      "meta": " Nadgradi svoje znanje",
+      "cover": "/images/uploads/120581961_3507561899265616_570589775827686295_n.jpg",
+      "photos": [
+        "/images/uploads/133057771_3756804204341383_5272481139473348744_n.jpg",
+        "/images/uploads/472949788_9251651074856641_2384982181356596734_n.jpg",
+        "/images/uploads/117389647_3352045724817235_5117128509418630975_n.jpg",
+        "/images/uploads/Kids ride 1-1.jpg",
+        "/images/uploads/SKOK.jpg",
+        "/images/uploads/472945262_9251650884856660_1544891190252396550_n.jpg",
+        "/images/uploads/Kids ride 5-1.jpg",
+        "/images/uploads/Kids ride 2-2.jpg"
       ]
     }
   ]
