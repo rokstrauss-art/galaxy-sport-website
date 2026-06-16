@@ -13,5 +13,11 @@
   "hours": "Ponedeljek in sreda 12.00 - 18.00, torek in četrtek 7.00 - 11.00 in 13.00 - 16.00, ter petek 8.00 - 14.00. Sobota, nedelja in prazniki FURAMO",
   "services": "Pregled, nastavitve in popravila vseh vrst koles, svetovanje pri izbiri opreme in kam se podati na naslednjo kolesarsko avanturo.",
   "cta_primary_label": "Naroči servis",
-  "cta_secondary_label": "Najdi nas"
+  "cta_secondary_label": "Najdi nas",
+  "gallery": [
+    "/images/uploads/20260522_141615.jpg",
+    "/images/uploads/20260522_141451.jpg",
+    "/images/uploads/20260603_152257.jpg",
+    "/images/uploads/20260418_153152.jpg"
+  ]
 }
