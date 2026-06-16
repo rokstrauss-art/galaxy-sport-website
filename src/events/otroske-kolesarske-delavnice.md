@@ -14,6 +14,9 @@ location_meta: Osrednjeslovenska
 audience: otroci med 6 in 13 letom
 group_size: 4 - 10
 difficulty: Primerno za začetnike
+description: Popoldansko kolesarsko druženje otrok, pri katerem se na zabaven
+  način pridobi nova znanja obvladovanja gorskega kolesa. Daleč od ekranov in
+  ostalih motilcev zabave v naravi.
 price_num: 20 €
 price_includes_accommodation: false
 contact_email: info@galaxysport.si
