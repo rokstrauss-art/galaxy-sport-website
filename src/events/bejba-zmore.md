@@ -1,8 +1,8 @@
 ---
 title: Bejba zmore — MTB delavnica
 slug: bejba-zmore
-category: delavnica
 title_short: Bejba zmore
+category: delavnica
 image: /images/uploads/IMG_8964-3.jpg
 image_label: Pure women's energy
 tag: Samo za ženske
@@ -18,7 +18,7 @@ difficulty: Začetnice in srednje izkušene
 instructor: Teja Cerar
 description: Ženska MTB delavnica z inštruktorico Tejo. Pilimo tehniko po
   ajdovskih trailih, zvečer pa razvajamo brbončice na Sinjem vrhu. Brez
-  tekmovalnosti, samo dobre vibre.
+  tekmovalnosti, samo dober vibe.
 price_num: 359 €
 price_label: Polni paket
 price_includes_accommodation: true
