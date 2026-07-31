@@ -2440,4 +2440,20 @@ body.event-page { background: var(--bone); }
   .event-meta-row { gap: 12px 20px; font-size: 14px; }
 }
 </style>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-0LesNfe4pTFn3hy8uOy4-.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<!-- Sledenje povpraševanj (klik na mail/telefon) -->
+<script>
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('mailto:') === 0) plausible('Povprasevanje', {props:{tip:'email'}});
+    if (h.indexOf('tel:') === 0)    plausible('Povprasevanje', {props:{tip:'telefon'}});
+  });
+</script>
 </head>
