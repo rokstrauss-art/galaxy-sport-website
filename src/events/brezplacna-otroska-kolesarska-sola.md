@@ -16,5 +16,11 @@ group_size: 6 - 13
 difficulty: Primerno za začetnike
 description: Kolesarska šola je namenjena otrokom od 5. do 8. leta starosti,
   tako začetnikom kot tistim, ki so na kolesu že samozavestni.
+price_num: Brezplačno
 price_includes_accommodation: false
 ---
+Namenjena otrokom med 5 in 8 letom starosti .Primerna tako za začetnike kot tudi za tiste ki že suvereno obvladajo vožnjo gorskega kolesa. V šoli se otroci spoznavajo s pravilnimi tehnikami vožnje gorskega kolesa, gozdnim bontonom pridobivanjem splošne pripravljenosti in več. Kolesarska šola je popoldanski dogodek in se bo izvajala 10. septembra od 16.00 do 18.30. Zbor otrok bo na parkirišču ŠRC Dobrova v Gabrju.
+
+Obvezna je uporaba kolesarske čelade in delujočega kolesa. Priporočamo, da imajo otroci s seboj manjši nahrbtnik, v katerem naj bo vsaj liter pijače in kakšen prigrizek.
+
+  
