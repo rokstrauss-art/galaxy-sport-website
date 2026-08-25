@@ -83,6 +83,9 @@ content:
       - { name: difficulty, label: Zahtevnost, type: string, required: false }
       - { name: instructor, label: Vodi / inštruktor, type: string, required: false }
       - { name: description, label: "Kratek opis (za kartico na naslovnici)", type: text }
+      - { name: is_free, label: "Brezplačen dogodek", type: boolean, default: false, hint: "Če je vklopljeno, se cena ne prikaže. Prijava je brez plačila." }
+      - { name: sold_out, label: "Razprodano", type: boolean, default: false, hint: "Če je vklopljeno, se čez fotografijo na seznamu izpiše RAZPRODANO, prijavnica pa se zapre." }
+      - { name: sold_out_note, label: "Besedilo ob razprodanem dogodku", type: text, required: false, hint: "Npr. \"Prosta mesta so zapolnjena. Piši nam za čakalno listo.\"" }
       - { name: price_num, label: "Cena (npr. \"359 €\")", type: string }
       - { name: price_label, label: "Opis cene (npr. \"Polni paket\")", type: string }
       - { name: price_includes_accommodation, label: "Cena vključuje nastanitev", type: boolean, default: false }
@@ -115,6 +118,15 @@ content:
         list: true
         required: false
       - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: rich-text }
+      - name: blocks
+        label: "Dodatni odstavki (besedilo in fotografije vmes)"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Naslov odstavka (neobvezno)", type: string, required: false }
+          - { name: text, label: "Besedilo", type: text }
+          - { name: images, label: "Fotografije (do 3)", type: image, list: { max: 3 } }
+          - { name: video, label: "Video (YouTube ali Vimeo povezava)", type: string, required: false }
 
   - name: blog
     label: Blog (članki)
