@@ -16,6 +16,8 @@ group_size: 6 - 13
 difficulty: Primerno za začetnike
 description: Kolesarska šola je namenjena otrokom od 5. do 8. leta starosti,
   tako začetnikom kot tistim, ki so na kolesu že samozavestni.
+is_free: true
+sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
 ---
