@@ -23,4 +23,3 @@ Namenjena otrokom med 5 in 8 letom starosti .Primerna tako za začetnike kot tud
 
 Obvezna je uporaba kolesarske čelade in delujočega kolesa. Priporočamo, da imajo otroci s seboj manjši nahrbtnik, v katerem naj bo vsaj liter pijače in kakšen prigrizek.
 
-  
