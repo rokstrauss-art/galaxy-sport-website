@@ -21,6 +21,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM-2.png
 ---
 Kolesarski tečaj je namenjen vsem tistim, ki kljub dolgem kolesarskem stažu želijo izvedeti kaj novega.  Spoznajte s pravilnimi tehnikami vožnje kolesa, saj nikoli ni prepozno za pridobivanje novih znanj. Takšna znanja vam bodo koristila pri lažjem obvladovanju kolesa na makadamskih poteh in kritičnih situacijah. Naj vam izbira tipa kolesa ni v breme, saj je tečaj primeren tako za klasična gorska, treking in električna kolesa.
 
