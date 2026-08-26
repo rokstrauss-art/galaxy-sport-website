@@ -14,6 +14,9 @@ location_meta: Osrednjeslovenska
 audience: Za vse mlade po srcu
 group_size: 6 - 13
 difficulty: Nezahtevno
+description: Kolesarski tečaj je namenjen starejšim, ki želijo osvežiti ali
+  nadgraditi svoje znanje ter izboljšati varnost in samozavest pri vožnji s
+  kolesom.
 is_free: true
 sold_out: false
 price_num: Brezplačno
