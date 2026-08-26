@@ -3,7 +3,7 @@ title: Gorskokolesarska tura dveh občin
 slug: torkova-dvokolesna-rekreacija1
 category: dogodek
 image: /images/uploads/MTB tura.jpg
-image_label: Torkova dvokolesna rekreacija
+image_label: Torkova dvokolesna rekreacija - MTB
 tag: Teden mobilnosti
 tag_hot: true
 date_label: 8. september 2026
