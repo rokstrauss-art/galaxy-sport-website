@@ -22,6 +22,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM-1.png
 ---
 Ta celodnevni kolesarski izlet bo nekaj posebnega, saj si boste lepote ljubljanskega barja ogledali tako iz barja samega kot iz najvišje točke ljubljanske kotline - Krima. Da pa pot ne bo dolgočasna, smo jo speljali preko Tomišlja in Rakitne vse do Krima, kjer se bo sigurno prilegla kakšna jed na žlico ali pa širše opevan jabolčni zavitek. Po počitku, se po drugi poti spustimo nazaj proti ravnemu barju in se po kombinaciji lepih makadamov, vrnemo nazaj do Dobrove.
 
@@ -33,4 +36,6 @@ Obvezna je uporaba kolesarske čelade in delujočega kolesa. Priporočamo, da im
 
 
 
-Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. Vse aktivnosti v okviru Evropskega tedna mobilnosti so brezplačne za občane Občine Dobrova - Polhov Gradec. Prijava na dogodek je obvezna!!!
+Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. Vse aktivnosti v okviru Evropskega tedna mobilnosti so brezplačne za občane Občine Dobrova - Polhov Gradec. 
+
+Prijava na dogodek je obvezna!!!
