@@ -21,6 +21,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM-6.png
 ---
 Zadnja torkova dvokolesna rekreacija nas popelje na Vrhe, kjer se bomo podili po kombinaciji enoslednic vse do sončnega zahoda. Vzpon na Vrhe je malce "napet", a vseeno ta napor prav vedno odtehtajo spusti, ki jih Vrhe skrivajo na svojih pobočjih. Še ena dvokolesna rekreacija za tiste prave gorske kolesarje, ki si želijo predvsem uživati v naravi in spustih. Nič ekstremnega, samo zabava.
 
