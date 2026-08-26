@@ -20,6 +20,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM-5.png
 ---
 Otroška kolesarska šola je namenjena otrokom med 5 in 8 letom starosti . Primerna tako za začetnike kot tudi za tiste ki že suvereno obvladajo vožnjo gorskega kolesa. V šoli se otroci spoznavajo s pravilnimi tehnikami vožnje gorskega kolesa, gozdnim bontonom pridobivanjem splošne pripravljenosti in več. 
 
