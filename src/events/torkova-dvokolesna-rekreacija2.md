@@ -21,6 +21,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM-3.png
 ---
 Za vas smo pripravili 2-3 urno krožno kolesarsko turo, ki vas bo popeljala po kombinaciji najlepših makadamih in gozdnih cestah, po skritih predelih naše občine. Za turo je potrebno biti srednje pripravljen, imeti delujoče gravel ali gorsko kolo in kolesarsko čelado. Sama trasa je tehnično nezahtevna.
 
