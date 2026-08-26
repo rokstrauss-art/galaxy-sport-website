@@ -21,6 +21,9 @@ is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+blocks:
+  - images:
+      - /images/uploads/Logotipi ETM.png
 ---
 Iz Gabrja se po kombinaciji skritih gozdnih poti odpeljemo proti Toškem čelu, od koder sledimo enoslednicam do Šentviškega vrha. In ker je to tura namenjena že obrušenim gorskim kolesarkam in kolesarjem, je tudi spust v tem stilu, saj se po razgibanem terenu spostimo vse do Guncelj. Od tam sledi sproščeno kolesarjenje nazaj proti Dobrovi. Čas izleta 2-3 ure. 
 
