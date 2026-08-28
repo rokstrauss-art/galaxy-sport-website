@@ -19,6 +19,8 @@ description: Tridnevna bikepacking avantura, ki nas mimo Cerkniškega jezera,
   skozi snežniške gozove, Čičarijo, preko Učke, pripelje na zaslužen sladoled v
   vasico Brseč, kjer se ne naveličamo prelepih pogledov na kvarnerski zaliv.
   Spimo v planinskih kočah — torej brez šotora, kuhalnika in odvečnih skrbi.
+is_free: false
+sold_out: false
 price_num: 140 €
 price_label: + stroški nočitev/hrane
 price_includes_accommodation: false
@@ -45,20 +47,20 @@ to_bring:
   - Čelada, rokavice, očala
 itinerary:
   - day: 1. dan
-    title: Rakek → Sviščaki
+    title: Rakek → Sviščaki (18. september)
     content: Zjutraj se dobimo v Rakeku, kjer se naša avantura prične in konča. Prva
       etapa nas vodi mimo Rakovega škocjana in Cerkniškega jezera ter po
       čudovitih makadamskih cestah do zaselka Mašun. Po pavzi za kavo in
       kalorije, napademo še zadnji vzpon do Sviščakov, kjer nas v planinskem
       domu čakata topel obrok in postelja.
-  - day: 2. dan
-    title: Sviščaki → Učka
+  - day: "2. dan "
+    title: Sviščaki → Učka (19. september)
     content: Na sporedu je kraljevska etapa. Jutranji spust nas že pozdravi z
       razgledi na Kvarner, nato pa nadaljujemo po makadamu, gozdnih in
       planinskih poteh preko Čičarije do planinskega doma Poklon pod Velo Učko –
       naše sobotne baze.
   - day: 3. dan
-    title: Učka → Lovran
+    title: Učka → Lovran (20. september)
     content: Najboljše za konec! Po grebenu Učke se spustimo vse do čarobne vasice
       Brseč, visoko nad kvarnerskim zalivom. Po zasluženem postanku za hrano in
       pijačo se po obalni cesti spustimo do Lovrana, kjer ob sladoledu in
@@ -72,14 +74,14 @@ event_gallery:
 ---
 ## O izletu
 
-Po uspešno opravljeni jesenski "na komot" avanturi, je tukaj različica št. 2.
-Si pripravljen/a kolesariti "na komot"?
-To sicer ne pomeni, da ne boš potočil(a) niti kapljice znoja ali da ti na nobenem spustu ne bo potrebno pošteno prijeti za krmilo. Pomeni pa, da je trasa skrbno izbrana, da bomo spali v posteljah in – brez skrbi – nihče ne bo ostal lačen.
-Gre za vodeno tridnevno bikepacking avanturo, primerno za vse: mlade, stare, električne, akustične, kosmate, obritonoge … važno je le, da te vleče želja po druženju in odkrivanju novih krajev. Trasa ni tehnično zahtevna – dnevno bomo prevozili 45–70 km in med 1300 in 1500 višinskih metrov, razporejenih čez cel dan.
-Spimo v planinskih kočah, kjer nas čaka komot-faktor: postelja s posteljnino ter zajtrk in večerja. Tako lahko klasično bikepacking prtljago (šotor, spalna vreča, kuhalnik ...) mirno pustiš doma. S sabo vzameš le tisto, kar potrebuješ za tri brezskrbne kolesarske dni.
+Tukaj je jesenska različica našega podaljšanega bikepacking vikenda.  
+**Si pripravljen/a kolesariti "na komot"?**  
+To sicer ne pomeni, da ne boš potočil(a) niti kapljice znoja ali da ti na nobenem spustu ne bo potrebno pošteno prijeti za krmilo. Pomeni pa, da je trasa skrbno izbrana, da bomo spali v posteljah in – brez skrbi – nihče ne bo ostal lačen.  
+Gre za **vodeno tridnevno bikepacking avanturo**, primerno za vse: mlade, stare, električne, akustične, kosmate, obritonoge … važno je le, da te vleče želja po druženju in odkrivanju novih krajev. Trasa ni tehnično zahtevna – **dnevno** bomo prevozili **45–70 km** in med **500 in 1300 višinskih metrov**, razporejenih čez cel dan.  
+Spimo v planinskih kočah, kjer nas čaka komot-faktor: postelja s posteljnino ter zajtrk in večerja. Tako lahko klasično bikepacking prtljago (šotor, spalna vreča, kuhalnik ...) mirno pustiš doma. **S sabo vzameš le tisto, kar potrebuješ za tri brezskrbne kolesarske dni.**
 
 ## Za koga je primerno
 
-Za vse, ki znajo voziti gravel ali MTB kolo več ur na dan in imajo nekaj kondicije. Ni hitrostnih izzivov — vsak gre svoj tempo, skupaj se ustavljamo. Najpomembnejše je veselje do več-dnevne avanture z kolesom.
+Za vse, ki znajo voziti gravel ali MTB kolo več ur na dan in imajo nekaj kondicije. Ni hitrostnih izzivov — vsak gre svoj tempo, skupaj se ustavljamo. **Najpomembnejše je veselje do več-dnevne avanture z kolesom.**
 
 Idealno za prvi bikepacking — ravno prav avanturistično za nove obraze, dovolj relaxed za izkušene.
