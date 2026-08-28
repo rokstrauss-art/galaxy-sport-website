@@ -7,12 +7,13 @@ excerpt: >-
   Najboljši opis, zakaj je Slovenija najbolj raznolika država na svetu. 
 
   Gore, jezera, reke in skrite pokrajine ki spominjajo na miniaturne
-  znamenitosti drugje po svetu. V Sloveniji najdete raznolikost tako pokrajin,
-  kot arhitekture in gastronomije na manjšem prostoru, kot je recimo Teksas v
-  Združenih državah Amerike. 
-
-
-  Ogled videa toplo priporočamo.
+  znamenitosti drugje po svetu.
 author: Galaxy Sport
 ---
+Najboljši opis, zakaj je Slovenija najbolj raznolika država na svetu. 
+
+Gore, jezera, reke in skrite pokrajine ki spominjajo na miniaturne znamenitosti drugje po svetu. V Sloveniji najdete raznolikost tako pokrajin, kot arhitekture in gastronomije na manjšem prostoru, kot je recimo Teksas v Združenih državah Amerike. 
+
+Ogled videa toplo priporočamo.
+
 [https://www.youtube.com/watch?v=AUlejwueGiE&t=196s](https://www.youtube.com/watch?v=AUlejwueGiE&t=196s)
