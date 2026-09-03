@@ -8,6 +8,7 @@
 //      MAIL_MARKO       (naslov, kamor pridejo obvestila o novih prijavah)
 //      MAIL_OD          (neobvezno; privzeto "Galaxy Sport <info@galaxysport.si>")
 //      MAIL_ODGOVOR     (neobvezno; kam gredo odgovori, privzeto info@galaxysport.si)
+//      MAIL_KOPIJA      (neobvezno; skrita kopija vsake potrditve, uporabno pri testiranju)
 //
 // Da pošta res odide z naslova @galaxysport.si, mora biti domena potrjena
 // v Resend (SPF in DKIM zapisa v DNS). Glej NAVODILA.md.
@@ -40,7 +41,9 @@ exports.handler = async (event) => {
     return { statusCode: 200, body: "mail ni nastavljen" };
   }
 
-  async function poslji(za, zadeva, html, odgovorNa) {
+  const KOPIJA = process.env.MAIL_KOPIJA || "";
+
+  async function poslji(za, zadeva, html, odgovorNa, sKopijo) {
     const r = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -51,6 +54,7 @@ exports.handler = async (event) => {
         from: OD,
         to: [za],
         reply_to: odgovorNa || ODGOVOR,
+        ...(sKopijo && KOPIJA ? { bcc: [KOPIJA] } : {}),
         subject: zadeva,
         html,
       }),
@@ -59,12 +63,21 @@ exports.handler = async (event) => {
     return r.ok;
   }
 
-  const brezplacno = /brezpla/i.test(cena) || cena === "0 €";
-  const placiloBesedilo = brezplacno
-    ? "Udeležba je brezplačna."
-    : (placilo.includes("TRR")
-        ? "Podatke za nakazilo ti pošljemo v ločenem sporočilu v največ 24 urah. Mesto je rezervirano po prejemu plačila."
-        : "Če plačilo s kartico še ni bilo izvedeno, ti pošljemo povezavo v ločenem sporočilu.");
+  const brezplacno = /brezpla/i.test(cena) || cena === "0 €" || cena === "0" || cena === "";
+  const sKartico = /kartic|sumup/i.test(placilo);
+
+  let placiloBesedilo;
+  if (brezplacno) {
+    placiloBesedilo = "Udeležba je brezplačna, zato ti ni treba storiti ničesar več. "
+      + "Če se ti načrti spremenijo, nam prosim javi, da mesto sprostimo za koga drugega.";
+  } else if (sKartico) {
+    placiloBesedilo = "<b>Račun ti pošljemo na ta e-naslov v največ 24 urah.</b> "
+      + "Če je plačilo s kartico že izvedeno, služi kot potrdilo o nakupu.";
+  } else {
+    placiloBesedilo = "<b>Račun s podatki za nakazilo ti pošljemo na ta e-naslov v največ 24 urah.</b> "
+      + "Mesto je dokončno rezervirano po prejemu plačila. Če računa v 24 urah ne dobiš, "
+      + "nam prosim javi, da preverimo.";
+  }
 
   // ── 1) potrditev prijavljenemu ──
   const zaPrijavljenega = `
@@ -102,14 +115,33 @@ exports.handler = async (event) => {
       ${izkusnje ? `<tr><td style="padding:5px 14px 5px 0;color:#8A8578">Izkušnje</td><td style="padding:5px 0">${izkusnje}</td></tr>` : ""}
       ${opombe ? `<tr><td style="padding:5px 14px 5px 0;color:#8A8578">Opombe</td><td style="padding:5px 0">${opombe}</td></tr>` : ""}
     </table>
+    ${brezplacno ? "" : `
+    <div style="margin-top:16px;padding:14px 16px;border-radius:10px;background:#FFF4E0;border-left:4px solid #C8643C">
+      <div style="font-weight:700;color:#8a3a1c;margin-bottom:4px">Izdaj račun v 24 urah</div>
+      <div style="font-size:13.5px;color:#5A4A2E">
+        Prijavljenemu smo v potrditvi napisali, da bo račun prejel v največ 24 urah.
+        Znesek: <b>${cena || "po ceniku"}</b>${oseb && oseb !== "1" ? ` za ${oseb} oseb` : ""}.
+        ${placilo.includes("TRR") ? "Način: nakazilo na TRR, dodaj podatke za plačilo." : "Način: kartica, račun služi kot potrdilo."}
+        Pošlji na <a href="mailto:${email}">${email}</a>.
+      </div>
+    </div>`}
     <p style="margin-top:14px;font-size:13px;color:#8A8578">Prijavljeni je prejel samodejno potrditev. Vse prijave so tudi na pregledu in v Netlify pod Forms.</p>
   </div>`;
 
-  const r1 = email ? await poslji(email, `Prijava sprejeta: ${dogodek}`, zaPrijavljenega) : false;
+  const r1 = email
+    ? await poslji(email, `Prijava sprejeta: ${dogodek}`, zaPrijavljenega, undefined, true)
+    : false;
   // pri obvestilu Marku je reply-to stranka, da lahko odgovori naravnost njej
   const r2 = process.env.MAIL_MARKO
-    ? await poslji(process.env.MAIL_MARKO, `Nova prijava: ${dogodek} (${ime})`, zaMarka, email || undefined)
+    ? await poslji(
+        process.env.MAIL_MARKO,
+        brezplacno
+          ? `Nova prijava: ${dogodek} (${ime})`
+          : `Nova prijava, IZDAJ RAČUN: ${dogodek} (${ime}, ${cena})`,
+        zaMarka, email || undefined)
     : false;
 
+  console.log("PRIJAVA:", dogodek, "|", ime, "|", email,
+              "| potrditev:", r1, "| obvestilo:", r2, "| od:", OD);
   return { statusCode: 200, body: JSON.stringify({ potrditev: r1, obvestilo: r2 }) };
 };
