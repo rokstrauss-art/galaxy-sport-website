@@ -162,40 +162,13 @@ eleventyComputed:
       </section>
       {% endif %}
 
-      {% if event.data.blocks %}
-      <div class="event-blocks">
-        {% for b in event.data.blocks %}
-        <div class="event-block">
-          {% if b.title %}<h3>{{ b.title }}</h3>{% endif %}
-          {% if b.text %}<p>{{ b.text | nl2br | safe }}</p>{% endif %}
-          {% if b.images and b.images.length %}
-          <div class="event-block-images n{{ b.images.length }}">
-            {% for im in b.images %}<img src="{{ im }}" alt="{{ event.data.title }}" loading="lazy">{% endfor %}
-          </div>
-          {% endif %}
-          {% if b.video %}
-          <div class="event-block-video">
-            <iframe src="{{ b.video | replace('watch?v=', 'embed/') | replace('youtu.be/', 'www.youtube.com/embed/') }}"
-                    allowfullscreen loading="lazy" title="{{ b.title or event.data.title }}"></iframe>
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
-
     </main>
 
     <aside class="event-sidebar">
       <div class="event-booking-card" id="registration">
         <div class="event-price-block">
-          {% if event.data.is_free %}
-          <div class="event-price-num-large free">Brezplačno</div>
-          <div class="event-price-label-large">{{ event.data.price_label | default("Prijava je obvezna") }}</div>
-          {% else %}
           <div class="event-price-num-large">{{ event.data.price_num }}</div>
           <div class="event-price-label-large">{{ event.data.price_label }}</div>
-          {% endif %}
         </div>
 
         <div class="event-quick-info">
@@ -219,22 +192,12 @@ eleventyComputed:
           {% endif %}
         </div>
 
-        {% if event.data.sold_out %}
-        <div class="event-soldout-box">
-          <strong>Razprodano</strong>
-          {{ event.data.sold_out_note | default("Prosta mesta so zapolnjena. Pišite nam in vas obvestimo, ko se sprosti mesto ali ko razpišemo nov termin.") }}
-        </div>
-        <a class="btn btn-outline btn-lg btn-block" href="mailto:{{ event.data.contact_email or settings.email }}?subject=Čakalna lista: {{ event.data.title }}">
-          Piši nam
-        </a>
-        {% else %}
         <button type="button" class="btn btn-primary btn-lg btn-block btn-arrow" id="openFormBtn">
-          {% if event.data.is_free %}Prijavi se{% elif event.data.payment_url %}Prijava in plačilo{% else %}Prijavi se{% endif %}
+          {% if event.data.payment_url %}Prijava in plačilo{% else %}Prijavi se{% endif %}
         </button>
 
         <p class="event-reg-note">{{ event.data.registration_note }}</p>
 
-        {% if not event.data.is_free %}
         <div class="event-payment-info">
           <strong>Način plačila:</strong>
           {% if event.data.payment_url %}
@@ -243,20 +206,12 @@ eleventyComputed:
           Po prijavi vam pošljemo podatke za nakazilo. Mesto v skupini je rezervirano po potrjenem plačilu.
           {% endif %}
         </div>
-        {% else %}
-        <div class="event-payment-info">
-          <strong>Udeležba je brezplačna.</strong>
-          Prijava je potrebna zaradi omejenega števila mest.
-        </div>
-        {% endif %}
-        {% endif %}
       </div>
     </aside>
   </div>
 </section>
 
 <!-- Registration form section -->
-{% if not event.data.sold_out %}
 <section class="event-form-section" id="registrationForm">
   <div class="container">
     <div class="event-form-wrap">
@@ -276,7 +231,7 @@ eleventyComputed:
 
         <input type="hidden" name="event_title" value="{{ event.data.title }}">
         <input type="hidden" name="event_date" value="{{ event.data.date_label }}">
-        <input type="hidden" name="event_price" value="{% if event.data.is_free %}Brezplačno{% else %}{{ event.data.price_num }}{% endif %}">
+        <input type="hidden" name="event_price" value="{{ event.data.price_num }}">
 
         <div class="form-row">
           <div class="form-field">
@@ -341,7 +296,7 @@ eleventyComputed:
         {% endif %}
 
         <button type="submit" class="btn btn-primary btn-lg btn-block btn-arrow" id="submitBtn">
-          {% if event.data.is_free %}Pošlji prijavo →{% elif event.data.payment_url %}Naprej na plačilo →{% else %}Pošlji prijavo →{% endif %}
+          {% if event.data.payment_url %}Naprej na plačilo →{% else %}Pošlji prijavo →{% endif %}
         </button>
 
         <p class="event-form-fineprint" id="formFineprint">
@@ -363,7 +318,6 @@ eleventyComputed:
     </div>
   </div>
 </section>
-{% endif %}
 
 <section class="event-cta-section">
   <div class="container">
@@ -473,13 +427,30 @@ if (form) {
       submitBtn.textContent = 'Pošiljam…';
       const params = new URLSearchParams();
       for (const [k, v] of new FormData(form)) params.append(k, v);
+      let ok = false;
       try {
-        await fetch('/', {
+        const r = await fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: params.toString()
         });
-      } catch (err) { /* show success regardless */ }
+        ok = r.ok;
+      } catch (err) { ok = false; }
+
+      if (!ok) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Poskusi znova';
+        let err = document.getElementById('formError');
+        if (!err) {
+          err = document.createElement('p');
+          err.id = 'formError';
+          err.style.cssText = 'margin-top:12px;padding:12px 14px;border-radius:10px;background:rgba(200,100,60,.12);color:#8a3a1c;font-size:14px';
+          form.appendChild(err);
+        }
+        err.textContent = 'Prijave trenutno ni bilo mogoče oddati. Prosimo, pokliči 070 678 401 ali piši na e-pošto, in prijavo uredimo ročno.';
+        return;
+      }
+
       form.hidden = true;
       const success = document.getElementById('formSuccess');
       if (success) {
@@ -497,14 +468,17 @@ if (form) {
       const params = new URLSearchParams();
       for (const [k, v] of new FormData(form)) params.append(k, v);
       try {
-        await fetch('/', {
+        const r = await fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: params.toString()
         });
+        if (!r.ok) throw new Error('prijava ni bila sprejeta');
         window.location.href = paymentUrl;
       } catch (err) {
-        window.location.href = paymentUrl;
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Poskusi znova';
+        alert('Prijave ni bilo mogoče oddati. Prosimo, pokliči 070 678 401 in prijavo uredimo ročno.');
       }
     }
     // If no paymentUrl and method is TRR, handled above. Nothing else needed.
