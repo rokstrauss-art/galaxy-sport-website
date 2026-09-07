@@ -31,6 +31,8 @@ Zbor udeležencev je v torek 29. septembra ob 16.00 na parkirišču ŠRC Dobrova
 
 
 
-Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. Vse aktivnosti v okviru Evropskega tedna mobilnosti so brezplačne za občane Občine Dobrova - Polhov Gradec. 
+Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. 
+
+**Vse aktivnosti v okviru Evropskega tedna mobilnosti, so za občane Občine Dobrova - Polhov Gradec brezplačne.** 
 
 Prijava na dogodek je obvezna!!!
