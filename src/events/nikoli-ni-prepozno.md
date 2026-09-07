@@ -31,6 +31,8 @@ Tečaj se bo izvedel 22. septembra od 16.00 do 18.30. Zbor udeležencev je na pa
 
 Obvezna je uporaba kolesarske čelade in delujočega kolesa. Priporočamo, da imate s seboj manjši nahrbtnik, v katerem naj bo vsaj liter pijače in kakšen prigrizek.
 
-Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. Vse aktivnosti v okviru Evropskega tedna mobilnosti so brezplačne za občane Občine Dobrova - Polhov Gradec. 
+Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. 
+
+**Vse aktivnosti v okviru Evropskega tedna mobilnosti, so za občane Občine Dobrova - Polhov Gradec brezplačne.** 
 
 Prijava na dogodek je obvezna!!!
