@@ -48,23 +48,30 @@ to_bring:
 itinerary:
   - day: 1. dan
     title: Rakek → Sviščaki (18. september)
-    content: Zjutraj se dobimo v Rakeku, kjer se naša avantura prične in konča. Prva
-      etapa nas vodi mimo Rakovega škocjana in Cerkniškega jezera ter po
-      čudovitih makadamskih cestah do zaselka Mašun. Po pavzi za kavo in
-      kalorije, napademo še zadnji vzpon do Sviščakov, kjer nas v planinskem
-      domu čakata topel obrok in postelja.
+    content: Zjutraj se dobimo na Rakeku, kjer se naša avantura prične in konča
+      (zborno mesto je železniška postaja Rakek). Prva etapa nas vodi mimo
+      Rakovega škocjana in Cerkniškega jezera ter po čudovitih makadamskih
+      cestah do zaselka Mašun. Po pavzi za kavo in kalorije, napademo še zadnji
+      vzpon do Sviščakov, kjer nas v planinskem domu čakata topel obrok in
+      postelja. Bolj za ogrevanje, bomo v 55 kilometrih premagali 900 višinskih
+      metrov.
   - day: "2. dan "
     title: Sviščaki → Učka (19. september)
-    content: Na sporedu je kraljevska etapa. Jutranji spust nas že pozdravi z
-      razgledi na Kvarner, nato pa nadaljujemo po makadamu, gozdnih in
-      planinskih poteh preko Čičarije do planinskega doma Poklon pod Velo Učko –
-      naše sobotne baze.
+    content: Na sporedu je kraljevska etapa. Na jutranjem spustu nas že pozdravi
+      razgled na Kvarner, nato pa nadaljujemo po makadamu, gozdnih in planinskih
+      poteh preko Čičarije do planinskega doma Poklon pod Velo Učko – naše
+      sobotne baze. Čeprav je to najdaljši dan, bomo 1300 višinskih metrov
+      premagali v 65 kilometrih, za katere imamo na razpolago ves ljubi dan. Bo
+      pa v 65 km tudi 1600 višinskih metrov spusta, kar je več kot dovolj da
+      upraviči ime Kraljevska etapa.
   - day: 3. dan
     title: Učka → Lovran (20. september)
     content: Najboljše za konec! Po grebenu Učke se spustimo vse do čarobne vasice
-      Brseč, visoko nad kvarnerskim zalivom. Po zasluženem postanku za hrano in
-      pijačo se po obalni cesti spustimo do Lovrana, kjer ob sladoledu in
-      napitkih počakamo na prevoz, ki nas odpelje nazaj do izhodišča v Rakeku.
+      Brseč, visoko nad kvarnerskim zalivom. Ta dan bo več spusta kot vzpona,
+      ker bomo v 43 km premagali 370 višinskih metrov vzpona in kar 1300 vm
+      spusta.  Po zasluženem postanku za hrano in pijačo se po obalni cesti
+      spustimo do Lovrana, kjer ob sladoledu in napitkih počakamo na prevoz, ki
+      nas odpelje nazaj do izhodišča v Rakeku.
 event_gallery:
   - /images/uploads/IMG_2150-4.jpg
   - /images/uploads/IMG_2491-2.jpg
