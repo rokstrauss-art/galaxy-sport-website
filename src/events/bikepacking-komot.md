@@ -85,10 +85,12 @@ Tukaj je jesenska različica našega podaljšanega bikepacking vikenda.
 **Si pripravljen/a kolesariti "na komot"?**  
 To sicer ne pomeni, da ne boš potočil(a) niti kapljice znoja ali da ti na nobenem spustu ne bo potrebno pošteno prijeti za krmilo. Pomeni pa, da je trasa skrbno izbrana, da bomo spali v posteljah in – brez skrbi – nihče ne bo ostal lačen.  
 Gre za **vodeno tridnevno bikepacking avanturo**, primerno za vse: mlade, stare, električne, akustične, kosmate, obritonoge … važno je le, da te vleče želja po druženju in odkrivanju novih krajev. Trasa ni tehnično zahtevna – **dnevno** bomo prevozili **45–70 km** in med **500 in 1300 višinskih metrov**, razporejenih čez cel dan.  
-Spimo v planinskih kočah, kjer nas čaka komot-faktor: postelja s posteljnino ter zajtrk in večerja. Tako lahko klasično bikepacking prtljago (šotor, spalna vreča, kuhalnik ...) mirno pustiš doma. **S sabo vzameš le tisto, kar potrebuješ za tri brezskrbne kolesarske dni.**
+Spimo v planinskih kočah, kjer nas čaka komot-faktor: postelja s posteljnino ter zajtrk in večerja. Tako lahko klasično bikepacking prtljago (šotor, spalna vreča, kuhalnik ...) mirno pustiš doma. 
+
+**S sabo vzameš le tisto, kar potrebuješ za tri brezskrbne kolesarske dni.**
 
 ## Za koga je primerno
 
 Za vse, ki znajo voziti gravel ali MTB kolo več ur na dan in imajo nekaj kondicije. Ni hitrostnih izzivov — vsak gre svoj tempo, skupaj se ustavljamo. **Najpomembnejše je veselje do več-dnevne avanture z kolesom.**
 
-Idealno za prvi bikepacking — ravno prav avanturistično za nove obraze, dovolj relaxed za izkušene.
+Idealno za prvi bikepacking — ravno prav avanturistično za začetnike v tej kolesarski kategoriji in dovolj "na izi" za izkušene.
