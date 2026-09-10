@@ -78,5 +78,7 @@ Idealno za tiste, ki radi povezujejo MTB s počasnim odkrivanjem destinacije —
 
 ## Kakšne so poti
 
-Mešano na žaru - za pristop uporabljamo asfaltne in makadamske ceste, za spust pa mešanico planinskih, pastirskih poti, ter nekaj singletrailov z malce bolj tehničnimi vložki. Izbiro dnevne doze furanja prilagodimo skupini — če je kdo manj izkušen, izberemo lažje variante. Cilj je, da se imajo vsi lepo.
+Mešano na žaru - za pristop uporabljamo asfaltne in makadamske ceste, za spust pa mešanico planinskih, pastirskih poti, ter nekaj singletrailov z malce bolj tehničnimi vložki. 
+
+Izbiro dnevne doze furanja prilagodimo skupini — če je kdo manj izkušen, izberemo lažje variante. Cilj je, da se imajo vsi lepo.
 
