@@ -72,7 +72,7 @@ event_gallery:
 ---
 ## O izletu
 
-Cres je za nas postal sinonim za "no stress" furanje — otok, kjer čas teče drugače. Tri dni kombiniramo skrite poti, planinske trase in rajske zalive, vmes pa kosila v lokalnih oštarijah, kjer postrežejo jagnjetino kot je še niste jedli.
+Cres je za nas postal sinonim za "no stress" furanje — otok, kjer čas in furanje tečeta drugače. Tri dni kombiniramo skrite poti, planinske trase in rajske zalive, vmes pa kosila v lokalnih oštarijah, kjer postrežejo jagnjetino kot je še niste jedli.
 
 Idealno za tiste, ki radi povezujejo MTB s počasnim odkrivanjem destinacije — ni hitenja, ni "kdo bo prvi". Gremo s tempom, ki dovoli, da uživaš v okolici.
 
