@@ -7,9 +7,9 @@ image: /images/uploads/IMG_6712-2.jpg
 image_label: Tridnevna avantura, brez šotora, spalke in skrbi.
 tag: Komot vibe
 tag_hot: false
-date_label: 18.–20. september 2026
-date_start: 2026-09-18
-date_end: 2026-09-20
+date_label: 16.–18. oktober 2026
+date_start: 2026-10-16
+date_end: 2026-10-18
 location: Rakek → Učka → Lovran
 location_meta: Slovenija · Hrvaška
 audience: Vse ravni, vsa kolesa
@@ -24,10 +24,11 @@ sold_out: false
 price_num: 140 €
 price_label: + stroški nočitev/hrane
 price_includes_accommodation: false
-registration_note: Prijave do 10. septembra 2026. Pošlji nam mail in skupaj
-  uredimo izposojo torb, če jih ne imaš.
+registration_note: Prijave do 09. oktobra 2026. V primeru, da nimate bikepacking
+  torb, lahko mi poskrbimo za izposojo le teh. Pokliči ali piši na naš
+  elektronski naslov, da vam poskušamo pomagati.
 contact_email: info@galaxysport.si
-payment_url: https://pay.sumup.com/b2c/QLP54DUG
+payment_url: https://pay.sumup.com/b2c/QUTUKZF4
 included:
   - Načrtovanje rute in dnevnih razdalj
   - 3 dnevno vodenje
@@ -47,7 +48,7 @@ to_bring:
   - Čelada, rokavice, očala
 itinerary:
   - day: 1. dan
-    title: Rakek → Sviščaki (18. september)
+    title: Rakek → Sviščaki (16. oktober)
     content: Zjutraj se dobimo na Rakeku, kjer se naša avantura prične in konča
       (zborno mesto je železniška postaja Rakek). Prva etapa nas vodi mimo
       Rakovega škocjana in Cerkniškega jezera ter po čudovitih makadamskih
@@ -56,7 +57,7 @@ itinerary:
       postelja. Bolj za ogrevanje, bomo v 55 kilometrih premagali 900 višinskih
       metrov.
   - day: "2. dan "
-    title: Sviščaki → Učka (19. september)
+    title: Sviščaki → Učka (17. oktober)
     content: Na sporedu je kraljevska etapa. Na jutranjem spustu nas že pozdravi
       razgled na Kvarner, nato pa nadaljujemo po makadamu, gozdnih in planinskih
       poteh preko Čičarije do planinskega doma Poklon pod Velo Učko – naše
@@ -65,7 +66,7 @@ itinerary:
       pa v 65 km tudi 1600 višinskih metrov spusta, kar je več kot dovolj da
       upraviči ime Kraljevska etapa.
   - day: 3. dan
-    title: Učka → Lovran (20. september)
+    title: Učka → Lovran (18. oktober)
     content: Najboljše za konec! Po grebenu Učke se spustimo vse do čarobne vasice
       Brseč, visoko nad kvarnerskim zalivom. Ta dan bo več spusta kot vzpona,
       ker bomo v 43 km premagali 370 višinskih metrov vzpona in kar 1300 vm
