@@ -14,19 +14,35 @@ excerpt: >-
   pridružite.   
 author: Galaxy Sport
 blocks:
-  - text: "**Bikepacking.**Že sama beseda zveni precej avanturistično, kajne. Kolo.
-      Torbe. Makadam. Gozd. Gore. Sončni zahod.In potem nastopi realnost.Pozno
-      popoldne se znajdeš na točki iskanja primernega prostora za postavitev
-      kampa, iz torb vlečeš mokro spalno vrečo, iščeš prostor, kjer ni blata, in
-      ugotavljaš, da si pozabil žlico.Ampak hej … **si pa pravi bikepacker.**
-      😂Mi, pri Galaxy Sportu smo nekoč pomislili:**»Kaj pa, če bi šli na
-      bikepacking, ampak bi zvečer vseeno spali v postelji?«** A vendar razlog
-      za to idejo ni bil samo naš odpor do mokre spalne vreče, kuhalnika in
-      instant testenin na 1000 in en način - razlogov je več."
+  - text: >-
+      Bikepacking.
+
+
+      Že sama beseda zveni precej avanturistično, kajne. Kolo. Torbe. Makadam.
+      Gozd. Gore. Sončni zahod.
+
+
+      In potem nastopi realnost.
+
+      Pozno popoldne se znajdeš na točki iskanja primernega prostora za
+      postavitev kampa, iz torb vlečeš mokro spalno vrečo, iščeš prostor, kjer
+      ni blata, in ugotavljaš, da si pozabil žlico.
+
+
+      Ampak hej … si pa pravi bikepacker. 😂
+
+
+      Mi, pri Galaxy Sportu smo nekoč pomislili: »Kaj pa, če bi šli na
+      bikepacking, ampak bi zvečer vseeno spali v postelji?« 
+
+
+      A vendar razlog za to idejo ni bil samo naš odpor do mokre spalne vreče,
+      kuhalnika in instant testenin na 1000 in en način - razlogov je več.
     images:
       - /images/uploads/Gravel tura.jpg
       - /images/uploads/IMG_2491-3.jpg
       - /images/uploads/IMG_6632-5.jpg
+  - {}
 ---
 **Bikepacking.**
 
