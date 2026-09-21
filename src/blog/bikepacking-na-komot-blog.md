@@ -96,6 +96,64 @@ blocks:
       - /images/uploads/Barje.jpg
       - /images/uploads/IMG_6571-5.jpg
       - /images/uploads/IMG_2150-7.jpg
+  - text: >-
+      Kaj pa kolo?
+
+
+      Za takšno avanturo ne potrebuješ posebnega »bikepacking« kolesa za 4.999
+      €.
+
+      Potrebuješ MTB ali gravel kolo, na katerem ti je udobno preživeti več ur.
+
+      Ker trasa ni tehnično zahtevna, je pomembneje, da je kolo zanesljivo in da
+      ga dobro poznaš.
+
+      In DA – električna kolesa so dobrodošla.
+
+
+      Pravzaprav je čisto vseeno, ali si mlad, malo manj mlad, kosmat, obrit, na
+      elektriko ali na polento.
+
+      Važno je, da imaš rad/a avanture na kolesu.
+
+
+      Bikepacking je lahko tekmovanje s samim sabo.
+
+      Lahko je minimalistično preživetje.
+
+      Lahko je 200 kilometrov na dan in spanje pod mostom.
+
+
+      Lahko pa je tudi nekaj precej bolj preprostega: tri dni na kolesu, dobra
+      družba, lepe poti, dobra hrana in postelja na koncu dneva.
+
+
+      Mi smo izbrali slednje.
+
+
+      Torej ...
+
+
+      Če ti je cilj nekaj urna vožnja s kolesom po skrivnostnih in odročnih
+      krajih, imaš nekaj kondicije in te mika večdnevna kolesarska avantura, je
+      Bikepacking »na komot« lahko precej dober način, da prvič poskusiš ali ti
+      takšen način preživljanja prostega časa odgovarja.
+
+
+      Brez kompliciranja, brez dirkanja, brez nepotrebnega tovora.
+
+
+      Samo kolo, dobra družba in narava.
+
+
+      Logistiko prepusti nam.
+
+
+      Ti samo furaš. 🤘
+    images:
+      - /images/uploads/IMG_20170606_102353.jpg
+      - /images/uploads/IMG_6727-2.jpg
+      - /images/uploads/IMG_2136-1.jpg
 ---
 **Bikepacking.**
 
