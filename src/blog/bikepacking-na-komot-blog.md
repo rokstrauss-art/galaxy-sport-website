@@ -7,6 +7,7 @@ excerpt: >-
   Kako se je sploh porodila ideja, da klasični bikepacking spremenimo v malce
   bolj "komot" izvedenko. 
 
+
   Ni vse v tem, da smo se novodobno polenili in da nam je prenašanje šotorov,
   spalnih vreč, ter kuharskih pripomočkov odveč, ampak razlogov je več. 
 
