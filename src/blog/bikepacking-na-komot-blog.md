@@ -2,7 +2,7 @@
 title: Kako biti bikepacker in pri tem ne spati v mokri travi
 slug: bikepacking-na-komot-blog
 date: 2026-09-15
-cover: /images/uploads/IMG_2150-6.jpg
+cover: /images/uploads/IMG_6712-3.jpg
 excerpt: >-
   Kako se je sploh porodila ideja, da klasični bikepacking spremenimo v malce
   bolj "komot" izvedenko. 
@@ -23,7 +23,6 @@ blocks:
       centimetra, šotora, spalne vreče, kuhalnika, treh dni instant testenin in
       jutranjega vprašanja:
 
-
       »Zakaj za vraga to počnem?«
 
 
@@ -33,18 +32,14 @@ blocks:
 
       Kaj sploh pomeni »na komot«?
 
-
       Najprej razčistimo eno stvar. »Na komot« ne pomeni, da ne boš konkretno
-      obračal pedal.
+      obračal pedal: boš, in to kar nekaj tisoč obratov.
 
-      Boš.
-
-      Ne pomeni, da ne boš švical.
-
-      Boš.
+      Ne pomeni, da ne boš švical, ker boš (odvisno od temperatur, a potenje je
+      neizbežno).
 
       In zagotovo ne pomeni, da na kakšnem vzponu ne boš pogledal proti nebu in
-      se vprašal, kdo te je prepričal, da je to dobra ideja.
+      se vprašal, kdo za vraga te je prepričal, da je to dobra ideja.
 
       Tudi to se zna zgoditi. 😂
 
