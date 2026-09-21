@@ -61,18 +61,13 @@ blocks:
       Ni potrebe, da na kolesu prevažaš pol stanovanja.
 
 
-      Namesto tega nas zvečer čaka postelja, posteljnina, večerja in zajtrk.
-
-      Torej: čez dan si polovični bikepacker, zvečer pa se v objemu planinske
-      koče, počutiš kot doma.
-
-
       To je naš koncept. 
     images:
       - /images/uploads/Gravel tura.jpg
       - /images/uploads/IMG_2491-3.jpg
       - /images/uploads/IMG_6632-5.jpg
   - text: >-
+      
       Malo zaradi komoditete. Malo zaradi zakonov.
 
 
@@ -80,9 +75,8 @@ blocks:
       oziroma prenočevanje na prostem izven uradnih kampov je v Sloveniji
       prepovedano in podobno velja tudi za Hrvaško.
 
-      Pravila niso povsod popolnoma enaka, nekaj je tudi lokalnih posebnosti in
-      izjem, vendar klasična ideja: »Zvečer nekje postavimo šotor, zjutraj pa
-      gremo naprej« ni ravno nekaj, na kar bi bilo pametno računati.
+      Zato klasična ideja: »Zvečer nekje postavimo šotor, zjutraj pa gremo
+      naprej« ni ravno nekaj, na kar bi bilo pametno računati.
 
 
       In tukaj se je začela porajati ideja za naš Bikepacking »na komot«.
@@ -92,9 +86,9 @@ blocks:
       ukvarjati niti z zakonodajo niti z iskanjem primernega prostora za spanje?
 
 
-      Namesto tega nas zvečer čaka postelja, posteljnina, večerja in zajtrk.
+      Namesto tega nas vsak dan čaka postelja, posteljnina, večerja in zajtrk.
 
-      Torej: čez dan si polovični bikepacker, zvečer pa se v objemu planinske
+      Torej: čez dan si skoraj 100% bikepacker, zvečer pa se v objemu planinske
       koče, počutiš kot doma.
 
 
