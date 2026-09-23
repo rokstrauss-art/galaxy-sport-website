@@ -16,10 +16,12 @@ audience: Za ženske ki že furajo
 group_size: 4–7 udeleženk
 difficulty: Za srednje izkušene
 instructor: Ana Tancik
-description: Ženski MTB dan z inštruktorico Ano. Ker ste čez poletje pridno
-  nabirale kilometre, premagovale nove gorskokolesarske izzive in pridobivale
-  izkušnje, smo za vas pripravili prav posebno enodnevno druženje na Črnih
-  njivah nad Ilirsko Bistrico 🔥
+description: >-
+  Ženski MTB dan z inštruktorico Ano. 
+
+  Ker ste čez poletje pridno nabirale kilometre, premagovale nove
+  gorskokolesarske izzive in pridobivale izkušnje, smo za vas pripravili prav
+  posebno enodnevno druženje na Črnih njivah nad Ilirsko Bistrico 🔥
 is_free: false
 sold_out: false
 price_num: 125 €
