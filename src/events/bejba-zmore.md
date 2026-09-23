@@ -121,6 +121,8 @@ Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo!
 
 ### **Pa še nekaj malega o Ani**
 
+
+
 Ana Tancik. Žena, mamica, podjetnica, športnica, trenerka, vodnica, socialna delavka, supervizorka ... skratka, človek, ki ima toliko funkcij, da bi zanjo potrebovali večji okvir na kolesu. 😎
 
 Gorsko kolesarstvo ima v krvi, izkušnje pa je nabirala tako na tekmovanjih kot pri delu z mladimi. Danes skrbi, da ljudje ne pilijo samo tehnike na kolesu, ampak tudi tisto, kar se dogaja med ušesi. Ker je včasih največja ovira na trailu ravno misel: »Tega pa jaz ne zmorem!«
