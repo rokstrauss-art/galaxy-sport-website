@@ -1,29 +1,30 @@
 ---
-title: Bejba zmore — MTB delavnica
-slug: bejba-zmore
-title_short: Bejba zmore
+title: PUNCE NA TRAILIH – DAN ZA NOVE IZKUŠNJE IN ŠE VEČ UŽITKOV
+slug: punce-na-trailih-mtb-delavnica
+title_short: Punce na trailih
 category: delavnica
-image: /images/uploads/IMG_8964-3.jpg
+image: /images/uploads/IMG-20260922-WA0004-1.jpg
+image_label: Enodnevno druženje
 tag: Samo za ženske
 tag_hot: true
-date_label: 15.–17. maj 2026
-date_start: 2026-05-15
-date_end: 2026-05-17
-location: Ajdovščina
-location_meta: Sinji vrh · Vipavska dolina
-audience: Ženske, vse ravni
-group_size: 6–10 udeleženk
-difficulty: Začetnice in srednje izkušene
-instructor: Teja Cerar
-description: Ženska MTB delavnica z inštruktorico Tejo. Pilimo tehniko po
-  ajdovskih trailih, zvečer pa razvajamo brbončice na Sinjem vrhu. Brez
-  tekmovalnosti, samo dober vibe.
+date_label: 7. november 2026
+date_start: 2026-11-07
+date_end: 2026-11-07
+location: Ilirska Bistrica
+location_meta: Črne njive
+audience: Za ženske ki že furajo
+group_size: 4–7 udeleženk
+difficulty: Za srednje izkušene
+instructor: Ana Tancik
+description: Ženski MTB dan z inštruktorico Ano. Ker ste čez poletje pridno
+  nabirale kilometre, premagovale nove gorskokolesarske izzive in pridobivale
+  izkušnje, smo za vas pripravili prav posebno enodnevno druženje na Črnih
+  njivah nad Ilirsko Bistrico 🔥
 is_free: false
 sold_out: false
-price_num: 359 €
-price_label: Polni paket
-price_includes_accommodation: true
-registration_note: Prijave do 1. maja 2026 oziroma do zapolnitve mest.
+price_num: 125 €
+price_includes_accommodation: false
+registration_note: Prijave do 30. oktobra 2026, oziroma do zapolnitve mest.
 contact_email: info@galaxysport.si
 included:
   - Strokovno vodenje in inštrukcije v majhnih skupinah
