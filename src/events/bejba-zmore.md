@@ -46,10 +46,12 @@ to_bring:
   - Nahrbtnik z vsaj 1-1,5L tekočine in kakšen prigrizek
 event_gallery:
   - /images/uploads/IMG-20260922-WA0010-1.jpg
-  - /images/uploads/IMG_8964-6.jpg
-  - /images/uploads/IMG-20260922-WA0002-1.jpg
-  - /images/uploads/IMG-20260922-WA0009-1.jpg
-  - /images/uploads/IMG-20260922-WA0008-1.jpg
+  - /images/uploads/IMG-20260922-WA0001-2.jpg
+  - /images/uploads/IMG-20260922-WA0002-2.jpg
+  - /images/uploads/IMG_8964-7.jpg
+  - /images/uploads/IMG-20260922-WA0008-2.jpg
+  - /images/uploads/IMG-20260922-WA0005-4.jpg
+  - /images/uploads/IMG-20260922-WA0009-3.jpg
 blocks:
   - title: Nekaj malega o Ani
     text: >-
@@ -115,7 +117,11 @@ Ker vemo, da je gorsko kolesarstvo še bolj zabavno, ko se znanje in izkušnje d
 
 Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo! 🤘
 
+
+
 ### **POVZETEK**
+
+
 
 📅 **TERMIN:** 7. november 2026
 
@@ -132,3 +138,20 @@ Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo!
 🥪 **Malica:** ni vključena v ceno
 
 🎥 **Video analiza:** vključena v program
+
+
+
+### **Pa še nekaj malega o Ani**
+
+Ana Tancik. Žena, mamica, podjetnica, športnica, trenerka, vodnica, socialna delavka, supervizorka ... skratka, človek, ki ima toliko funkcij, da bi zanjo potrebovali večji okvir na kolesu. 😎
+
+Gorsko kolesarstvo ima v krvi, izkušnje pa je nabirala tako na tekmovanjih kot pri delu z mladimi. Danes skrbi, da ljudje ne pilijo samo tehnike na kolesu, ampak tudi tisto, kar se dogaja med ušesi. Ker je včasih največja ovira na trailu ravno misel: »Tega pa jaz ne zmorem!«
+
+Ana zna motivirati, poslušati in razložiti. Če ne gre s prvo razlago, gre z drugo. Če ne gre z drugo, pa ... no, še vedno obstaja možnost, da bo treba čez oviro. 😂
+
+Njena supermoč: združevanje telesa, duha in gorskega kolesa.
+
+Njena šibka točka: verjetno še ni odkrila, da obstajajo ljudje, ki po ravnem vozijo samo zato, ker jih je strah spusta. 🤣
+
+V našem primeru bo poskrbela, da boste izboljšale tehniko, pridobile samozavest in se predvsem imele fajn. Kajti cilj ni, da postanete svetovne prvakinje v premagovanju strahu, ampak da se na kolesu počutite bolj sproščeno, varno in samozavestno.
+
