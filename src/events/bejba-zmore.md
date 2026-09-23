@@ -119,28 +119,6 @@ Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo!
 
 
 
-### **POVZETEK**
-
-
-
-📅 **TERMIN:** 7. november 2026
-
-📍 **Lokacija:** Črne njive nad Ilirsko Bistrico
-
-🕙 **Začetek:** 10.00
-
-🕓 **Predviden zaključek:** ob 16.00 ali kasneje
-
-👩‍🏫 **Vodja:** Ana Tancik
-
-🚐 **Shuttle prevozi:** vključeni v program
-
-🥪 **Malica:** ni vključena v ceno
-
-🎥 **Video analiza:** vključena v program
-
-
-
 ### **Pa še nekaj malega o Ani**
 
 Ana Tancik. Žena, mamica, podjetnica, športnica, trenerka, vodnica, socialna delavka, supervizorka ... skratka, človek, ki ima toliko funkcij, da bi zanjo potrebovali večji okvir na kolesu. 😎
