@@ -29,41 +29,50 @@ price_includes_accommodation: false
 registration_note: Prijave do 30. oktobra 2026, oziroma do zapolnitve mest.
 contact_email: info@galaxysport.si
 included:
-  - Strokovno vodenje in inštrukcije v majhnih skupinah
+  - Strokovno vodenje in inštrukcije na poti
   - Dve nočitvi s polpenzionom na Sinjem vrhu
   - Vse organizacijske stvari (poti, transferji do startov)
   - Veliko smeha in dobre družbe
 not_included:
   - Prevoz do/iz Ajdovščine
-  - Kosila na turah
+  - Malice
   - Osebno zavarovanje
 to_bring:
   - Lastno MTB ali e-MTB kolo v dobrem stanju
   - Čelado (obvezno)
   - Rokavice, kolesarska očala
-  - Kolesarska oblačila za 2 dni
   - Ščitnike za kolena (priporočeno)
-  - Nahrbtnik s pitnikom (1,5–2L)
-itinerary:
-  - day: Petek
-    title: Prihod in spoznavanje
-    content: Zvečer prihod na Sinji vrh, dobrodošlica z domačo večerjo. Spoznamo se,
-      pregledamo opremo in skupaj pregledamo plan za vikend.
-  - day: Sobota
-    title: Tehnika in vožnja
-    content: Dopoldne delavnica osnov MTB tehnike na primernem terenu. Popoldne
-      preizkusimo naučeno na lažji turi. Zvečer kosilo skupaj na vrhu.
-  - day: Nedelja
-    title: Daljša tura
-    content: Aplikacija pridobljenega znanja na zahtevnejši, a obvladljivi turi.
-      Kosilo, slovo in odhod popoldne.
+  - Nahrbtnik z vsaj 1-1,5L tekočine in kakšen prigrizek
+event_gallery:
+  - /images/uploads/IMG-20260922-WA0010-1.jpg
+  - /images/uploads/IMG_8964-6.jpg
+  - /images/uploads/IMG-20260922-WA0002-1.jpg
+  - /images/uploads/IMG-20260922-WA0009-1.jpg
 ---
 ## O delavnici
 
-Bejba zmore je ženska MTB delavnica, kjer združimo tehnično učenje, lepe poti in sproščeno družbo. Inštruktorica Teja Cerar — z dolgoletnimi izkušnjami v MTB svetu — vodi delavnico v majhnih skupinah, kjer ima vsaka dovolj časa za individualne nasvete.
+To ne bo klasična delavnica, kjer bi vas ves dan mučili z različnimi vajami, pravilnimi izvedbami itd. 😉 Bolj kot delavnica bo to **vožnja po trailih pod budnim očesom Ane Tancik**, ki bo spremljala vaše znanje, tehniko in način vožnje ter vam po potrebi svetovala, kako kakšen odsek odpeljati bolje, varneje in še bolj tekoče.
 
-Brez tekmovalnosti, brez pritiska. Cilj je, da v treh dneh pridobiš samozavest in nove veščine, ki ti bodo služile celo sezono.
+🕙 **Začnemo ob 10.00**, s kratkim uvodom in preverjanjem vašega znanja. Nato pa sledi tisto, zaradi česar smo tukaj – kolo, traili in uživanje!
 
-## Kaj se naučiš
+🚐 S kombijem in shuttle prevozi se boste vozile do izhodišč posameznih spustov, kjer bo dovolj časa za:
 
-Osnovne MTB tehnike: pravilna pozicija, zaviranje, prehod čez ovire, vožnja v ovinkih, prehod čez tehnične sekcije. Vse postopno in v varnem okolju, z razlago in praktičnimi vajami.
+🔹 več spustaških užitkov,
+
+🔹 vaje za boljšo in bolj tekočo vožnjo,
+
+🔹 premagovanje odsekov, ki vam morda še povzročajo težave,
+
+🔹 izmenjavo izkušenj in seveda dobro družbo.
+
+🥪🎥 **Okoli 12.30 si bomo vzele čas za malico in video analizo.** Medtem ko si bomo privoščile kratek odmor in malico, si bomo skupaj ogledale posnetke dopoldanske vožnje. Ana bo opozorila na morebitne napake, ponudila nasvete in pokazala, kako lahko posamezne odseke odpeljemo bolje.
+
+Tako bomo lahko že na naslednjih spustih poskusile popraviti opažene napake, izboljšati tehniko in svoje znanje prenesti neposredno na trail. 💪
+
+**Malica ni vključena v ceno in si jo vsaka udeleženka zagotovi sama.**
+
+🎯 **Namen tega dne ni tekmovanje, ampak povezovanje deklet, pridobivanje samozavesti in izboljšanje tehnike vožnje**, da bodo vaši naslednji spusti še bolj tekoči, sproščeni in predvsem – še bolj uživaški!
+
+Ker vemo, da je gorsko kolesarstvo še bolj zabavno, ko se znanje in izkušnje delijo med sabo. ❤️
+
+Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo! 🤘
