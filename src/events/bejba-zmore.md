@@ -30,11 +30,11 @@ registration_note: Prijave do 30. oktobra 2026, oziroma do zapolnitve mest.
 contact_email: info@galaxysport.si
 included:
   - Strokovno vodenje in inštrukcije na poti
-  - Dve nočitvi s polpenzionom na Sinjem vrhu
-  - Vse organizacijske stvari (poti, transferji do startov)
+  - Shuttle prevoz udeleženk in koles na izhodišča spustov
+  - Video analiza vsake udeleženke
   - Veliko smeha in dobre družbe
 not_included:
-  - Prevoz do/iz Ajdovščine
+  - Prevoz do/iz Ilirske Bistrice (Črnih njiv)
   - Malice
   - Osebno zavarovanje
 to_bring:
@@ -48,14 +48,15 @@ event_gallery:
   - /images/uploads/IMG_8964-6.jpg
   - /images/uploads/IMG-20260922-WA0002-1.jpg
   - /images/uploads/IMG-20260922-WA0009-1.jpg
+  - /images/uploads/IMG-20260922-WA0008-1.jpg
 ---
 ## O delavnici
 
 To ne bo klasična delavnica, kjer bi vas ves dan mučili z različnimi vajami, pravilnimi izvedbami itd. 😉 Bolj kot delavnica bo to **vožnja po trailih pod budnim očesom Ane Tancik**, ki bo spremljala vaše znanje, tehniko in način vožnje ter vam po potrebi svetovala, kako kakšen odsek odpeljati bolje, varneje in še bolj tekoče.
 
-🕙 **Začnemo ob 10.00**, s kratkim uvodom in preverjanjem vašega znanja. Nato pa sledi tisto, zaradi česar smo tukaj – kolo, traili in uživanje!
+🕙 **Začnemo ob 10.00**, s kratkim uvodom in preverjanjem vašega znanja in stanja koles. Nato pa sledi tisto, zaradi česar smo tukaj – kolo, traili in uživanje!
 
-🚐 S kombijem in shuttle prevozi se boste vozile do izhodišč posameznih spustov, kjer bo dovolj časa za:
+🚐 S shuttle prevozom (kombi in prikolica za kolesa) se boste vozile do izhodišč posameznih spustov, kjer bo dovolj časa za:
 
 🔹 več spustaških užitkov,
 
@@ -65,9 +66,11 @@ To ne bo klasična delavnica, kjer bi vas ves dan mučili z različnimi vajami, 
 
 🔹 izmenjavo izkušenj in seveda dobro družbo.
 
-🥪🎥 **Okoli 12.30 si bomo vzele čas za malico in video analizo.** Medtem ko si bomo privoščile kratek odmor in malico, si bomo skupaj ogledale posnetke dopoldanske vožnje. Ana bo opozorila na morebitne napake, ponudila nasvete in pokazala, kako lahko posamezne odseke odpeljemo bolje.
+🥪🎥 **Okoli 12.30 si bomo vzele čas za malico in video analizo.** 
 
-Tako bomo lahko že na naslednjih spustih poskusile popraviti opažene napake, izboljšati tehniko in svoje znanje prenesti neposredno na trail. 💪
+Medtem ko si bomo privoščile kratek odmor in malico, si bomo skupaj ogledale posnetke dopoldanske vožnje. Ana bo opozorila na morebitne napake, ponudila nasvete in pokazala, kako lahko posamezne odseke odpeljemo bolje.
+
+Tako bomo lahko že na naslednjih spustih poskusile popraviti opažene napake, izboljšati tehniko in nova znanja prenesti neposredno v prakso. 💪
 
 **Malica ni vključena v ceno in si jo vsaka udeleženka zagotovi sama.**
 
