@@ -28,6 +28,7 @@ price_num: 125 €
 price_includes_accommodation: false
 registration_note: Prijave do 30. oktobra 2026, oziroma do zapolnitve mest.
 contact_email: info@galaxysport.si
+payment_url: https://pay.sumup.com/b2c/Q3CB68P7
 included:
   - Strokovno vodenje in inštrukcije na poti
   - Shuttle prevoz udeleženk in koles na izhodišča spustov
