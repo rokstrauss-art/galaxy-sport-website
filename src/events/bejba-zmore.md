@@ -1,6 +1,7 @@
 ---
 title: PUNCE NA TRAILIH – DAN ZA NOVE IZKUŠNJE IN ŠE VEČ UŽITKOV
 slug: punce-na-trailih-mtb-delavnica
+published: true
 title_short: Punce na trailih
 category: delavnica
 image: /images/uploads/IMG-20260922-WA0004-1.jpg

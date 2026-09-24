@@ -1,6 +1,7 @@
 ---
 title: Bikepacking "na komot" Vol. 2
 slug: bikepacking-komot
+published: true
 title_short: Bikepacking na komot
 category: avantura
 image: /images/uploads/IMG_6712-2.jpg

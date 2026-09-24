@@ -32,6 +32,7 @@ exports.handler = async (event) => {
   const placilo = (f.payment_method || "").trim();
   const opombe = (f.notes || "").trim();
   const izkusnje = (f.experience || "").trim();
+  const pogoji = (f.consent_terms || "").trim();
 
   const OD = process.env.MAIL_OD || "Galaxy Sport <info@galaxysport.si>";
   const ODGOVOR = process.env.MAIL_ODGOVOR || "info@galaxysport.si";
@@ -114,6 +115,7 @@ exports.handler = async (event) => {
       <tr><td style="padding:5px 14px 5px 0;color:#8A8578">Plačilo</td><td style="padding:5px 0">${placilo || "ni izbrano"}</td></tr>
       ${izkusnje ? `<tr><td style="padding:5px 14px 5px 0;color:#8A8578">Izkušnje</td><td style="padding:5px 0">${izkusnje}</td></tr>` : ""}
       ${opombe ? `<tr><td style="padding:5px 14px 5px 0;color:#8A8578">Opombe</td><td style="padding:5px 0">${opombe}</td></tr>` : ""}
+      <tr><td style="padding:5px 14px 5px 0;color:#8A8578">Pogoji</td><td style="padding:5px 0">${pogoji || "NI POTRJENO"}</td></tr>
     </table>
     ${brezplacno ? "" : `
     <div style="margin-top:16px;padding:14px 16px;border-radius:10px;background:#FFF4E0;border-left:4px solid #C8643C">

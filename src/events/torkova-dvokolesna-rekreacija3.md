@@ -1,6 +1,7 @@
 ---
 title: Za konec na Vrhe
 slug: torkova-dvokolesna-rekreacija3
+published: true
 category: dogodek
 image: /images/uploads/IMG_8938-1.jpg
 image_label: Torkova dvokolesna rekreacija - MTB

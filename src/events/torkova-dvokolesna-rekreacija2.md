@@ -1,6 +1,7 @@
 ---
 title: Najlepši makadami občine Dobrova
 slug: torkova-dvokolesna-rekreacija2
+published: true
 category: dogodek
 image: /images/uploads/IMG_6671-2.jpg
 image_label: Torkova dvokolesna rekreacija - makadam

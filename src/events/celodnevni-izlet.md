@@ -1,6 +1,7 @@
 ---
 title: Kolesarski dan za starostnike - Rakitna -Krim
 slug: celodnevni-izlet
+published: true
 category: avantura
 image: /images/uploads/Tura za starostnike.jpg
 image_label: Zabaven dan na kolesu

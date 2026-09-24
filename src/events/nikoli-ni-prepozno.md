@@ -1,6 +1,7 @@
 ---
 title: Kolesarski tečaj za starostnike
 slug: nikoli-ni-prepozno
+published: true
 category: delavnica
 image: /images/uploads/IMG_2150-5.jpg
 image_label: Za boljše obvadovanje kolesa

@@ -1,6 +1,7 @@
 ---
 title: Francoske MTB počitnice
 slug: francoske-pocitnice
+published: true
 title_short: Francoske MTB počitnice
 category: avantura
 image: /images/uploads/IMG_6119-4.jpg

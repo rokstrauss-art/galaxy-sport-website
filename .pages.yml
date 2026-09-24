@@ -83,6 +83,7 @@ content:
       - { name: difficulty, label: Zahtevnost, type: string, required: false }
       - { name: instructor, label: Vodi / inštruktor, type: string, required: false }
       - { name: description, label: "Kratek opis (za kartico na naslovnici)", type: text }
+      - { name: published, label: "Objavljeno na strani", type: boolean, default: false, hint: "Dokler je izklopljeno, dogodka na spletni strani ni. Vklopi, ko je pripravljen." }
       - { name: is_free, label: "Brezplačen dogodek", type: boolean, default: false, hint: "Če je vklopljeno, se cena ne prikaže. Prijava je brez plačila." }
       - { name: sold_out, label: "Razprodano", type: boolean, default: false, hint: "Če je vklopljeno, se čez fotografijo na seznamu izpiše RAZPRODANO, prijavnica pa se zapre." }
       - { name: sold_out_note, label: "Besedilo ob razprodanem dogodku", type: text, required: false, hint: "Npr. \"Prosta mesta so zapolnjena. Piši nam za čakalno listo.\"" }
@@ -119,12 +120,24 @@ content:
         required: false
       - { name: body, label: "Daljši opis (poglavje \"O dogodku\")", type: rich-text }
       - name: blocks
-        label: "Dodatni odstavki (besedilo in fotografije vmes)"
+        label: "Dodatni odstavki (vlečeš jih v poljubni vrstni red)"
         type: object
         list: true
         fields:
+          - { name: active, label: "Prikaži na strani", type: boolean, default: true, hint: "Izklopi, če odstavka še ne želiš objaviti. Ostane shranjen." }
           - { name: title, label: "Naslov odstavka (neobvezno)", type: string, required: false }
           - { name: text, label: "Besedilo", type: text }
+          - name: color
+            label: "Barva besedila"
+            type: select
+            default: default
+            options:
+              values:
+                - { label: "Privzeta", value: default }
+                - { label: "Temno zelena", value: forest }
+                - { label: "Opečnata", value: ember }
+                - { label: "Mahova zelena", value: moss }
+                - { label: "Prigušena siva", value: mute }
           - { name: images, label: "Fotografije (do 3)", type: image, list: { max: 3 } }
           - { name: video, label: "Video (YouTube ali Vimeo povezava)", type: string, required: false }
 
@@ -143,13 +156,25 @@ content:
       - { name: cover, label: Naslovna fotografija, type: image, required: false, hint: "Priporočena velikost: 1600 × 1067 px (razmerje 3:2, ležeče), JPG, pod 2 MB. Na seznamu se prikaže v razmerju 3:2, na strani članka čez celo širino; motiv naj bo na sredini." }
       - { name: excerpt, label: "Kratek povzetek (prikaže se na seznamu)", type: text }
       - { name: author, label: Avtor, type: string, required: false, default: "Galaxy Sport" }
-      - { name: body, label: "Vsebina članka", type: rich-text }
       - name: blocks
-        label: "Odstavki (besedilo, fotografije, video)"
+        label: "Odstavki (vlečeš jih v poljubni vrstni red)"
         type: object
         list: true
         fields:
+          - { name: active, label: "Prikaži na strani", type: boolean, default: true, hint: "Izklopi, če odstavka še ne želiš objaviti. Ostane shranjen." }
+          - { name: title, label: "Naslov odstavka (neobvezno)", type: string, required: false }
           - { name: text, label: "Besedilo", type: text }
+          - name: color
+            label: "Barva besedila"
+            type: select
+            default: default
+            options:
+              values:
+                - { label: "Privzeta", value: default }
+                - { label: "Temno zelena", value: forest }
+                - { label: "Opečnata", value: ember }
+                - { label: "Mahova zelena", value: moss }
+                - { label: "Prigušena siva", value: mute }
           - { name: images, label: "Fotografije (do 3)", type: image, list: { max: 3 } }
           - { name: video, label: "Video (YouTube ali Vimeo povezava)", type: string, hint: "Prilepi povezavo do videa na YouTube ali Vimeo." }
 
@@ -296,6 +321,8 @@ content:
     path: src/_data/settings.json
     icon: settings
     fields:
+      - { name: site_url, label: "🌐 Naslov strani (brez poševnice na koncu)", type: string, hint: "Npr. https://galaxysport.si. Uporabi se za predogled povezav na družbenih omrežjih." }
+      - { name: share_image, label: "🖼️ Slika za predogled povezave", type: image, required: false, hint: "Priporočeno 1200 × 630 px, JPG. To se prikaže, ko kdo deli povezavo na Facebooku ali WhatsAppu. Pri dogodkih in člankih se uporabi njihova lastna fotografija." }
       - { name: contact_email, label: "📧 Kontaktni e-mail (uporabljen povsod na strani)", type: string }
       - { name: contact_phone, label: "📞 Telefon — kot se prikaže (npr. 068 147 467)", type: string }
       - { name: contact_phone_link, label: "📞 Telefon — za klic (mednarodna oblika, npr. +38668147467)", type: string, hint: "Brez presledkov in pomišljajev. Začne se s + in kodo države." }

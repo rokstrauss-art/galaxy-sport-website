@@ -1,0 +1,234 @@
+---
+title: "Splošni pogoji poslovanja - Galaxy Sport"
+permalink: "/pogoji-poslovanja/"
+---
+{% include "head.njk" %}
+<body class="legal-page">
+<style>
+.legal { padding: 130px 0 80px; background: var(--bone); }
+.legal-inner { max-width: 800px; }
+.legal-title { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 5vw, 56px); line-height: 1.12; color: var(--forest-deep); margin: 0 0 10px; }
+.legal-date { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 40px; }
+.legal h2 { font-family: var(--display); font-weight: 400; font-size: 28px; line-height: 1.22; color: var(--forest-deep); margin: 48px 0 14px; }
+.legal h3 { font-family: var(--body); font-weight: 600; font-size: 17px; color: var(--forest-deep); margin: 28px 0 10px; }
+.legal p { font-size: 16.5px; line-height: 1.75; color: var(--ink); margin: 0 0 16px; }
+.legal ul { margin: 0 0 16px; padding-left: 22px; }
+.legal li { font-size: 16.5px; line-height: 1.75; color: var(--ink); margin-bottom: 8px; }
+.legal a { color: var(--ember); border-bottom: 1px solid rgba(200, 100, 60, 0.35); }
+.legal a:hover { border-bottom-color: var(--ember); }
+.legal-table-wrap { overflow-x: auto; margin: 0 0 20px; }
+.legal-table { width: 100%; border-collapse: collapse; font-size: 15.5px; min-width: 420px; }
+.legal-table th { text-align: left; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.legal-table td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); color: var(--ink); vertical-align: top; }
+.legal-table td:last-child, .legal-table th:last-child { padding-right: 0; text-align: right; white-space: nowrap; font-weight: 600; color: var(--forest-deep); }
+.legal-contact { background: var(--oat); border: 1px solid var(--line); border-radius: var(--radius-card); padding: 22px 26px; margin: 0 0 8px; }
+.legal-contact p { margin: 0; font-size: 15.5px; }
+@media (max-width: 640px) { .legal { padding: 110px 0 60px; } .legal h2 { font-size: 24px; margin-top: 40px; } }
+</style>
+
+<header id="header">
+  <div class="container nav">
+    <a href="/" class="logo" aria-label="Galaxy Sport">
+      <img src="/images/logo-dark.png" alt="Galaxy Sport">
+    </a>
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="/#events" class="nav-dropdown-toggle">Ponudba <svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <ul class="nav-submenu">
+          <li><a href="/#avanture">Avanture</a></li>
+          <li><a href="/#dogodki">Dogodki</a></li>
+          <li><a href="/#delavnice">Delavnice</a></li>
+          <li><a href="/#shop">Servis</a></li>
+        </ul>
+      </li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/#about">O nas</a></li>
+      <li><a href="/#gallery">Galerija</a></li>
+    </ul>
+    <a href="/#events" class="btn btn-primary">Poglej ponudbo</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Glavni meni">
+  <ul>
+    <li>
+      <div class="mm-group-label">Ponudba</div>
+      <ul class="mm-sub">
+        <li><a href="/#avanture">Avanture</a></li>
+        <li><a href="/#dogodki">Dogodki</a></li>
+        <li><a href="/#delavnice">Delavnice</a></li>
+        <li><a href="/#shop">Servis</a></li>
+      </ul>
+    </li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#about">O nas</a></li>
+    <li><a href="/#gallery">Galerija</a></li>
+  </ul>
+</nav>
+
+<section class="legal">
+  <div class="container legal-inner">
+    <h1 class="legal-title">Splošni pogoji poslovanja</h1>
+    <p class="legal-date">Veljajo od 24. septembra 2026</p>
+
+    <h2>1. Splošno</h2>
+    <p>Ti splošni pogoji veljajo za vse storitve, ki jih izvaja Galaxy sport, Marko Šimenc s.p., s sedežem na naslovu Tomačevo 30a, 1000 Ljubljana, poslovna enota Šujica 150a, 1356 Dobrova, matična številka 6918867000, davčna številka 23942746 (v nadaljevanju „izvajalec“).</p>
+    <div class="legal-contact">
+      <p>Kontakt: <a href="tel:{{ settings.contact_phone_link }}">{{ settings.contact_phone }}</a>, <a href="mailto:{{ settings.contact_email }}">{{ settings.contact_email }}</a>, galaxysport.si</p>
+    </div>
+    <p>Pogoji veljajo za servis koles, delavnice in tečaje ter za vodena doživetja in ture. Za posamezno storitev lahko veljajo dodatni pogoji, ki so navedeni ob storitvi in imajo v primeru neskladja prednost pred temi pogoji.</p>
+    <p>Z oddajo naročila, prijavo na dogodek ali oddajo kolesa v servis naročnik potrjuje, da je te pogoje prebral in da z njimi soglaša.</p>
+
+    <h2>2. Servis in popravila koles</h2>
+    <h3>2.1 Prevzem in ocena</h3>
+    <p>Ob prevzemu kolesa izvajalec izda potrdilo o prevzemu. Okvirna cena popravila se poda po pregledu in je informativna. Če se med delom pokaže, da bo cena presegla oceno za več kot 20 % ali za več kot 30 €, izvajalec pred nadaljevanjem pridobi soglasje naročnika.</p>
+    <h3>2.2 Roki</h3>
+    <p>Predviden rok izvedbe se dogovori ob prevzemu. V sezonski konici se rok lahko podaljša, o čemer izvajalec naročnika obvesti. Rok ni zavezujoč, razen če je izrecno dogovorjen kot fiksen.</p>
+    <h3>2.3 Prevzem opravljenega dela in hramba</h3>
+    <p>Naročnik kolo prevzame v 30 dneh od obvestila, da je delo končano. Po tem roku izvajalec lahko zaračuna ležarino 2 € na dan. Če kolo ni prevzeto v 6 mesecih in se naročnik na pozive ne odziva, izvajalec ravna skladno z veljavno zakonodajo o hrambi tujih stvari.</p>
+    <h3>2.4 Garancija na opravljeno delo</h3>
+    <p>Za opravljeno delo izvajalec jamči 6 mesecev, za vgrajene nove dele pa velja garancija proizvajalca. Garancija ne velja za obrabne dele (veriga, zavorne ploščice, plašči, žice), za poškodbe zaradi padca ali nepravilne uporabe ter za dele, ki jih je priskrbel naročnik.</p>
+    <h3>2.5 Deli naročnika</h3>
+    <p>Če naročnik priskrbi lastne dele, izvajalec ne odgovarja za njihovo ustreznost, kakovost ali združljivost. Delo se v tem primeru zaračuna tudi, če vgradnja ni uspešna.</p>
+
+    <h2>3. Delavnice, tečaji in enodnevni dogodki</h2>
+    <h3>3.1 Prijava in plačilo</h3>
+    <p>Prijava je veljavna, ko udeleženec odda prijavnico in prejme potrditev. Plačilo se izvede ob prijavi s kartico ali po prejetem računu, najkasneje 3 dni pred dogodkom. Pri brezplačnih dogodkih plačilo ni potrebno. Mesta se dodeljujejo po vrstnem redu prijav.</p>
+    <h3>3.2 Odpoved s strani udeleženca</h3>
+    <p>Če udeleženec odpove udeležbo, se stroški obračunajo takole:</p>
+    <div class="legal-table-wrap">
+      <table class="legal-table">
+        <thead><tr><th>Odpoved</th><th>Zadržan znesek</th></tr></thead>
+        <tbody>
+          <tr><td>več kot 14 dni pred dogodkom</td><td>0 %</td></tr>
+          <tr><td>14 do 7 dni pred dogodkom</td><td>50 %</td></tr>
+          <tr><td>manj kot 7 dni pred dogodkom</td><td>100 %</td></tr>
+          <tr><td>neudeležba brez odpovedi</td><td>100 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Udeleženec lahko namesto sebe pošlje drugo osebo, ki izpolnjuje pogoje za udeležbo, če o tem obvesti izvajalca najkasneje 5 dni pred dogodkom.</p>
+    <h3>3.3 Odpoved s strani izvajalca</h3>
+    <p>Izvajalec lahko dogodek odpove, če se ne prijavi zadostno število udeležencev (najmanj 4), zaradi neprimernih vremenskih razmer, bolezni vodnika ali višje sile. V tem primeru udeleženec izbere med:</p>
+    <ul>
+      <li>udeležbo na nadomestnem terminu,</li>
+      <li>dobropisom za drugo storitev,</li>
+      <li>vračilom celotnega vplačanega zneska.</li>
+    </ul>
+    <p>Izvajalec ne odgovarja za morebitne dodatne stroške udeleženca (pot, nastanitev, odsotnost z dela).</p>
+    <h3>3.4 Vreme</h3>
+    <p>Dogodki potekajo tudi v slabšem vremenu, razen če razmere ogrožajo varnost (nevihta, poledica, močan veter). Odločitev sprejme vodnik. Ob odpovedi zaradi vremena veljajo določila iz točke 3.3.</p>
+    <h3>3.5 Pogoji za udeležbo</h3>
+    <p>Udeleženec mora imeti delujoče kolo in kolesarsko čelado. Izvajalec lahko udeležencu, ki ne izpolnjuje pogojev ali ogroža varnost skupine, odkloni udeležbo brez vračila.</p>
+    <h3>3.6 Odgovornost in zavarovanje</h3>
+    <p>Udeležba je na lastno odgovornost. Udeleženec se z udeležbo strinja, da je seznanjen s tveganji kolesarjenja in da je zdravstveno sposoben za udeležbo. Izvajalec priporoča sklenitev nezgodnega zavarovanja. Izvajalec odgovarja le za škodo, ki nastane zaradi njegove hude malomarnosti ali naklepa.</p>
+    <h3>3.7 Mladoletni udeleženci</h3>
+    <p>Za udeležence, mlajše od 18 let, je obvezno pisno soglasje staršev ali skrbnika, ki ga oddajo ob prijavi. Starš ali skrbnik s soglasjem potrjuje, da je otrok zdravstveno sposoben za udeležbo in da zna voziti kolo v obsegu, ki ga zahteva program.</p>
+    <p>Pri programih za otroke izvajalec zagotovi največ 10 otrok na enega vodnika. Otroke starši pripeljejo na zbirno mesto in jih po koncu tam prevzamejo. Izvajalec ne prevzema odgovornosti za otroke pred začetkom in po koncu programa.</p>
+
+    <h2>4. Večdnevne ture in doživetja</h2>
+    <h3>4.1 Prijava in plačilo</h3>
+    <p>Ob prijavi udeleženec plača akontacijo v višini 30 % cene, preostanek pa najkasneje 14 dni pred odhodom. Prijava je potrjena šele s plačano akontacijo.</p>
+    <h3>4.2 Odpoved s strani udeleženca</h3>
+    <div class="legal-table-wrap">
+      <table class="legal-table">
+        <thead><tr><th>Odpoved pred odhodom</th><th>Zadržan znesek</th></tr></thead>
+        <tbody>
+          <tr><td>več kot 30 dni</td><td>10 %</td></tr>
+          <tr><td>29 do 22 dni</td><td>30 %</td></tr>
+          <tr><td>21 do 15 dni</td><td>50 %</td></tr>
+          <tr><td>14 do 8 dni</td><td>80 %</td></tr>
+          <tr><td>7 dni ali manj, ali neudeležba</td><td>100 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Odpoved mora biti podana pisno (e-pošta zadošča). Šteje datum prejema.</p>
+    <h3>4.3 Odstopnina</h3>
+    <p>Udeleženec lahko ob prijavi doplača odstopnino v višini 10 % cene. Odstopnina velja v primeru nepričakovane bolezni, poškodbe, smrti v ožji družini ali uradnega poziva, in sicer ob predložitvi ustreznega pisnega dokazila. Odstopnino je mogoče skleniti samo ob prijavi, naknadno ne. Odstopnina ne krije neudeležbe brez opravičenega razloga.</p>
+    <h3>4.4 Spremembe programa</h3>
+    <p>Izvajalec si pridržuje pravico do manjših sprememb programa (vrstni red, poti, nastanitev enakovredne kategorije), če to narekujejo razmere na terenu, vreme ali varnost. Ob bistveni spremembi lahko udeleženec odstopi od pogodbe brez stroškov.</p>
+    <h3>4.5 Najmanjše število udeležencev</h3>
+    <p>Za izvedbo so potrebni najmanj 4 udeleženci. Če se to število ne doseže, izvajalec ture ne izvede in o tem obvesti najkasneje 10 dni pred odhodom, udeleženci pa prejmejo celotno vračilo.</p>
+    <h3>4.6 Prekinitev med turo</h3>
+    <p>Če udeleženec turo prekine po lastni želji, nima pravice do povračila neizkoriščenega dela. Stroške predčasne vrnitve krije sam.</p>
+
+    <h2>5. Reklamacije</h2>
+    <p>Morebitne pomanjkljivosti mora naročnik grajati takoj na kraju samem, da jih je mogoče odpraviti. Pisno reklamacijo lahko vloži v 8 dneh po opravljeni storitvi na <a href="mailto:{{ settings.contact_email }}">{{ settings.contact_email }}</a>. Reklamacija mora biti utemeljena in vsebovati podatke o storitvi ter dokazila. Izvajalec odgovori v 8 dneh.</p>
+    <p>Izvajalec ne obravnava reklamacij, ki jih naročnik ni grajal med izvedbo, čeprav bi bilo pomanjkljivost mogoče odpraviti na kraju samem.</p>
+
+    <h2>6. Varstvo osebnih podatkov</h2>
+    <p>Izvajalec obdeluje osebne podatke za izvedbo storitve, obveščanje o poteku naročila in izpolnjevanje zakonskih obveznosti. Podatki se hranijo, dokler je to potrebno za namen obdelave oziroma dokler to zahteva zakon.</p>
+    <p>Za obveščanje o novostih in ponudbah izvajalec podatke uporablja le ob izrecni privolitvi, ki jo je mogoče kadarkoli preklicati.</p>
+
+    <h2>7. Fotografiranje na dogodkih</h2>
+    <p>Na dogodkih lahko nastajajo fotografije in videoposnetki za promocijo dejavnosti. Udeleženec, ki tega ne želi, to sporoči pred začetkom dogodka in izvajalec to upošteva.</p>
+
+    <h2>8. Reševanje sporov</h2>
+    <p>Izvajalec si prizadeva morebitne spore rešiti sporazumno. Naročnika zato prosimo, da se ob težavi vedno najprej obrne na izvajalca, saj je večino nesoglasij mogoče rešiti neposredno.</p>
+    <p>Skladno s tretjim odstavkom 32. člena Zakona o izvensodnem reševanju potrošniških sporov (Uradni list RS, št. 81/15) izvajalec obvešča potrošnike, da ne priznava nobenega izvajalca izvensodnega reševanja potrošniških sporov kot pristojnega za reševanje potrošniškega spora, ki bi ga potrošnik lahko sprožil v skladu s tem zakonom.</p>
+    <p>Za spore je pristojno sodišče v Ljubljani.</p>
+
+    <h2>9. Veljavnost</h2>
+    <p>Izvajalec lahko pogoje spremeni. Za posamezno naročilo veljajo pogoji, ki so bili objavljeni ob oddaji naročila oziroma prijave. Aktualna različica je vedno objavljena na galaxysport.si/pogoji-poslovanja.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="logo" aria-label="Galaxy Sport">
+          <img src="/images/logo-light.png" alt="Galaxy Sport">
+        </a>
+        <p class="footer-tag">{{ settings.footer_tagline }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Ponudba</h4>
+        <ul>
+          <li><a href="/#avanture">Avanture</a></li>
+          <li><a href="/#delavnice">Delavnice</a></li>
+          <li><a href="/#shop">Servis</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Galaxy Sport</h4>
+        <ul>
+          <li><a href="/#about">O nas</a></li>
+          <li><a href="mailto:{{ settings.contact_email }}">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sledi nam</h4>
+        <ul>
+          {% if settings.facebook_url %}<li><a href="{{ settings.facebook_url }}" target="_blank" rel="noopener">Facebook</a></li>{% endif %}
+          {% if settings.instagram_url %}<li><a href="{{ settings.instagram_url }}" target="_blank" rel="noopener">Instagram</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Galaxy Sport. Vse pravice pridržane.</span>
+      <span><a href="/pogoji-poslovanja/">Pogoji poslovanja</a></span>
+      <span>{{ settings.contact_email }} · {{ settings.contact_phone }}</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const burger = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  if (!burger || !menu) return;
+  function close() { burger.classList.remove('open'); menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+})();
+</script>
+</body>
+</html>

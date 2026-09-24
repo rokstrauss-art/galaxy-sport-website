@@ -1,6 +1,7 @@
 ---
 title: Otroška kolesarska šola Nr. 2
 slug: brezplacna-otroska-kolesarska-sola2
+published: true
 category: delavnica
 image: /images/uploads/Kids ride 4-1.jpg
 image_label: Zabava na kolesu se nadaljuje

@@ -1,6 +1,7 @@
 ---
 title: No stress on Cres MTB Weekend
 slug: no-stress-cres
+published: true
 title_short: No stress Cres
 category: avantura
 image: /images/uploads/20250928_122151.jpg

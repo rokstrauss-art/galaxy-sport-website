@@ -39,6 +39,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("events", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("src/events/*.md")
+      // Hide events that are explicitly switched off in the CMS.
+      // Missing field means visible, so older events keep working.
+      .filter((item) => item.data.published !== false)
       .sort((a, b) => {
         const dateA = new Date(a.data.date_start || 0);
         const dateB = new Date(b.data.date_start || 0);

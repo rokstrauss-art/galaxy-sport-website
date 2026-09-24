@@ -1,6 +1,7 @@
 ---
 title: Otroški kolesarski popoldnevi
 slug: otroske-kolesarske-delavnice
+published: true
 category: delavnica
 image: /images/uploads/Kids ride 2.jpg
 image_label: Na Dobrovi

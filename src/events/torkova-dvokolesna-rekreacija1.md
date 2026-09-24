@@ -1,6 +1,7 @@
 ---
 title: Gorskokolesarska tura dveh občin
 slug: torkova-dvokolesna-rekreacija1
+published: true
 category: dogodek
 image: /images/uploads/MTB tura.jpg
 image_label: Torkova dvokolesna rekreacija - MTB

@@ -1,6 +1,7 @@
 ---
 title: "Otroška kolesarska šola Nr. 1 "
 slug: brezplacna-otroska-kolesarska-sola1
+published: true
 category: delavnica
 image: /images/uploads/Kids ride 3-1.jpg
 image_label: Zabavne urice na kolesu

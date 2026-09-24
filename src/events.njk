@@ -6,6 +6,7 @@ pagination:
 permalink: "/dogodki/{{ event.data.slug }}/"
 eleventyComputed:
   title: "{{ event.data.title }} — Galaxy Sport"
+  ogImage: "{{ event.data.image }}"
 ---
 {% include "head.njk" %}
 <body class="event-page">
@@ -102,12 +103,34 @@ eleventyComputed:
       <section class="event-gallery-section">
         <div class="event-gallery-grid event-gallery-count-{{ event.data.event_gallery.length }}">
           {% for photo in event.data.event_gallery %}
-          <button type="button" class="event-gallery-item" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
+          <button type="button" class="event-gallery-item" data-gallery="main" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
             <img src="{{ photo }}" alt="{{ event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
           </button>
           {% endfor %}
         </div>
       </section>
+      {% endif %}
+
+      {% if event.data.blocks and event.data.blocks.length %}
+      {% for block in event.data.blocks %}
+      {% set blockIndex = loop.index %}
+      {% if block.active !== false %}
+      <section class="event-section event-block">
+        {% if block.title %}<h2 class="event-section-title">{{ block.title }}</h2>{% endif %}
+        {% if block.text %}<div class="event-block-text tone-{{ block.color or 'default' }}">{{ block.text | nl2br | safe }}</div>{% endif %}
+        {% if block.images and block.images.length %}
+        <div class="event-block-photos n{{ block.images.length }}">
+          {% for img in block.images %}{% if loop.index <= 3 %}
+          <button type="button" class="event-gallery-item" data-gallery="block-{{ blockIndex }}" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
+            <img src="{{ img }}" alt="{{ block.title or event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
+          </button>
+          {% endif %}{% endfor %}
+        </div>
+        {% endif %}
+        {% if block.video %}<div class="event-block-video">{{ block.video | videoEmbed | safe }}</div>{% endif %}
+      </section>
+      {% endif %}
+      {% endfor %}
       {% endif %}
 
       {% if event.data.itinerary and event.data.itinerary.length %}
@@ -295,6 +318,13 @@ eleventyComputed:
         <input type="hidden" name="payment_method" value="Nakazilo preko TRR">
         {% endif %}
 
+        <div class="form-field form-consent">
+          <label class="consent-label">
+            <input type="checkbox" id="ef-consent" name="consent_terms" value="Da, razlicica 2026-09-24" required>
+            <span>Strinjam se s <a href="/pogoji-poslovanja/" target="_blank" rel="noopener">pogoji poslovanja</a>. <span class="req">*</span></span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn-primary btn-lg btn-block btn-arrow" id="submitBtn">
           {% if event.data.payment_url %}Naprej na plačilo →{% else %}Pošlji prijavo →{% endif %}
         </button>
@@ -368,6 +398,7 @@ eleventyComputed:
     </div>
     <div class="footer-bottom">
       <span>© 2026 Galaxy Sport. Vse pravice pridržane.</span>
+      <span><a href="/pogoji-poslovanja/">Pogoji poslovanja</a></span>
       <span>{{ settings.contact_email }} · {{ settings.contact_phone }}</span>
     </div>
   </div>
@@ -489,7 +520,15 @@ if (form) {
 (function() {
   const items = document.querySelectorAll('.event-gallery-item[data-photo-index]');
   if (!items.length) return;
-  const photos = Array.from(items).map(it => it.querySelector('img').src);
+
+  // Each data-gallery value is its own set, so one paragraph's photos
+  // never mix with another's.
+  const groups = {};
+  items.forEach(it => {
+    const key = it.dataset.gallery || 'main';
+    (groups[key] = groups[key] || []).push(it.querySelector('img').src);
+  });
+  let photos = [];
 
   const lb = document.createElement('div');
   lb.className = 'lightbox';
@@ -520,7 +559,10 @@ if (form) {
     img.src = '';
   }
 
-  items.forEach(it => it.addEventListener('click', () => open(parseInt(it.dataset.photoIndex, 10))));
+  items.forEach(it => it.addEventListener('click', () => {
+    photos = groups[it.dataset.gallery || 'main'];
+    open(parseInt(it.dataset.photoIndex, 10));
+  }));
   lb.querySelector('.lightbox-close').addEventListener('click', close);
   lb.querySelector('.lightbox-prev').addEventListener('click', () => show(idx - 1));
   lb.querySelector('.lightbox-next').addEventListener('click', () => show(idx + 1));
