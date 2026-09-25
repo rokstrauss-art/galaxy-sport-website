@@ -111,28 +111,6 @@ eleventyComputed:
       </section>
       {% endif %}
 
-      {% if event.data.blocks and event.data.blocks.length %}
-      {% for block in event.data.blocks %}
-      {% set blockIndex = loop.index %}
-      {% if block.active !== false %}
-      <section class="event-section event-block">
-        {% if block.title %}<h2 class="event-section-title">{{ block.title }}</h2>{% endif %}
-        {% if block.text %}<div class="event-block-text tone-{{ block.color or 'default' }}">{{ block.text | nl2br | safe }}</div>{% endif %}
-        {% if block.images and block.images.length %}
-        <div class="event-block-photos n{{ block.images.length }}">
-          {% for img in block.images %}{% if loop.index <= 3 %}
-          <button type="button" class="event-gallery-item" data-gallery="block-{{ blockIndex }}" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
-            <img src="{{ img }}" alt="{{ block.title or event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
-          </button>
-          {% endif %}{% endfor %}
-        </div>
-        {% endif %}
-        {% if block.video %}<div class="event-block-video">{{ block.video | videoEmbed | safe }}</div>{% endif %}
-      </section>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-
       {% if event.data.itinerary and event.data.itinerary.length %}
       <section class="event-section">
         <h2 class="event-section-title">Program po dnevih</h2>
@@ -184,6 +162,29 @@ eleventyComputed:
         </ul>
       </section>
       {% endif %}
+
+      {% if event.data.blocks and event.data.blocks.length %}
+      {% for block in event.data.blocks %}
+      {% set blockIndex = loop.index %}
+      {% if block.active !== false %}
+      <section class="event-section event-block">
+        {% if block.title %}<h2 class="event-section-title">{{ block.title }}</h2>{% endif %}
+        {% if block.text %}<div class="event-block-text tone-{{ block.color or 'default' }}">{{ block.text | richText | safe }}</div>{% endif %}
+        {% if block.images and block.images.length %}
+        <div class="event-block-photos n{{ block.images.length }}">
+          {% for img in block.images %}{% if loop.index <= 3 %}
+          <button type="button" class="event-gallery-item" data-gallery="block-{{ blockIndex }}" data-photo-index="{{ loop.index0 }}" aria-label="Odpri fotografijo {{ loop.index }}">
+            <img src="{{ img }}" alt="{{ block.title or event.data.title }} — fotografija {{ loop.index }}" loading="lazy">
+          </button>
+          {% endif %}{% endfor %}
+        </div>
+        {% endif %}
+        {% if block.video %}<div class="event-block-video">{{ block.video | videoEmbed | safe }}</div>{% endif %}
+      </section>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+
 
     </main>
 

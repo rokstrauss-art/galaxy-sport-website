@@ -13,6 +13,14 @@ eleventyComputed:
 <style>
 .blog-block{margin:0 0 2.4rem;}
 .blog-block-text{font-size:1.06rem;line-height:1.75;margin:0 0 1rem;}
+.blog-block-text p{margin:0 0 .95rem;color:inherit;}
+.blog-block-text p:last-child{margin-bottom:0;}
+.blog-block-text strong{font-weight:700;color:inherit;}
+.blog-block-text em{font-style:italic;}
+.blog-block-text ul,.blog-block-text ol{margin:0 0 .95rem;padding-left:1.35rem;}
+.blog-block-text li{margin-bottom:.35rem;}
+.blog-block-text a{color:var(--ember);border-bottom:1px solid rgba(200,100,60,.35);}
+.blog-block-text a:hover{border-bottom-color:var(--ember);}
 .blog-block-photos{display:grid;gap:12px;margin:1.2rem 0;}
 .blog-block-photos.n1{grid-template-columns:1fr;}
 .blog-block-photos.n2{grid-template-columns:1fr 1fr;}
@@ -87,7 +95,7 @@ eleventyComputed:
       {% if block.active !== false %}
       <div class="blog-block">
         {% if block.title %}<h2 class="blog-block-title">{{ block.title }}</h2>{% endif %}
-        {% if block.text %}<div class="blog-block-text tone-{{ block.color or 'default' }}">{{ block.text | nl2br | safe }}</div>{% endif %}
+        {% if block.text %}<div class="blog-block-text tone-{{ block.color or 'default' }}">{{ block.text | richText | safe }}</div>{% endif %}
         {% if block.images and block.images.length %}
         <div class="blog-block-photos n{{ block.images.length }}">
           {% for img in block.images %}{% if loop.index <= 3 %}

@@ -126,7 +126,7 @@ content:
         fields:
           - { name: active, label: "Prikaži na strani", type: boolean, default: true, hint: "Izklopi, če odstavka še ne želiš objaviti. Ostane shranjen." }
           - { name: title, label: "Naslov odstavka (neobvezno)", type: string, required: false }
-          - { name: text, label: "Besedilo", type: text }
+          - { name: text, label: "Besedilo", type: rich-text, hint: "Odebeljeno, ležeče, seznami in povezave. Velikosti pisave in naslovov namenoma ni, da ostane stran enotna." }
           - name: color
             label: "Barva besedila"
             type: select
@@ -163,7 +163,7 @@ content:
         fields:
           - { name: active, label: "Prikaži na strani", type: boolean, default: true, hint: "Izklopi, če odstavka še ne želiš objaviti. Ostane shranjen." }
           - { name: title, label: "Naslov odstavka (neobvezno)", type: string, required: false }
-          - { name: text, label: "Besedilo", type: text }
+          - { name: text, label: "Besedilo", type: rich-text, hint: "Odebeljeno, ležeče, seznami in povezave. Velikosti pisave in naslovov namenoma ni, da ostane stran enotna." }
           - name: color
             label: "Barva besedila"
             type: select

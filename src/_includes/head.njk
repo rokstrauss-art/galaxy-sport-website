@@ -2232,6 +2232,14 @@ body.event-page { background: var(--bone); }
 
 /* Extra paragraphs on an event page */
 .event-block-text { font-size: 1.02rem; line-height: 1.75; margin: 0 0 1rem; }
+.event-block-text p { margin: 0 0 .9rem; color: inherit; }
+.event-block-text p:last-child { margin-bottom: 0; }
+.event-block-text strong { font-weight: 700; color: inherit; }
+.event-block-text em { font-style: italic; }
+.event-block-text ul, .event-block-text ol { margin: 0 0 .9rem; padding-left: 1.35rem; }
+.event-block-text li { margin-bottom: .35rem; }
+.event-block-text a { color: var(--ember); border-bottom: 1px solid rgba(200, 100, 60, .35); }
+.event-block-text a:hover { border-bottom-color: var(--ember); }
 .event-block-photos { display: grid; gap: 12px; margin: 1.2rem 0; }
 .event-block-photos.n1 { grid-template-columns: 1fr; }
 .event-block-photos.n2 { grid-template-columns: 1fr 1fr; }

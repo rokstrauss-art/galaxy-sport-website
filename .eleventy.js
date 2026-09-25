@@ -1,4 +1,35 @@
+const MarkdownIt = require("markdown-it");
+
+// Formatting the client may use inside a CMS paragraph.
+// Deliberately limited: bold, italic, links and lists only.
+// Headings, images, tables, code blocks and raw HTML stay off so that
+// nobody can change type sizes or break the page layout from the CMS.
+const paragraphMd = new MarkdownIt({
+  html: false,       // no raw HTML, no inline styles, no font sizes
+  breaks: true,      // a single newline stays a line break, as before
+  linkify: true,     // a pasted address becomes a link on its own
+  typographer: false,
+});
+paragraphMd.disable([
+  "heading",
+  "lheading",
+  "image",
+  "table",
+  "code",
+  "fence",
+  "blockquote",
+  "hr",
+  "html_block",
+  "html_inline",
+]);
+
 module.exports = function (eleventyConfig) {
+  // Renders a CMS paragraph with the limited formatting set above.
+  eleventyConfig.addFilter("richText", function (value) {
+    if (!value) return "";
+    return paragraphMd.render(String(value));
+  });
+
 
   // Convert a YouTube or Vimeo URL into a responsive embed
   eleventyConfig.addFilter("videoEmbed", function (url) {
