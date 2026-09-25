@@ -47,11 +47,9 @@ to_bring:
   - Nahrbtnik z vsaj 1-1,5L tekočine in kakšen prigrizek
 event_gallery:
   - /images/uploads/IMG-20260922-WA0010-1.jpg
-  - /images/uploads/IMG-20260922-WA0001-2.jpg
   - /images/uploads/IMG-20260922-WA0002-2.jpg
   - /images/uploads/IMG_8964-7.jpg
   - /images/uploads/IMG-20260922-WA0008-2.jpg
-  - /images/uploads/IMG-20260922-WA0005-4.jpg
   - /images/uploads/IMG-20260922-WA0009-3.jpg
 blocks:
   - active: true
