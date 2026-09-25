@@ -1,7 +1,6 @@
 ---
 title: PUNCE NA TRAILIH – DAN ZA NOVE IZKUŠNJE IN ŠE VEČ UŽITKOV
 slug: punce-na-trailih-mtb-delavnica
-published: true
 title_short: Punce na trailih
 category: delavnica
 image: /images/uploads/IMG-20260922-WA0004-1.jpg
@@ -23,6 +22,7 @@ description: >-
   Ker ste čez poletje pridno nabirale kilometre, premagovale nove
   gorskokolesarske izzive in pridobivale izkušnje, smo za vas pripravili prav
   posebno enodnevno druženje na Črnih njivah nad Ilirsko Bistrico 🔥
+published: true
 is_free: false
 sold_out: false
 price_num: 125 €
@@ -54,7 +54,8 @@ event_gallery:
   - /images/uploads/IMG-20260922-WA0005-4.jpg
   - /images/uploads/IMG-20260922-WA0009-3.jpg
 blocks:
-  - title: Nekaj malega o Ani
+  - active: true
+    title: Nekaj malega o Ani
     text: >-
       🤘 ANA TANCIK – ŽENSKA, KI TI NAJPREJ POMAGA NA KOLO, POTEM PA ŠE V
       ŽIVLJENJU
@@ -86,6 +87,7 @@ blocks:
       samozavest in se predvsem imele fajn. Kajti cilj ni, da postanete svetovne
       prvakinje v premagovanju strahu, ampak da se na kolesu počutite bolj
       sproščeno, varno in samozavestno.
+    color: default
     images:
       - /images/uploads/IMG-20260922-WA0005-1.jpg
       - /images/uploads/IMG-20260922-WA0001.jpg
@@ -117,22 +119,4 @@ Tako bomo lahko že na naslednjih spustih poskusile popraviti opažene napake, i
 Ker vemo, da je gorsko kolesarstvo še bolj zabavno, ko se znanje in izkušnje delijo med sabo. ❤️
 
 Torej, punce, pripravite kolesa, nasmehe in dobro voljo. Črne njive, prihajamo! 🤘
-
-
-
-### **Pa še nekaj malega o Ani**
-
-
-
-Ana Tancik. Žena, mamica, podjetnica, športnica, trenerka, vodnica, socialna delavka, supervizorka ... skratka, človek, ki ima toliko funkcij, da bi zanjo potrebovali večji okvir na kolesu. 😎
-
-Gorsko kolesarstvo ima v krvi, izkušnje pa je nabirala tako na tekmovanjih kot pri delu z mladimi. Danes skrbi, da ljudje ne pilijo samo tehnike na kolesu, ampak tudi tisto, kar se dogaja med ušesi. Ker je včasih največja ovira na trailu ravno misel: »Tega pa jaz ne zmorem!«
-
-Ana zna motivirati, poslušati in razložiti. Če ne gre s prvo razlago, gre z drugo. Če ne gre z drugo, pa ... no, še vedno obstaja možnost, da bo treba čez oviro. 😂
-
-Njena supermoč: združevanje telesa, duha in gorskega kolesa.
-
-Njena šibka točka: verjetno še ni odkrila, da obstajajo ljudje, ki po ravnem vozijo samo zato, ker jih je strah spusta. 🤣
-
-V našem primeru bo poskrbela, da boste izboljšale tehniko, pridobile samozavest in se predvsem imele fajn. Kajti cilj ni, da postanete svetovne prvakinje v premagovanju strahu, ampak da se na kolesu počutite bolj sproščeno, varno in samozavestno.
 
