@@ -85,8 +85,8 @@ content:
       - { name: description, label: "Kratek opis (za kartico na naslovnici)", type: text }
       - { name: published, label: "Objavljeno na strani", type: boolean, default: false, hint: "Dokler je izklopljeno, dogodka na spletni strani ni. Vklopi, ko je pripravljen." }
       - { name: is_free, label: "Brezplačen dogodek", type: boolean, default: false, hint: "Če je vklopljeno, se cena ne prikaže. Prijava je brez plačila." }
-      - { name: sold_out, label: "Razprodano", type: boolean, default: false, hint: "Če je vklopljeno, se čez fotografijo na seznamu izpiše RAZPRODANO, prijavnica pa se zapre." }
-      - { name: sold_out_note, label: "Besedilo ob razprodanem dogodku", type: text, required: false, hint: "Npr. \"Prosta mesta so zapolnjena. Piši nam za čakalno listo.\"" }
+      - { name: sold_out, label: "Zasedeno (ni več prostih mest)", type: boolean, default: false, hint: "Če je vklopljeno, se čez fotografijo na seznamu izpiše ZASEDENO, prijavnica pa se zapre." }
+      - { name: sold_out_note, label: "Besedilo ob zasedenem dogodku", type: text, required: false, hint: "Npr. \"Prosta mesta so zapolnjena. Piši nam za čakalno listo.\"" }
       - { name: price_num, label: "Cena (npr. \"359 €\")", type: string }
       - { name: price_label, label: "Opis cene (npr. \"Polni paket\")", type: string }
       - { name: price_includes_accommodation, label: "Cena vključuje nastanitev", type: boolean, default: false }

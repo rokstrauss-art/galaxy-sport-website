@@ -3,7 +3,7 @@
     {% if not ev.data.image %}<svg class="trees" style="color: var(--forest-deep);"><use href="#trees"/></svg>{% endif %}
     <span class="event-tag{% if ev.data.tag_hot %} hot{% endif %}">{{ ev.data.tag }}</span>
     <span class="event-image-label">{{ ev.data.image_label }}</span>
-    {% if ev.data.sold_out %}<span class="event-soldout">Razprodano</span>{% endif %}
+    {% if ev.data.sold_out %}<span class="event-soldout">Zasedeno</span>{% endif %}
   </div>
   <div class="event-content">
     <div class="event-meta-top">
