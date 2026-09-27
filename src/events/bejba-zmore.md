@@ -55,29 +55,28 @@ blocks:
   - active: true
     title: Nekaj malega o Ani
     text: >-
-      🤘 ANA TANCIK – ŽENSKA, KI TI NAJPREJ POMAGA NA KOLO, POTEM PA ŠE V
-      ŽIVLJENJU
+      🤘 **ANA TANCIK** 
 
 
-      Ana Tancik. Žena, mamica, podjetnica, športnica, trenerka, vodnica,
-      socialna delavka, supervizorka ... skratka, človek, ki ima toliko funkcij,
-      da bi zanjo potrebovali večji okvir na kolesu. 😎
+      Žena, mamica, podjetnica, športnica, trenerka, vodnica, socialna delavka,
+      supervizorka ... skratka, človek, ki ima toliko funkcij, da bi zanjo
+      potrebovali večji okvir na kolesu. 😎  
 
       Gorsko kolesarstvo ima v krvi, izkušnje pa je nabirala tako na tekmovanjih
       kot pri delu z mladimi. Danes skrbi, da ljudje ne pilijo samo tehnike na
       kolesu, ampak tudi tisto, kar se dogaja med ušesi. Ker je včasih največja
-      ovira na trailu ravno misel: »Tega pa jaz ne zmorem!«
+      ovira na trailu ravno misel: **»Tega pa jaz ne zmorem!«**
 
 
-      Ana zna motivirati, poslušati in razložiti. Če ne gre s prvo razlago, gre
-      z drugo. Če ne gre z drugo, pa ... no, še vedno obstaja možnost, da bo
+      **Ana zna motivirati, poslušati in razložiti.** Če ne gre s prvo razlago,
+      gre z drugo. Če ne gre z drugo, pa ... no, še vedno obstaja možnost, da bo
       treba čez oviro. 😂
 
 
-      Njena supermoč: združevanje telesa, duha in gorskega kolesa.
+      **Njena supermoč:** združevanje telesa, duha in gorskega kolesa.
 
 
-      Njena šibka točka: verjetno še ni odkrila, da obstajajo ljudje, ki po
+      **Njena šibka točka:** verjetno še ni odkrila, da obstajajo ljudje, ki po
       ravnem vozijo samo zato, ker jih je strah spusta. 🤣
 
 
@@ -92,11 +91,11 @@ blocks:
 ---
 ## O delavnici
 
-To ne bo klasična delavnica, kjer bi vas ves dan mučili z različnimi vajami, pravilnimi izvedbami itd. 😉 Bolj kot delavnica bo to **vožnja po trailih pod budnim očesom Ane Tancik**, ki bo spremljala vaše znanje, tehniko in način vožnje ter vam po potrebi svetovala, kako kakšen odsek odpeljati bolje, varneje in še bolj tekoče.
+To **ne bo klasična delavnica**, kjer bi vas ves dan mučili z različnimi vajami, pravilnimi izvedbami itd. 😉 Bolj kot delavnica bo to **vožnja po trailih pod budnim očesom Ane Tancik**, ki bo spremljala vaše znanje, tehniko in način vožnje ter vam po potrebi svetovala, kako kakšen odsek odpeljati bolje, varneje in še bolj tekoče.
 
 🕙 **Začnemo ob 10.00**, s kratkim uvodom in preverjanjem vašega znanja in stanja koles. Nato pa sledi tisto, zaradi česar smo tukaj – kolo, traili in uživanje!
 
-🚐 S shuttle prevozom (kombi in prikolica za kolesa) se boste vozile do izhodišč posameznih spustov, kjer bo dovolj časa za:
+🚐 S shuttle prevozom (**kombi in prikolica za kolesa**) se boste vozile do izhodišč posameznih spustov, kjer bo dovolj časa za:
 
 🔹 več spustaških užitkov,
 
