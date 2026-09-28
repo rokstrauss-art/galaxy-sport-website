@@ -1,34 +1,39 @@
 ---
-title: Kolesarski tečaj za starostnike
-slug: nikoli-ni-prepozno
-published: true
+title: Nadaljevalna kolesarska šola za otroke
+slug: napredna-kolesarska-sola-otroci
 category: delavnica
-image: /images/uploads/IMG_2150-5.jpg
+image: /images/uploads/Kids ride 5-2.jpg
 image_label: Za boljše obvadovanje kolesa
 tag: Teden mobilnosti
 tag_hot: true
-date_label: 22. september 2026
-date_start: 2026-09-22
-date_end: 2026-09-22
+date_label: 8. oktober 2026
+date_start: 2026-10-08
+date_end: 2026-10-08
 location: Galaxy sport - ŠRC Dobrova
 location_meta: Osrednjeslovenska
-audience: Za vse mlade po srcu
+audience: Napredujemo
 group_size: 6 - 13
 difficulty: Nezahtevno
-description: Kolesarski tečaj je namenjen starejšim, ki želijo osvežiti ali
-  nadgraditi svoje znanje ter izboljšati varnost in samozavest pri vožnji s
-  kolesom.
+description: Nadaljevalna MTB šola je namenjena otrokom med 8. in 12. letom, ki
+  že obvladujejo vožnjo z gorskim kolesom.
+published: true
 is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
 blocks:
-  - images:
+  - active: true
+    color: default
+    images:
       - /images/uploads/Logotipi ETM-2.png
 ---
-Kolesarski tečaj je namenjen vsem tistim, ki kljub dolgem kolesarskem stažu želijo izvedeti kaj novega.  Spoznajte s pravilnimi tehnikami vožnje kolesa, saj nikoli ni prepozno za pridobivanje novih znanj. Takšna znanja vam bodo koristila pri lažjem obvladovanju kolesa na makadamskih poteh in kritičnih situacijah. Naj vam izbira tipa kolesa ni v breme, saj je tečaj primeren tako za klasična gorska, treking in električna kolesa.
+**Vsem otrokom ki radi vozijo gorsko kolo in bi radi napredovali, je ta delavnica pisana na kožo.** 
 
-Tečaj se bo izvedel 22. septembra od 16.00 do 18.30. Zbor udeležencev je na parkirišču ŠRC Dobrova v Gabrju.
+Kot ponavadi, začnemo z kratkim preverjanjem znanja in voznih lastnosti koles (nastavitve). 
+
+Tečaj se nadaljuje v gozdu, kjer preverimo **tehniko vožnje na različnih podlagah** (korenine, nagnjen teren, skale,...). Vse skupaj se kmalu prelevi v prijeten **gorskokolesarski izlet** po okoliških gričih, kjer se pridobljeno znanje prelije v prakso na terenu.
+
+**Tečaj se bo izvedel 8. oktobra od 16.00 do 19.00.** Zbor udeležencev je na parkirišču ŠRC Dobrova v Gabrju.
 
 Obvezna je uporaba kolesarske čelade in delujočega kolesa. Priporočamo, da imate s seboj manjši nahrbtnik, v katerem naj bo vsaj liter pijače in kakšen prigrizek.
 
