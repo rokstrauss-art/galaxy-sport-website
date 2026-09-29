@@ -30,9 +30,15 @@ blocks:
     images:
       - /images/uploads/Logotipi ETM-1.png
 ---
-Ta celodnevni kolesarski izlet bo nekaj posebnega, saj si boste lepote ljubljanskega barja ogledali tako iz barja samega kot iz najvišje točke ljubljanske kotline - Krima. Da pa pot ne bo dolgočasna, smo jo speljali preko Tomišlja in Rakitne vse do Krima, kjer se bo sigurno prilegla kakšna jed na žlico ali pa širše opevan jabolčni zavitek. Po počitku, se po drugi poti spustimo nazaj proti ravnemu barju in se po kombinaciji lepih makadamov, vrnemo nazaj do Dobrove.
+Ta **celodnevni kolesarski izlet** bo nekaj posebnega, saj si boste lepote ljubljanskega barja ogledali tako iz barja samega kot iz **najvišje točke ljubljanske kotline - Krima.** 
 
-Dolžina celotne trase cca. 60 km in skoraj 1000 višinskih metrov vzpona. Svetujemo uporabo gorskega, gravel ali treking kolesa. V kolikor bi se kdo rad udeležil ture z električnim kolesom, je to vsekakor dobrodošlo, vendar bo moral tempo prilagajati akustičnim predhodnikom.
+**Vabljeni vsi spoli, različice koles, mladi stari, akustični in električni.**
+
+Da pa pot ne bo dolgočasna, smo jo speljali **preko Tomišlja in Rakitne** vse do Krima, kjer se bo sigurno prilegla kakšna jed na žlico ali pa širše opevan jabolčni zavitek. Po počitku, se po drugi poti spustimo nazaj proti ravnemu barju in se po kombinaciji lepih makadamov, vrnemo nazaj do Dobrove.
+
+**Dolžina celotne trase cca. 60 km in skoraj 1000 višinskih metrov vzpona.** 
+
+Svetujemo uporabo **gorskega, gravel ali treking kolesa.** V kolikor bi se kdo rad udeležil ture z električnim kolesom, je to vsekakor dobrodošlo, vendar bo moral tempo prilagajati akustičnim predhodnikom.
 
 Zbor udeležencev bo v soboto 10. oktobra ob 8.00 na parkirišču nogometnega igrišča v Gabrju.
 
