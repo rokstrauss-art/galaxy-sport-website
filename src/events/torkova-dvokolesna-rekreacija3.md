@@ -1,7 +1,6 @@
 ---
-title: Za konec na Vrhe
+title: Po skritih poteh na Vrheh
 slug: torkova-dvokolesna-rekreacija3
-published: true
 category: dogodek
 image: /images/uploads/IMG_8938-1.jpg
 image_label: Torkova dvokolesna rekreacija - MTB
@@ -18,12 +17,15 @@ difficulty: Srednja
 description: Za zaključek torkovih dvokolesnih rekreacij 2026, se bomo podali na
   Vrhe in uživali na kombinaciji gozdnih poti in enoslednic. Tura je namenjena
   gorskim kolesarjem z nekaj več izkušnjami.
+published: true
 is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
 blocks:
-  - images:
+  - active: true
+    color: default
+    images:
       - /images/uploads/Logotipi ETM-6.png
 ---
 Zadnja torkova dvokolesna rekreacija nas popelje na Vrhe, kjer se bomo podili po kombinaciji enoslednic vse do sončnega zahoda. Vzpon na Vrhe je malce "napet", a vseeno ta napor prav vedno odtehtajo spusti, ki jih Vrhe skrivajo na svojih pobočjih. Še ena dvokolesna rekreacija za tiste prave gorske kolesarje, ki si želijo predvsem uživati v naravi in spustih. Nič ekstremnega, samo zabava.
