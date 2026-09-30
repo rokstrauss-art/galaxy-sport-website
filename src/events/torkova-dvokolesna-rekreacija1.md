@@ -1,7 +1,6 @@
 ---
 title: Gorskokolesarska tura dveh občin
 slug: torkova-dvokolesna-rekreacija1
-published: true
 category: dogodek
 image: /images/uploads/MTB tura.jpg
 image_label: Torkova dvokolesna rekreacija - MTB
@@ -18,12 +17,15 @@ difficulty: Srednja
 description: Približno 2–3-urna gorskokolesarska tura iz Gabrja preko Toškega
   Čela in Šentviškega vrha, namenjena srednje izkušenejšim in izkušenim gorskim
   kolesarjem.
+published: false
 is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
 blocks:
-  - images:
+  - active: true
+    color: default
+    images:
       - /images/uploads/Logotipi ETM.png
 ---
 Iz Gabrja se po kombinaciji skritih gozdnih poti odpeljemo proti Toškem čelu, od koder sledimo enoslednicam do Šentviškega vrha. In ker je to tura namenjena že obrušenim gorskim kolesarkam in kolesarjem, je tudi spust v tem stilu, saj se po razgibanem terenu spostimo vse do Guncelj. Od tam sledi sproščeno kolesarjenje nazaj proti Dobrovi. Čas izleta 2-3 ure. 
