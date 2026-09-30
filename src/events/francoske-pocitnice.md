@@ -1,7 +1,6 @@
 ---
 title: Francoske MTB počitnice
 slug: francoske-pocitnice
-published: true
 title_short: Francoske MTB počitnice
 category: avantura
 image: /images/uploads/IMG_6119-4.jpg
@@ -20,6 +19,7 @@ instructor: Marko Mac Šimenc
 description: MTB počitnice brez primere. Furamo parke in traile v okolici Serre
   Chevaliera, PSV, Les Orresa, Bardonecchie,.. Svež alpski luft, veliko
   višincev, vrhunska nastanitev, lokalna kulinarika in dober vibe.
+published: false
 is_free: false
 sold_out: true
 price_num: 860 €
