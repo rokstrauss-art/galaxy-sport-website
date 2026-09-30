@@ -41,4 +41,4 @@ Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti
 
 **Vse aktivnosti v okviru Evropskega tedna mobilnosti, so za občane Občine Dobrova - Polhov Gradec brezplačne.** 
 
-Prijava na dogodek je obvezna!!!
+Prijava na dogodek je obvezna.
