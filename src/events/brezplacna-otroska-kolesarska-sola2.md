@@ -1,7 +1,6 @@
 ---
 title: Otroška kolesarska šola Nr. 2
 slug: brezplacna-otroska-kolesarska-sola2
-published: true
 category: delavnica
 image: /images/uploads/Kids ride 4-1.jpg
 image_label: Zabava na kolesu se nadaljuje
@@ -17,12 +16,15 @@ group_size: 6 - 13
 difficulty: Primerno za začetnike
 description: Kolesarska šola je namenjena otrokom od 5. do 8. leta starosti,
   tako začetnikom kot tistim, ki so na kolesu že samozavestni.
+published: false
 is_free: true
 sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
 blocks:
-  - images:
+  - active: true
+    color: default
+    images:
       - /images/uploads/Logotipi ETM-5.png
 ---
 Otroška kolesarska šola je namenjena otrokom med 5 in 8 letom starosti . Primerna tako za začetnike kot tudi za tiste ki že suvereno obvladajo vožnjo gorskega kolesa. V šoli se otroci spoznavajo s pravilnimi tehnikami vožnje gorskega kolesa, gozdnim bontonom pridobivanjem splošne pripravljenosti in več. 
