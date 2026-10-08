@@ -16,12 +16,13 @@ blocks:
 
 
       **To in še marsikaj drugega je Slovenija.** Raznolika v kulturi, besedi,
-      navadah, kulinariki, arhitekturi in predvsem naravnih danosti. Imaš
+      navadah, kulinariki, arhitekturi in predvsem naravnih danostih. Imaš
       občutek da si v francoskih Alpah in po manj kot uri vožnje je občutek
       lahko popolnoma toskanski.
 
 
-      **Da, veseli in ponosni smo lahko na to našo malo kokoško.**
+      **Da, ponosni smo lahko na to našo malo kokoško in počaščeni, da lahko tu
+      živimo.**
     color: default
     video: https://www.youtube.com/watch?v=AUlejwueGiE&t=426s
 ---
