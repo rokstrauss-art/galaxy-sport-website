@@ -17,7 +17,7 @@ difficulty: Srednja
 description: Tehnično nezahtevna 2–3-urna krožna tura po najlepših makadamskih
   in gozdnih cestah naše občine. Primerna je za srednje pripravljene kolesarje z
   gravel ali gorskim kolesom.
-published: true
+published: false
 is_free: true
 sold_out: true
 price_num: Brezplačno
