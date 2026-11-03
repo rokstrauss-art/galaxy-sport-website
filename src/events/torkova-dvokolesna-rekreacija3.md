@@ -17,7 +17,7 @@ difficulty: Srednja
 description: Za zaključek torkovih dvokolesnih rekreacij 2026, se bomo podali na
   Vrhe in uživali na kombinaciji gozdnih poti in enoslednic. Tura je namenjena
   gorskim kolesarjem z nekaj več izkušnjami.
-published: true
+published: false
 is_free: true
 sold_out: false
 price_num: Brezplačno
