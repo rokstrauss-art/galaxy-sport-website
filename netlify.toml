@@ -6,14 +6,23 @@
   command = "npm run build"
   publish = "_site"
 
-  # Preskoči build, če commit spreminja SAMO fotografije v uploads.
-  # Pages CMS naredi ločen commit za vsako naloženo fotografijo —
-  # 10 fotografij = 10 commitov = 10 buildov. Fotografije pa na strani
-  # niso vidne, dokler jih vsebina ne referencira (klik na Shrani),
-  # zato je varno počakati na ta zadnji commit, ki sproži en sam build
-  # z vsemi fotografijami vred.
-  # Izhod 0 = preskoči build, izhod 1 = build se izvede.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)src/images/uploads'"
+  # Tu je bil nekoč "ignore" ukaz, ki je preskočil build, kadar je commit
+  # spreminjal samo fotografije v src/images/uploads.
+  #
+  # Odstranjen 3. novembra 2026, ker je od 8. oktobra 2026 preskakoval
+  # čisto vse buildove in se stran ni posodabljala skoraj mesec dni.
+  #
+  # Vzrok: brez predpomnilnika je $CACHED_COMMIT_REF prazen. Ukaz je takrat
+  # dobil en sam argument namesto dveh, zato ni primerjal dveh commitov,
+  # ampak delovno kopijo s trenutnim commitom. Ta je vedno čista, torej
+  # izhod 0, torej preskoči. Preskočen build ne zapiše predpomnilnika,
+  # zato se je stanje samo ohranjalo naprej.
+  #
+  # Če bo kdaj spet potreben, mora imeti varovalko, ki gradi, kadar
+  # primerjalna točka manjka:
+  #   ignore = "if [ -z \"$CACHED_COMMIT_REF\" ]; then exit 1; fi; git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)src/images/uploads'"
+  # Pravilo: privzeto naj bo gradnja, ne preskok. Odvečen build stane
+  # 20 sekund, odvečen preskok je stal mesec dni.
 
 [[headers]]
   for = "/images/*"
