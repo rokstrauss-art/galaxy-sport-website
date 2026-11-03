@@ -1,7 +1,6 @@
 ---
 title: Otroški kolesarski popoldnevi
 slug: otroske-kolesarske-delavnice
-published: true
 category: delavnica
 image: /images/uploads/Kids ride 2.jpg
 image_label: Na Dobrovi
@@ -18,6 +17,7 @@ difficulty: Primerno za začetnike in nadaljevalce
 description: Popoldansko kolesarsko druženje otrok, pri katerem se na zabaven
   način pridobi nova znanja obvladovanja gorskega kolesa. Daleč od ekranov in
   ostalih motilcev zabave v naravi.
+published: false
 is_free: false
 sold_out: false
 price_num: 20 €
