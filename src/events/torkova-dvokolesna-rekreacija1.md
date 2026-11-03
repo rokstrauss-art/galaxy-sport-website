@@ -20,7 +20,7 @@ description: Bikepacking v Maroku je lahko avantura na 1001 način. Trda realnos
   kamnitopeščeni, a magični svet, ki te spremeni za vekomaj. Podobno, kot se
   globin vsakogar dotakne Himalaja, ko dojemanje tega Sveta potem ni več isto.
   Vabljeni na potopisno predavanje.
-published: false
+published: true
 is_free: true
 sold_out: false
 price_num: Brezplačno
