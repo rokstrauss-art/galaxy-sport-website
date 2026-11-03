@@ -12,7 +12,7 @@ date_start: 2026-11-19
 date_end: 2026-11-19
 location: Galaxy sport - ŠRC Dobrova
 location_meta: Osrednjeslovenska
-audience: Gorske kolesarje vseh spolov in generacij
+audience: Za vse ki jih zanimajo dobre zgodbe
 group_size: do 25 slušateljev
 difficulty: Ušesom in očem prijetno
 instructor: Dejan Ogrinec
