@@ -1,6 +1,7 @@
 ---
 title: Kolesarsko potopisno predavanje - MAROKO
 slug: potopisno-predavanje-maroko
+title_short: Bikepacking Maroko predavanje
 category: dogodek
 image: /images/uploads/20230228_114219.jpg
 image_label: Dejan Ogrinec
