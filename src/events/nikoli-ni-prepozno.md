@@ -16,7 +16,7 @@ group_size: 6 - 13
 difficulty: Nezahtevno
 description: Nadaljevalna MTB šola je namenjena otrokom med 8. in 12. letom, ki
   že obvladujejo vožnjo z gorskim kolesom.
-published: true
+published: false
 is_free: true
 sold_out: false
 price_num: Brezplačno
