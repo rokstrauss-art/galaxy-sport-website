@@ -34,7 +34,7 @@ event_gallery:
   - /images/uploads/20230228_175104.jpg
   - /images/uploads/20230314_085717-1.jpg
 blocks:
-  - active: false
+  - active: true
     title: DEJAN OGRINEC – človek, ki mu očitno 24 ur na dan ni dovolj.
     text: >-
       Alpinist, ekstremni smučar, gorski kolesar, popotnik, novinar, fotograf,
