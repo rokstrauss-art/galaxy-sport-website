@@ -43,5 +43,5 @@ Aja, pa še nekaj. Izvedeli boste tudi, zakaj ne verjeti influenserjem, blogom i
 
 
 
-Vabljeni v bar Lokalc, v četrtek 19.11. ob 19.00
+Vabljeni v bar Lokalc, v četrtek 19.11. ob 19.00 - [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
