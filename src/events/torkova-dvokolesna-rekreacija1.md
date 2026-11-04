@@ -77,7 +77,9 @@ blocks:
 
 
 
-"Če vas zanima, kako se s kolesom, ki sem ga za 50 euričev kupil v neki garaži (namesto za 3000 €, kolikor naj bi menda stalo kolo za takšno avanturo), februarja znajti v puščavi, iskati senco, šteti vodo po kapljicah in ob vsakem obratu pedal moliti k vsem bogovom, da bodo gume, menjalnik in okvir zdržali – da o cenenih torbah z AliExpressa sploh ne govorimo – potem pridite poslušat še preostanek zgodbe.
+"Če vas zanima, kako se s kolesom, ki sem ga za 50 euričev kupil v neki garaži (namesto za 
+
+3000 €, kolikor naj bi menda stalo kolo za takšno avanturo), februarja znajti v puščavi, iskati senco, šteti vodo po kapljicah in ob vsakem obratu pedal moliti k vsem bogovom, da bodo gume, menjalnik in okvir zdržali – da o cenenih torbah z AliExpressa sploh ne govorimo – potem pridite poslušat še preostanek zgodbe.
 
 Milijoni udarcev kamenja, jarki, ki jih je izdolbla voda, in ostre konice odsekanih palmovih vej namreč niso ravno prizanesljivi do kolesa. Še manj do kolesarja.
 
