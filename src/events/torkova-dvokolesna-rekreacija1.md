@@ -41,14 +41,14 @@ blocks:
       vodnik … in še marsikaj bi lahko dodali.
 
 
-      Nekoč urednik priloge *NonStop* in revije *Sokol*, danes pa še vedno
+      Nekoč **urednik priloge *NonStop* in revije *Sokol***, danes pa še vedno
       človek, ki ga srečaš povsod, kjer se kaj zanimivega dogaja.
 
 
       V svetu gorskega kolesarstva je pustil precejšen pečat. Sodeloval je pri
       nastajanju, fotografiral in sooblikoval prvi resni slovenski
-      gorskokolesarski vodnik *Strme kolesnice* (Marko Paternu). Prav tako je
-      oblikoval in fotografiral knjigo *Sem kolesar. Gorski kolesar* (G.
+      gorskokolesarski **vodnik *Strme kolesnice*** (Marko Paternu). Prav tako
+      je oblikoval in fotografiral **knjigo *Sem kolesar. Gorski kolesar*** (G.
       Stražišar).
 
 
