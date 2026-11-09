@@ -91,9 +91,5 @@ Zakaj ravno Great Divide?  **Ker je življenje prekratko za dolgočasne dopuste!
 
 
 
-&nbsp;
-
-&nbsp;
-
 **Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!**
 
