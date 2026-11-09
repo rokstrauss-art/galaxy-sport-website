@@ -1,41 +1,61 @@
 ---
-title: Najlepši makadami občine Dobrova
-slug: torkova-dvokolesna-rekreacija2
+title: Kolesarsko potopisno predavanje - GREAT DIVIDE (KANADA-ZDA)
+slug: potopisno-predavanje-great-divide
 category: dogodek
-image: /images/uploads/IMG_6671-2.jpg
-image_label: Torkova dvokolesna rekreacija - makadam
-tag: Teden mobilnosti
+image: /images/uploads/bikepacking-great-divide2.jpg
+image_label: Erika & Rok Kovač
+tag: Bikepacking avantura
 tag_hot: true
-date_label: 29. september 2026
-date_start: 2026-09-29
-date_end: 2026-09-29
+date_label: 03. december 2026
+date_start: 2026-12-03
+date_end: 2026-12-03
 location: Galaxy sport - ŠRC Dobrova
 location_meta: Osrednjeslovenska
-audience: Za ljubitelje makadamskih izletov
-group_size: 4 - 10
-difficulty: Srednja
-description: Tehnično nezahtevna 2–3-urna krožna tura po najlepših makadamskih
-  in gozdnih cestah naše občine. Primerna je za srednje pripravljene kolesarje z
-  gravel ali gorskim kolesom.
-published: false
+audience: Avanturiste po duši
+group_size: do 25 slušateljev
+difficulty: Nezahtevno
+instructor: Erika in Rok Kovač
+description: >-
+  Erika in Rok Kovač sta svojo skupno pot začela kot plezalna naveza, k asneje
+  sta se posvetila predvsem gorskemu kolesarjenju, ki je preraslo v veselje do
+  potovanj s kolesi.
+
+
+  Rok je med drugim samostojno prekolesaril zasneženo Aljasko (Iditarod), skupaj
+  pa sta večkrat prečila Alpe, prevozila STKP, Indijsko Himalajo, Pamir, Atlas …
+
+
+  Leta 2024 sta kolesarila 4800 km od Calgaryja v Kanadi do Mehiške meje,
+  znameniti Great Divide, kar bo tudi rdeča nit predavanja.
+published: true
 is_free: true
-sold_out: true
+sold_out: false
 price_num: Brezplačno
 price_includes_accommodation: false
+event_gallery:
+  - /images/uploads/bikepacking-great-divide3-1.jpg
+  - /images/uploads/rok-kovac-great-divide-1.jpg
+  - /images/uploads/bikepacking-great-divide2-1.jpg
+  - /images/uploads/bikepacking- great- divide1-1.jpg
 blocks:
   - active: true
     color: default
-    images:
-      - /images/uploads/Logotipi ETM-3.png
 ---
-Za vas smo pripravili 2-3 urno krožno kolesarsko turo, ki vas bo popeljala po kombinaciji najlepših makadamih in gozdnih cestah, po skritih predelih naše občine. Za turo je potrebno biti srednje pripravljen, imeti delujoče gravel ali gorsko kolo in kolesarsko čelado. Sama trasa je tehnično nezahtevna.
+### **ERIKA IN ROK KOVAČ – 4.800 Km pedaliranja, prahu in pustolovščin 🚵‍♀️🚵‍♂️🌎**
 
-Zbor udeležencev je v torek 29. septembra ob 16.00 na parkirišču ŠRC Dobrova v Gabrju.
+Nekateri gredo na dopust na morje, drugi v hribe, Erika in Rok Kovač pa sta se leta 2024 odločila, da bosta šla malo na kolo. No, za kakšnih **4.800 kilometrov!** 😁
 
+Iz Calgaryja v Kanadi sta se podala na legendarno pot **Great Divide**, ki sledi hrbtenici Skalnega gorovja vse do mehiške meje.
 
+**Na meniju?** Neskončni makadami, dolgi vzponi, divjina, prah, veter, čudoviti razgledi in zagotovo kakšen trenutek, ko sta se vprašala, zakaj za vraga nista raje rezervirala hotela z bazenom. 😂
 
-Občina Dobrova - Polhov Gradec se letos pridružuje Evropskemu tednu mobilnosti 2026, ki poteka pod sloganom »Mobilnost za vse!«. 
+Ampak prav v tem je čar takšnih avantur. Dva človeka, dve kolesi, kup prtljage in skoraj 5.000 kilometrov zgodb, ki jih ne moreš kupiti v nobeni turistični agenciji.
 
-**Vse aktivnosti v okviru Evropskega tedna mobilnosti, so za občane Občine Dobrova - Polhov Gradec brezplačne.** 
+**Zakaj ravno Great Divide - ker je življenje prekratko za dolgočasne dopuste!** 🚵‍♂️🌵🏔️
 
-Prijava na dogodek je obvezna!!!
+# Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
+
+### [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
+
+# Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!
+
