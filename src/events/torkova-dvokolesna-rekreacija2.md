@@ -51,11 +51,13 @@ Iz Calgaryja v Kanadi sta se podala na legendarno pot **Great Divide**, ki sledi
 
 **Na meniju?** Neskončni makadami, dolgi vzponi, divjina, prah, veter, čudoviti razgledi in zagotovo kakšen trenutek, ko sta se vprašala, zakaj za vraga nista raje rezervirala hotela z bazenom. 😂
 
-Ampak prav v tem je čar takšnih avantur. Dva človeka, dve kolesi, kup prtljage in skoraj 5.000 kilometrov zgodb, ki jih ne moreš kupiti v nobeni turistični agenciji.
+Ampak prav v tem je čar takšnih avantur. **Dve osebi**, dve kolesi, kup prtljage in skoraj **5.000 kilometrov zgodb**, ki jih ne moreš kupiti v nobeni turistični agenciji.
 
-**Zakaj ravno Great Divide - ker je življenje prekratko za dolgočasne dopuste!** 🚵‍♂️🌵🏔️
+Zakaj ravno Great Divide?  **Ker je življenje prekratko za dolgočasne dopuste!** 🚵‍♂️🌵🏔️
 
 
+
+&nbsp;
 
 ### Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
 
