@@ -61,7 +61,9 @@ Zakaj ravno Great Divide?  **Ker je življenje prekratko za dolgočasne dopuste!
 
 ### Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
 
-### [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
+
+
+### Lokacija: [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
 
 
