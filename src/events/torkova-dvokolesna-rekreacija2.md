@@ -1,5 +1,5 @@
 ---
-title: Kolesarsko potopisno predavanje - GREAT DIVIDE (KANADA-ZDA)
+title: Kolesarsko potopisno predavanje - GREAT DIVIDE (Kanada-ZDA)
 slug: potopisno-predavanje-great-divide
 category: dogodek
 image: /images/uploads/bikepacking-great-divide2.jpg
@@ -41,7 +41,7 @@ blocks:
   - active: true
     color: default
 ---
-### **ERIKA IN ROK KOVAČ – 4.800 Km pedaliranja, prahu in pustolovščin 🚵‍♀️🚵‍♂️🌎**
+## **ERIKA IN ROK KOVAČ – 4.800 Km pedaliranja, prahu in pustolovščin 🚵‍♀️🚵‍♂️🌎**
 
 Nekateri gredo na dopust na morje, drugi v hribe, Erika in Rok Kovač pa sta se leta 2024 odločila, da bosta šla malo na kolo. No, za kakšnih **4.800 kilometrov!** 😁
 
