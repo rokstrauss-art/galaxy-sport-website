@@ -43,6 +43,8 @@ blocks:
 ---
 ## **ERIKA IN ROK KOVAČ – 4.800 Km pedaliranja, prahu in pustolovščin 🚵‍♀️🚵‍♂️🌎**
 
+
+
 Nekateri gredo na dopust na morje, drugi v hribe, Erika in Rok Kovač pa sta se leta 2024 odločila, da bosta šla malo na kolo. No, za kakšnih **4.800 kilometrov!** 😁
 
 Iz Calgaryja v Kanadi sta se podala na legendarno pot **Great Divide**, ki sledi hrbtenici Skalnega gorovja vse do mehiške meje.
@@ -53,9 +55,11 @@ Ampak prav v tem je čar takšnih avantur. Dva človeka, dve kolesi, kup prtljag
 
 **Zakaj ravno Great Divide - ker je življenje prekratko za dolgočasne dopuste!** 🚵‍♂️🌵🏔️
 
-# Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
+### Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
 
 ### [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
-# Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!
+
+
+### Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!
 
