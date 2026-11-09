@@ -89,7 +89,5 @@ Zakaj ravno Great Divide?  **Ker je življenje prekratko za dolgočasne dopuste!
 
 ### Lokacija: [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
-
-
 **Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!**
 
