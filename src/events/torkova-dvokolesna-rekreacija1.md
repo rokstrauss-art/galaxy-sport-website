@@ -75,8 +75,6 @@ blocks:
 ---
 ## Dejan o kolesarski avanturi v Maroku:
 
-
-
 "Če vas zanima, kako se s kolesom, ki sem ga za 50 euričev kupil v neki garaži (namesto za 3000 €, kolikor naj bi menda stalo kolo za takšno avanturo), februarja znajti v puščavi, iskati senco, šteti vodo po kapljicah in ob vsakem obratu pedal moliti k vsem bogovom, da bodo gume, menjalnik in okvir zdržali – da o cenenih torbah z AliExpressa sploh ne govorimo – potem pridite poslušat še preostanek zgodbe.
 
 Milijoni udarcev kamenja, jarki, ki jih je izdolbla voda, in ostre konice odsekanih palmovih vej namreč niso ravno prizanesljivi do kolesa. Še manj do kolesarja.
@@ -93,7 +91,7 @@ Izkazalo se je namreč, da avtor GPX-sledi najtežjih 40 % trase sploh ni prevoz
 
 Ja, ni ravno zabavno sredi puščave, brez cest in daleč od civilizacije, na lastni koži oziroma kolesu ugotavljati kaj takšnega …"
 
-### Vabljeni v bar Lokalc, v četrtek, 19. 11., ob 19.00!
+### Vabljeni v bar Lokalc, v četrtek, 19. novembra, ob 19.00! 
 
-### [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
+### Lokacija: [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
