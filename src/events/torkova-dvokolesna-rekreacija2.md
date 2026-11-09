@@ -55,11 +55,13 @@ Ampak prav v tem je čar takšnih avantur. Dva človeka, dve kolesi, kup prtljag
 
 **Zakaj ravno Great Divide - ker je življenje prekratko za dolgočasne dopuste!** 🚵‍♂️🌵🏔️
 
+
+
 ### Več izveste na potopisnem predavanju v baru Lokalc, 3. decembra ob 19.00.
 
 ### [https://maps.app.goo.gl/r492cPuwjiz1xVTMA](https://maps.app.goo.gl/r492cPuwjiz1xVTMA)
 
 
 
-### Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!
+**Ker je število sedežev omejeno, vas naprošamo, da se na dogodek prijavite!!**
 
