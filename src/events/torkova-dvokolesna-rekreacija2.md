@@ -39,7 +39,31 @@ event_gallery:
   - /images/uploads/bikepacking- great- divide1-1.jpg
 blocks:
   - active: true
+    title: Erika in Rok Kovač – pustolovca stare šole!
+    text: >-
+      **Rok Kovač** je precej več kot le kolesar, ki je **prekolesaril
+      Aljasko**. Je alpinist stare šole, pionir slovenskega lednega plezanja,
+      gorski reševalec in vsestranski pustolovec, ki je premikal meje že v
+      časih, ko si moral marsikateri kos športne opreme izdelati kar sam.
+
+
+      Njegova **dolgoletna sopotnica Erika** prav tako prihaja iz alpinističnih
+      vrst. Že v osemdesetih letih **sta skupaj premagovala zahtevne plezalne
+      smeri**, štiri desetletja pozneje pa očitno še vedno nista našla razloga,
+      da bi se umirila.
+
+
+      Sedaj si počitnice organizirata po lastnih željah, tako da na dveh kolesih
+      in agregatom na polento **premagujeta velike razdalje in odkrivata nove
+      horizonte.**
+
+
+      **Nekateri se z leti umirijo, Erika in Rok pa očitno samo podaljšujeta
+      svoje avanture!** 😁
     color: default
+    images:
+      - /images/uploads/rok-erika-kovac-bikepacking.jpg
+      - /images/uploads/biking-on-snow.jpg
 ---
 ## **ERIKA IN ROK KOVAČ – 4.800 Km pedaliranja, prahu in pustolovščin 🚵‍♀️🚵‍♂️🌎**
 
